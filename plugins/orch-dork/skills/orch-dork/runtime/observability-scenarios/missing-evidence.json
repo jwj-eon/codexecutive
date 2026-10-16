@@ -1,0 +1,41 @@
+{
+  "schema": "orch-dork/observability-scenario/v1",
+  "scenario_id": "missing-evidence",
+  "title": "Missing required evidence",
+  "mode": "governed",
+  "summary": "A completion declaration exists, but exact attempt usage was not observed.",
+  "disposition": {
+    "kind": "success",
+    "reason": "The submitted completion requests success, subject to the evidence gate.",
+    "evidence_class": "sealed",
+    "evidence_tier": "sealed-runtime",
+    "source_pointer": "governed-report#requested-disposition",
+    "source_sha256": null
+  },
+  "claims": [
+    {
+      "claim_id": "terminal-state",
+      "label": "Terminal state",
+      "value": "completed",
+      "required": true,
+      "evidence_class": "runtime",
+      "evidence_tier": "runtime-observed",
+      "source_pointer": "observer#terminal-state",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "exact-usage",
+      "label": "Exact attempt usage",
+      "value": null,
+      "required": true,
+      "evidence_class": "unknown",
+      "evidence_tier": "runtime-observed",
+      "source_pointer": "observer#usage-unavailable",
+      "source_sha256": null,
+      "unknown_reason": "runtime telemetry did not include attributable token components",
+      "contradictory_values": null
+    }
+  ]
+}

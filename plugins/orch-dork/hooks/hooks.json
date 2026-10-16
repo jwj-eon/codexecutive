@@ -1,0 +1,67 @@
+{
+  "description": "Fail-closed Orch Dork project-ground lifecycle and mutation gate.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c 'exec(\"import json, os, sys\\nHOOK = (\\\"hooks\\\", \\\"project_ground_hook.py\\\")\\nMESSAGE = (\\\"Orch Dork was reinstalled while this task was open, so its hooks are gone. \\\"\\n           \\\"Start a new task to keep working.\\\")\\ndef hook(root):\\n    return os.path.join(root, *HOOK)\\ndef installed(parent):\\n    found = []\\n    for name in sorted(os.listdir(parent)):\\n        root = os.path.join(parent, name)\\n        try:\\n            with open(os.path.join(root, \\\".codex-plugin\\\", \\\"plugin.json\\\"), encoding=\\\"utf-8\\\") as handle:\\n                version = json.load(handle).get(\\\"version\\\")\\n        except (OSError, ValueError, AttributeError):\\n            continue\\n        if version == name and os.path.isfile(hook(root)):\\n            found.append(root)\\n    return found\\ngiven = sys.argv[1] if len(sys.argv) > 1 else \\\"\\\"\\nroot = given if given and not given.startswith(\\\"$\\\") else os.environ.get(\\\"PLUGIN_ROOT\\\", \\\"\\\")\\nif root and os.path.isfile(hook(root)):\\n    os.execv(sys.executable, [sys.executable, hook(root)])\\ndata = sys.stdin.buffer.read()\\ntry:\\n    event = json.loads(data.decode(\\\"utf-8\\\") or \\\"{}\\\").get(\\\"hook_event_name\\\")\\nexcept (ValueError, UnicodeDecodeError, AttributeError):\\n    event = None\\ntry:\\n    roots = installed(os.path.dirname(os.path.normpath(root))) if root else []\\nexcept OSError:\\n    roots = []\\nif event in (\\\"SessionStart\\\", \\\"PreToolUse\\\", \\\"PostToolUse\\\") and len(roots) == 1:\\n    import subprocess\\n    done = subprocess.run([sys.executable, hook(roots[0])], input=data, stdout=subprocess.PIPE,\\n                          env=dict(os.environ, PLUGIN_ROOT=roots[0]))\\n    sys.stdout.buffer.write(done.stdout)\\n    sys.exit(done.returncode)\\nif event == \\\"PreToolUse\\\":\\n    output = {\\\"hookSpecificOutput\\\": {\\\"hookEventName\\\": \\\"PreToolUse\\\", \\\"permissionDecision\\\": \\\"deny\\\",\\n                                     \\\"permissionDecisionReason\\\": MESSAGE}}\\nelif event == \\\"SessionStart\\\":\\n    output = {\\\"continue\\\": True, \\\"systemMessage\\\": MESSAGE}\\nelse:\\n    output = {\\\"continue\\\": True}\\nsys.stdout.write(json.dumps(output, sort_keys=True, separators=(\\\",\\\", \\\":\\\")) + \\\"\\\\n\\\")\\n\")' \"${PLUGIN_ROOT}\"",
+            "timeout": 10,
+            "statusMessage": "Checking enrolled project ground"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c 'exec(\"import json, os, sys\\nHOOK = (\\\"hooks\\\", \\\"project_ground_hook.py\\\")\\nMESSAGE = (\\\"Orch Dork was reinstalled while this task was open, so its hooks are gone. \\\"\\n           \\\"Start a new task to keep working.\\\")\\ndef hook(root):\\n    return os.path.join(root, *HOOK)\\ndef installed(parent):\\n    found = []\\n    for name in sorted(os.listdir(parent)):\\n        root = os.path.join(parent, name)\\n        try:\\n            with open(os.path.join(root, \\\".codex-plugin\\\", \\\"plugin.json\\\"), encoding=\\\"utf-8\\\") as handle:\\n                version = json.load(handle).get(\\\"version\\\")\\n        except (OSError, ValueError, AttributeError):\\n            continue\\n        if version == name and os.path.isfile(hook(root)):\\n            found.append(root)\\n    return found\\ngiven = sys.argv[1] if len(sys.argv) > 1 else \\\"\\\"\\nroot = given if given and not given.startswith(\\\"$\\\") else os.environ.get(\\\"PLUGIN_ROOT\\\", \\\"\\\")\\nif root and os.path.isfile(hook(root)):\\n    os.execv(sys.executable, [sys.executable, hook(root)])\\ndata = sys.stdin.buffer.read()\\ntry:\\n    event = json.loads(data.decode(\\\"utf-8\\\") or \\\"{}\\\").get(\\\"hook_event_name\\\")\\nexcept (ValueError, UnicodeDecodeError, AttributeError):\\n    event = None\\ntry:\\n    roots = installed(os.path.dirname(os.path.normpath(root))) if root else []\\nexcept OSError:\\n    roots = []\\nif event in (\\\"SessionStart\\\", \\\"PreToolUse\\\", \\\"PostToolUse\\\") and len(roots) == 1:\\n    import subprocess\\n    done = subprocess.run([sys.executable, hook(roots[0])], input=data, stdout=subprocess.PIPE,\\n                          env=dict(os.environ, PLUGIN_ROOT=roots[0]))\\n    sys.stdout.buffer.write(done.stdout)\\n    sys.exit(done.returncode)\\nif event == \\\"PreToolUse\\\":\\n    output = {\\\"hookSpecificOutput\\\": {\\\"hookEventName\\\": \\\"PreToolUse\\\", \\\"permissionDecision\\\": \\\"deny\\\",\\n                                     \\\"permissionDecisionReason\\\": MESSAGE}}\\nelif event == \\\"SessionStart\\\":\\n    output = {\\\"continue\\\": True, \\\"systemMessage\\\": MESSAGE}\\nelse:\\n    output = {\\\"continue\\\": True}\\nsys.stdout.write(json.dumps(output, sort_keys=True, separators=(\\\",\\\", \\\":\\\")) + \\\"\\\\n\\\")\\n\")' \"${PLUGIN_ROOT}\"",
+            "timeout": 10,
+            "statusMessage": "Authorizing project mutation"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c 'exec(\"import json, os, sys\\nHOOK = (\\\"hooks\\\", \\\"project_ground_hook.py\\\")\\nMESSAGE = (\\\"Orch Dork was reinstalled while this task was open, so its hooks are gone. \\\"\\n           \\\"Start a new task to keep working.\\\")\\ndef hook(root):\\n    return os.path.join(root, *HOOK)\\ndef installed(parent):\\n    found = []\\n    for name in sorted(os.listdir(parent)):\\n        root = os.path.join(parent, name)\\n        try:\\n            with open(os.path.join(root, \\\".codex-plugin\\\", \\\"plugin.json\\\"), encoding=\\\"utf-8\\\") as handle:\\n                version = json.load(handle).get(\\\"version\\\")\\n        except (OSError, ValueError, AttributeError):\\n            continue\\n        if version == name and os.path.isfile(hook(root)):\\n            found.append(root)\\n    return found\\ngiven = sys.argv[1] if len(sys.argv) > 1 else \\\"\\\"\\nroot = given if given and not given.startswith(\\\"$\\\") else os.environ.get(\\\"PLUGIN_ROOT\\\", \\\"\\\")\\nif root and os.path.isfile(hook(root)):\\n    os.execv(sys.executable, [sys.executable, hook(root)])\\ndata = sys.stdin.buffer.read()\\ntry:\\n    event = json.loads(data.decode(\\\"utf-8\\\") or \\\"{}\\\").get(\\\"hook_event_name\\\")\\nexcept (ValueError, UnicodeDecodeError, AttributeError):\\n    event = None\\ntry:\\n    roots = installed(os.path.dirname(os.path.normpath(root))) if root else []\\nexcept OSError:\\n    roots = []\\nif event in (\\\"SessionStart\\\", \\\"PreToolUse\\\", \\\"PostToolUse\\\") and len(roots) == 1:\\n    import subprocess\\n    done = subprocess.run([sys.executable, hook(roots[0])], input=data, stdout=subprocess.PIPE,\\n                          env=dict(os.environ, PLUGIN_ROOT=roots[0]))\\n    sys.stdout.buffer.write(done.stdout)\\n    sys.exit(done.returncode)\\nif event == \\\"PreToolUse\\\":\\n    output = {\\\"hookSpecificOutput\\\": {\\\"hookEventName\\\": \\\"PreToolUse\\\", \\\"permissionDecision\\\": \\\"deny\\\",\\n                                     \\\"permissionDecisionReason\\\": MESSAGE}}\\nelif event == \\\"SessionStart\\\":\\n    output = {\\\"continue\\\": True, \\\"systemMessage\\\": MESSAGE}\\nelse:\\n    output = {\\\"continue\\\": True}\\nsys.stdout.write(json.dumps(output, sort_keys=True, separators=(\\\",\\\", \\\":\\\")) + \\\"\\\\n\\\")\\n\")' \"${PLUGIN_ROOT}\"",
+            "timeout": 10,
+            "statusMessage": "Recording project mutation evidence"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c 'exec(\"import json, os, sys\\nHOOK = (\\\"hooks\\\", \\\"project_ground_hook.py\\\")\\nMESSAGE = (\\\"Orch Dork was reinstalled while this task was open, so its hooks are gone. \\\"\\n           \\\"Start a new task to keep working.\\\")\\ndef hook(root):\\n    return os.path.join(root, *HOOK)\\ndef installed(parent):\\n    found = []\\n    for name in sorted(os.listdir(parent)):\\n        root = os.path.join(parent, name)\\n        try:\\n            with open(os.path.join(root, \\\".codex-plugin\\\", \\\"plugin.json\\\"), encoding=\\\"utf-8\\\") as handle:\\n                version = json.load(handle).get(\\\"version\\\")\\n        except (OSError, ValueError, AttributeError):\\n            continue\\n        if version == name and os.path.isfile(hook(root)):\\n            found.append(root)\\n    return found\\ngiven = sys.argv[1] if len(sys.argv) > 1 else \\\"\\\"\\nroot = given if given and not given.startswith(\\\"$\\\") else os.environ.get(\\\"PLUGIN_ROOT\\\", \\\"\\\")\\nif root and os.path.isfile(hook(root)):\\n    os.execv(sys.executable, [sys.executable, hook(root)])\\ndata = sys.stdin.buffer.read()\\ntry:\\n    event = json.loads(data.decode(\\\"utf-8\\\") or \\\"{}\\\").get(\\\"hook_event_name\\\")\\nexcept (ValueError, UnicodeDecodeError, AttributeError):\\n    event = None\\ntry:\\n    roots = installed(os.path.dirname(os.path.normpath(root))) if root else []\\nexcept OSError:\\n    roots = []\\nif event in (\\\"SessionStart\\\", \\\"PreToolUse\\\", \\\"PostToolUse\\\") and len(roots) == 1:\\n    import subprocess\\n    done = subprocess.run([sys.executable, hook(roots[0])], input=data, stdout=subprocess.PIPE,\\n                          env=dict(os.environ, PLUGIN_ROOT=roots[0]))\\n    sys.stdout.buffer.write(done.stdout)\\n    sys.exit(done.returncode)\\nif event == \\\"PreToolUse\\\":\\n    output = {\\\"hookSpecificOutput\\\": {\\\"hookEventName\\\": \\\"PreToolUse\\\", \\\"permissionDecision\\\": \\\"deny\\\",\\n                                     \\\"permissionDecisionReason\\\": MESSAGE}}\\nelif event == \\\"SessionStart\\\":\\n    output = {\\\"continue\\\": True, \\\"systemMessage\\\": MESSAGE}\\nelse:\\n    output = {\\\"continue\\\": True}\\nsys.stdout.write(json.dumps(output, sort_keys=True, separators=(\\\",\\\", \\\":\\\")) + \\\"\\\\n\\\")\\n\")' \"${PLUGIN_ROOT}\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c 'exec(\"import json, os, sys\\nHOOK = (\\\"hooks\\\", \\\"project_ground_hook.py\\\")\\nMESSAGE = (\\\"Orch Dork was reinstalled while this task was open, so its hooks are gone. \\\"\\n           \\\"Start a new task to keep working.\\\")\\ndef hook(root):\\n    return os.path.join(root, *HOOK)\\ndef installed(parent):\\n    found = []\\n    for name in sorted(os.listdir(parent)):\\n        root = os.path.join(parent, name)\\n        try:\\n            with open(os.path.join(root, \\\".codex-plugin\\\", \\\"plugin.json\\\"), encoding=\\\"utf-8\\\") as handle:\\n                version = json.load(handle).get(\\\"version\\\")\\n        except (OSError, ValueError, AttributeError):\\n            continue\\n        if version == name and os.path.isfile(hook(root)):\\n            found.append(root)\\n    return found\\ngiven = sys.argv[1] if len(sys.argv) > 1 else \\\"\\\"\\nroot = given if given and not given.startswith(\\\"$\\\") else os.environ.get(\\\"PLUGIN_ROOT\\\", \\\"\\\")\\nif root and os.path.isfile(hook(root)):\\n    os.execv(sys.executable, [sys.executable, hook(root)])\\ndata = sys.stdin.buffer.read()\\ntry:\\n    event = json.loads(data.decode(\\\"utf-8\\\") or \\\"{}\\\").get(\\\"hook_event_name\\\")\\nexcept (ValueError, UnicodeDecodeError, AttributeError):\\n    event = None\\ntry:\\n    roots = installed(os.path.dirname(os.path.normpath(root))) if root else []\\nexcept OSError:\\n    roots = []\\nif event in (\\\"SessionStart\\\", \\\"PreToolUse\\\", \\\"PostToolUse\\\") and len(roots) == 1:\\n    import subprocess\\n    done = subprocess.run([sys.executable, hook(roots[0])], input=data, stdout=subprocess.PIPE,\\n                          env=dict(os.environ, PLUGIN_ROOT=roots[0]))\\n    sys.stdout.buffer.write(done.stdout)\\n    sys.exit(done.returncode)\\nif event == \\\"PreToolUse\\\":\\n    output = {\\\"hookSpecificOutput\\\": {\\\"hookEventName\\\": \\\"PreToolUse\\\", \\\"permissionDecision\\\": \\\"deny\\\",\\n                                     \\\"permissionDecisionReason\\\": MESSAGE}}\\nelif event == \\\"SessionStart\\\":\\n    output = {\\\"continue\\\": True, \\\"systemMessage\\\": MESSAGE}\\nelse:\\n    output = {\\\"continue\\\": True}\\nsys.stdout.write(json.dumps(output, sort_keys=True, separators=(\\\",\\\", \\\":\\\")) + \\\"\\\\n\\\")\\n\")' \"${PLUGIN_ROOT}\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

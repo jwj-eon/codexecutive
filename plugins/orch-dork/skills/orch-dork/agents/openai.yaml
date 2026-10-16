@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orch Dork"
+  short_description: "Observable default subagent orchestration"
+  default_prompt: "Use $orch-dork to coordinate this task with observable subagents."

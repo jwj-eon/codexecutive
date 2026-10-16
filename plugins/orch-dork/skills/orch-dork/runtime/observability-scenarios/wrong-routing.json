@@ -1,0 +1,29 @@
+{
+  "schema": "orch-dork/observability-scenario/v1",
+  "scenario_id": "wrong-routing",
+  "title": "Wrong subagent routing",
+  "mode": "governed",
+  "summary": "The observed subagent route does not match the frozen Luna/max/no-history contract.",
+  "disposition": {
+    "kind": "failure",
+    "reason": "A routing mismatch is a lifecycle failure and never falls back.",
+    "evidence_class": "sealed",
+    "evidence_tier": "sealed-runtime",
+    "source_pointer": "observer-report#routing-mismatch",
+    "source_sha256": null
+  },
+  "claims": [
+    {
+      "claim_id": "worker-route",
+      "label": "Observed subagent route",
+      "value": {"model": "gpt-5.6-terra", "effort": "max", "context_policy": "none"},
+      "required": true,
+      "evidence_class": "runtime",
+      "evidence_tier": "runtime-observed",
+      "source_pointer": "observer-report#worker-route",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    }
+  ]
+}

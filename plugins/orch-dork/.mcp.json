@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "orch-dork": {
+      "command": "python3",
+      "args": [
+        "-B",
+        "scripts/orch_dork_mcp_launcher.py",
+        "serve",
+        "--require-thread-id"
+      ],
+      "env_vars": [
+        "ORCH_DORK_APP_SERVER_SOCKET",
+        "ORCH_DORK_WORKER_MODEL",
+        "ORCH_DORK_WORKER_EFFORT"
+      ],
+      "cwd": "."
+    }
+  }
+}

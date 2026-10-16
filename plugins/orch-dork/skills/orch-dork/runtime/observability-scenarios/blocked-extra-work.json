@@ -1,0 +1,41 @@
+{
+  "schema": "orch-dork/observability-scenario/v1",
+  "scenario_id": "blocked-extra-work",
+  "title": "Undeclared extra work blocked",
+  "mode": "governed",
+  "summary": "The active controller observes a node outside the frozen plan and blocks it without adding a worker or retry.",
+  "disposition": {
+    "kind": "blocked",
+    "reason": "The requested node is not a member of the frozen admitted program.",
+    "evidence_class": "sealed",
+    "evidence_tier": "sealed-runtime",
+    "source_pointer": "active-controller-report#undeclared-node",
+    "source_sha256": null
+  },
+  "claims": [
+    {
+      "claim_id": "membership",
+      "label": "Program membership",
+      "value": "absent",
+      "required": true,
+      "evidence_class": "inferred",
+      "evidence_tier": "runtime-observed",
+      "source_pointer": "active-controller-report#membership",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "extra-worker-started",
+      "label": "Extra worker started",
+      "value": false,
+      "required": true,
+      "evidence_class": "runtime",
+      "evidence_tier": "runtime-observed",
+      "source_pointer": "active-controller-report#spawn-events",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    }
+  ]
+}

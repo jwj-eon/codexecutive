@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- frame-ancestors is deliberately absent: browsers ignore it in a meta element,
+     so the helper sends it as a response header instead. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Orch Dork - local view</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to the main view</a>
+
+<noscript>
+  <div class="noscript">
+    <h1>This page needs JavaScript</h1>
+    <p>Orch Dork's local view reads your records from the helper on this
+    machine and renders them in the page. With JavaScript turned off nothing
+    is fetched and nothing is shown. The chat path remains complete: ask Orch
+    Dork in the chat for the same records.</p>
+  </div>
+</noscript>
+
+<div class="shell" id="shell">
+  <nav class="nav" id="nav" aria-label="Orch Dork views">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">OD</span>
+      <span class="brand-text">
+        <span class="brand-name">Orch Dork</span>
+        <span class="brand-sub" id="brand-sub" data-default-subtitle="Local view, this machine only">Local view, this machine only</span>
+      </span>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <button type="button" class="nav-item" data-view="runs" id="nav-runs">
+          <span class="nav-label">Runs</span>
+          <span class="nav-meta" id="nav-runs-meta"></span>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="nav-item" data-view="run" id="nav-run">
+          <span class="nav-label">Selected run</span>
+          <span class="nav-meta" id="nav-run-meta"></span>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="nav-item" data-view="setup" id="nav-setup">
+          <span class="nav-label">Setup</span>
+          <span class="nav-meta" id="nav-setup-meta"></span>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="nav-item" data-view="models" id="nav-models">
+          <span class="nav-label">Models</span>
+          <span class="nav-meta" id="nav-models-meta"></span>
+        </button>
+      </li>
+    </ul>
+    <div class="nav-foot">
+      <p class="nav-note">Every view here is a one-way projection. Starting,
+      stopping, approving, steering, and revising a run stay in the chat.</p>
+      <dl class="nav-stats" id="nav-stats"></dl>
+    </div>
+  </nav>
+
+  <main class="main" id="main" tabindex="-1">
+    <div class="banners" id="banners" aria-live="polite"></div>
+
+    <section class="view" id="view-runs" aria-labelledby="runs-title">
+      <header class="view-head">
+        <h1 id="runs-title">Runs</h1>
+        <p class="view-lede">Recent runs and pending plans on this machine (up to 100 of each). Older records remain available in chat, with
+        its verdict, cost, and canonical digest. Open one to watch it live or to
+        compare its plan with what actually happened.</p>
+      </header>
+      <div id="runs-body"></div>
+    </section>
+
+    <section class="view" id="view-run" aria-labelledby="run-title" hidden>
+      <header class="view-head">
+        <h1 id="run-title">Selected run</h1>
+        <p class="view-lede">Plan versus actual over verified projections. The
+        raw evidence bundle is the authority wherever sources disagree.</p>
+      </header>
+      <div id="run-body"></div>
+    </section>
+
+    <section class="view" id="view-setup" aria-labelledby="setup-title" hidden>
+      <header class="view-head">
+        <h1 id="setup-title">Setup and settings</h1>
+        <p class="view-lede">Enroll a project or change its settings. Anything
+        saved here applies to later runs and never changes a run already under
+        way. Orch Dork writes the same record the chat path writes.</p>
+      </header>
+      <div id="setup-projects"></div>
+      <div id="setup-stage"></div>
+    </section>
+
+    <section class="view" id="view-models" aria-labelledby="models-title" hidden>
+      <header class="view-head">
+        <h1 id="models-title">Models</h1>
+        <p class="view-lede">The models Codex reports here, plus any model you
+        name yourself: family, privacy class, onboarding result, and each
+        model's V1 status or the reason it has none.</p>
+      </header>
+      <div id="models-body"></div>
+      <div id="models-stage"></div>
+      <div id="v1-body"></div>
+    </section>
+  </main>
+</div>
+
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title" hidden>
+  <div class="gate-card">
+    <h1 id="gate-title" class="gate-title">This page needs a fresh link</h1>
+    <p id="gate-text" class="gate-text">Open the local view again from the chat.
+    Each link carries a one-session key that this page keeps in memory only and
+    never saves.</p>
+    <p class="gate-note">Your records are untouched. Ask Orch Dork in the chat
+    for a new link, or ask for the same records in the chat.</p>
+  </div>
+</div>
+
+<p class="sr-only" id="sr-status" role="status" aria-live="polite"></p>
+
+<script src="./app.js" defer></script>
+</body>
+</html>

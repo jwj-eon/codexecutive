@@ -1,0 +1,21 @@
+{
+  "schema": "orch-dork/execution-readiness-regression-corpus/v1",
+  "fixtures": [
+    {
+      "fixture": "issue17_finalizer_drift",
+      "historical_issue": "17",
+      "failure": "Post-timeout finalization left exact usage unknown after the one-shot canary cutoff.",
+      "grant_state": "failed",
+      "grant_reusable": false,
+      "source_pointer": "TICKETS.md#issue-17-preserved-failed"
+    },
+    {
+      "fixture": "issue28_barrier_clock",
+      "historical_issue": "28",
+      "failure": "The lifecycle barrier measured its deadline from assignment instead of release_sent.",
+      "grant_state": "failed",
+      "grant_reusable": false,
+      "source_pointer": "TICKETS.md#issue-28-preserved-failed-canary-noncompliant"
+    }
+  ]
+}

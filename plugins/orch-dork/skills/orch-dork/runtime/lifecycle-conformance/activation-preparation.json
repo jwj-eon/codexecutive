@@ -1,0 +1,1018 @@
+{
+  "cases": [
+    {
+      "constructor": "prepare_governed_native_activation",
+      "expected_status": "PASS",
+      "id": "activation-preparation-ready",
+      "raw_input": {
+        "activation_payload": {
+          "enrollment_program": {
+            "binding": {
+              "adapter_command": [
+                "python3",
+                "scripts/adapter.py"
+              ],
+              "adapter_sha256": "34dbb493f753c7da72f356eba8d38b6052613065d281a446d7557e014e5dac92",
+              "generation": 1,
+              "protocol": "orch-dork/project-ground/v1",
+              "required": true,
+              "source_pointer": "issue160#binding"
+            },
+            "expected_registry": {
+              "record_sha256": null,
+              "version": 0
+            },
+            "identity": {
+              "canonical_initial_root": "/tmp/tmp3pa7ux_3",
+              "environment_id": "codex-app",
+              "host_id": "jwj-lab",
+              "project_id": "orch-dork-source",
+              "repository_kind": "git",
+              "saved_project_id": "orch-dork-source",
+              "source_pointer": "issue160#identity",
+              "workspace_id": "issue-160-fixture",
+              "worktree_id": null
+            },
+            "maintenance": {
+              "active_writer": false,
+              "reason": "provider-free controller fixture",
+              "source_pointer": "issue160#maintenance"
+            },
+            "operation": "inspect",
+            "project_root": "/tmp/tmp3pa7ux_3",
+            "registry_root": "/tmp/tmp18v_hk8d/enrollment-registry",
+            "schema": "orch-dork/project-enrollment-program/v1",
+            "source_pointer": "issue160#enrollment"
+          },
+          "hook_trust_receipt_sha256": "a29c778e9bb73e09abd82e1682125a109de00e88c69455fbe03538e54a5bcbd9",
+          "identity": {
+            "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+            "attempt_id": "issue94-attempt-1",
+            "authority_scope_sha256": "aeb2988c2c1b9731aeee42ef13f9d66e5e0939d9431b048133dc181aeaf1d2a1",
+            "enrollment_generation": 1,
+            "fresh_task": true,
+            "hook_definition_sha256": "645457bf99707fde2542024d97f0ce21a4ff879f8d2dfd1b1653caadbe82f1b1",
+            "hook_registration_sha256": "bd87338452f4c66635bbaab6a41255dec546cbe1318718d472b438ffc20a210a",
+            "installed_plugin_version": "0.1.0+codex.20260905211325",
+            "native_adapter_sha256": "4c80b5aee88e0eab1c517787934146bc6149f1b32c6ea053f9e629cf92a2eae2",
+            "plan_sha256": "1dea11a65ebe3ac58d70930b2f9b9d2d4e2a96c2f9fa3c686232e3ef07b65885",
+            "project_id": "orch-dork-source",
+            "root_effort": "ultra",
+            "root_model": "gpt-5.6-sol",
+            "root_session_id": "issue160-root-session",
+            "root_thread_id": "root-logical-plan",
+            "run_id": "issue94-run",
+            "source_version": "0.1.0+codex.20260905211325",
+            "task_loaded_version": "0.1.0+codex.20260905211325",
+            "task_specs_sha256": "c61cd896517ee3bd5331c8f24a0cc771cfec3acdf002da65f6e6a2ec604327f8",
+            "ticket_id": "issue-94"
+          },
+          "project_ground_state": {
+            "program": {
+              "completion": {
+                "final_verification_sha256": null,
+                "final_verification_valid": false,
+                "governed_controller_status": "PENDING",
+                "independent_observation": "UNBOUND"
+              },
+              "event": {
+                "agent_id": null,
+                "agent_type": null,
+                "code_mode_nested": false,
+                "cwd": "/tmp/tmp3pa7ux_3",
+                "hook_event_name": "SessionStart",
+                "model": "gpt-5.6-sol",
+                "permission_mode": "dontAsk",
+                "session_id": "issue160-root-session",
+                "source": "resume",
+                "stop_hook_active": false,
+                "tool_input": {},
+                "tool_name": null,
+                "tool_response": null,
+                "tool_use_id": null,
+                "turn_id": null
+              },
+              "gateways": [],
+              "protected_resources": [
+                ".orch-dork/project-adapter.json",
+                "execution-lease.json",
+                "semantic:adapter-snapshot",
+                "semantic:coordinator-capsule",
+                "semantic:evidence-seal",
+                "semantic:execution-lease",
+                "semantic:hook-state",
+                "semantic:project-binding",
+                "semantic:project-enrollment-record",
+                "semantic:ticket-admission"
+              ],
+              "schema": "orch-dork/project-ground-enforcement-program/v1",
+              "source_pointer": "fixture.json#issue-42",
+              "state": {
+                "hook": {
+                  "enabled": true,
+                  "expected_sha256": "645457bf99707fde2542024d97f0ce21a4ff879f8d2dfd1b1653caadbe82f1b1",
+                  "managed": false,
+                  "matching_decisions": [
+                    "allow"
+                  ],
+                  "observed_sha256": "645457bf99707fde2542024d97f0ce21a4ff879f8d2dfd1b1653caadbe82f1b1",
+                  "source": "plugin",
+                  "status": "ready",
+                  "timeout_ms": 10000,
+                  "trusted": true
+                },
+                "lifecycle": {
+                  "binding_revalidated": true,
+                  "compacted": false,
+                  "concurrent_writers": 1,
+                  "duplicate_task": false,
+                  "expected_mutation_seq": 0,
+                  "mutation_seq": 0,
+                  "resumed": true,
+                  "session_health": null
+                },
+                "prerequisites": {
+                  "active_controller": {
+                    "report_sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+                    "status": "PASS"
+                  },
+                  "adapter": {
+                    "decision": "ALLOW",
+                    "report_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+                    "snapshot_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                    "status": "PASS"
+                  },
+                  "authority": {
+                    "grants_sha256": "7777777777777777777777777777777777777777777777777777777777777777",
+                    "narrowed": true,
+                    "scope_sha256": "aeb2988c2c1b9731aeee42ef13f9d66e5e0939d9431b048133dc181aeaf1d2a1",
+                    "writable_scope_sha256": "6666666666666666666666666666666666666666666666666666666666666666"
+                  },
+                  "capsule": {
+                    "capsule_sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+                    "status": "PASS"
+                  },
+                  "enrollment": {
+                    "decision": "ACTIVE",
+                    "generation": 1,
+                    "manifest_sha256": "054f560dddc4d9b385077ffb040d64bde54f6ce0cb3e04fd5e99589b920eb045",
+                    "project_id": "orch-dork-source",
+                    "record_sha256": "8ac7a7f4dde532bb3bd1fda7db8420dc4aa65e321c14200192a3f57b839b5136",
+                    "status": "PASS"
+                  },
+                  "execution_readiness": {
+                    "report_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+                    "status": "PASS"
+                  },
+                  "lease": {
+                    "cas_valid": true,
+                    "checkpoint_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+                    "current_thread_id": "root-logical-plan",
+                    "owner_thread_id": "root-logical-plan",
+                    "status": "active_successor",
+                    "version": 3
+                  },
+                  "ticket_admission": {
+                    "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                    "decision": "ATOMIC_ADMITTED",
+                    "implementation_permitted": true,
+                    "plan_sha256": "1dea11a65ebe3ac58d70930b2f9b9d2d4e2a96c2f9fa3c686232e3ef07b65885",
+                    "status": "PASS",
+                    "ticket_id": "issue-94"
+                  },
+                  "workspace": {
+                    "baseline_sha256": "8888888888888888888888888888888888888888888888888888888888888888",
+                    "baseline_valid": true,
+                    "current_sha256": "8888888888888888888888888888888888888888888888888888888888888888"
+                  }
+                },
+                "sandbox": {
+                  "covered_classes": [
+                    "child_process",
+                    "computer_use",
+                    "external_process",
+                    "hosted",
+                    "specialized",
+                    "write_stdin"
+                  ],
+                  "profile": "narrow-local",
+                  "source_pointer": "sandbox.json#profile",
+                  "status": "PASS",
+                  "writable_roots": [
+                    "/tmp/tmp3pa7ux_3"
+                  ]
+                },
+                "source_pointer": "state.json#current"
+              },
+              "tool_policy": {
+                "gateway_only_classes": [
+                  "child_process",
+                  "computer_use",
+                  "external_process",
+                  "hosted",
+                  "specialized",
+                  "write_stdin"
+                ],
+                "max_tool_input_bytes": 100000,
+                "read_only_tools": [
+                  "view_image"
+                ],
+                "supported_hook_classes": [
+                  "apply_patch",
+                  "code_mode_nested",
+                  "local_function",
+                  "mcp",
+                  "shell"
+                ]
+              }
+            },
+            "program_sha256": "ac6ce0aa23e7f3890aa38e7ac371af3296500b049834a03d2ba3ba8c3262d761",
+            "schema": "orch-dork/project-ground-hook-state/v1"
+          },
+          "task_specs": [
+            {
+              "logical_worker_id": "worker-000",
+              "task_spec": {
+                "acceptance_checks": [
+                  {
+                    "description": "Runtime evidence is present",
+                    "id": "runtime-check",
+                    "required": true
+                  }
+                ],
+                "allowed_tools": [
+                  "inspect"
+                ],
+                "budgets": {
+                  "context_tokens": 1000,
+                  "handoff_tokens": 1200,
+                  "output_tokens": 200,
+                  "retries": 0,
+                  "tool_calls": 10
+                },
+                "deliverable": {
+                  "description": "Typed evidence-backed probe result",
+                  "media_type": "application/json",
+                  "schema": "orch-dork/probe-result/v1"
+                },
+                "dependencies": [],
+                "executor": "subagent",
+                "failure_policy": {
+                  "on_blocked": "return_receipt",
+                  "on_budget_exhausted": "return_receipt",
+                  "on_failed": "return_receipt"
+                },
+                "goal": "Complete the bounded work assigned to worker-000",
+                "id": "worker-000",
+                "input_refs": [],
+                "kind": "probe",
+                "may_request_decomposition": false,
+                "model_profile": "qwen_executor",
+                "non_goals": [
+                  "Return untyped prose"
+                ],
+                "rationale": "Bind runtime evidence to the frozen logical worker",
+                "read_scope": [
+                  "resource/**"
+                ],
+                "risk": {
+                  "level": "low",
+                  "reasons": [
+                    "read_only"
+                  ]
+                },
+                "schema": "orch-dork/task-spec/v2",
+                "write_scope": [
+                  "resource/worker-000"
+                ]
+              }
+            },
+            {
+              "logical_worker_id": "worker-001",
+              "task_spec": {
+                "acceptance_checks": [
+                  {
+                    "description": "Runtime evidence is present",
+                    "id": "runtime-check",
+                    "required": true
+                  }
+                ],
+                "allowed_tools": [
+                  "inspect"
+                ],
+                "budgets": {
+                  "context_tokens": 1000,
+                  "handoff_tokens": 1200,
+                  "output_tokens": 200,
+                  "retries": 0,
+                  "tool_calls": 10
+                },
+                "deliverable": {
+                  "description": "Typed evidence-backed probe result",
+                  "media_type": "application/json",
+                  "schema": "orch-dork/probe-result/v1"
+                },
+                "dependencies": [],
+                "executor": "subagent",
+                "failure_policy": {
+                  "on_blocked": "return_receipt",
+                  "on_budget_exhausted": "return_receipt",
+                  "on_failed": "return_receipt"
+                },
+                "goal": "Complete the bounded work assigned to worker-001",
+                "id": "worker-001",
+                "input_refs": [],
+                "kind": "probe",
+                "may_request_decomposition": false,
+                "model_profile": "qwen_executor",
+                "non_goals": [
+                  "Return untyped prose"
+                ],
+                "rationale": "Bind runtime evidence to the frozen logical worker",
+                "read_scope": [
+                  "resource/**"
+                ],
+                "risk": {
+                  "level": "low",
+                  "reasons": [
+                    "read_only"
+                  ]
+                },
+                "schema": "orch-dork/task-spec/v2",
+                "write_scope": [
+                  "resource/worker-001"
+                ]
+              }
+            }
+          ]
+        },
+        "project_adapter_report": {
+          "adapter_definition_sha256": "5475e84006a6fe8e74252976820179c2fbddde667caeeb6501730787b08247ef",
+          "adapter_id": "example-coding-adapter",
+          "adapter_required": true,
+          "adapter_status": "available",
+          "adapter_version": "adapter-v1",
+          "authority_boundary_preserved": true,
+          "authority_broadened": false,
+          "authority_inferred": false,
+          "authority_narrowed": false,
+          "blockers": [],
+          "checkpoint_blocks": [],
+          "commands_executed_by_plugin": 0,
+          "configuration_sha256": "095d9bf25aef842e28c03d350c8e7bf613ee8619a02195749d91949d7f627173",
+          "declared_checkpoint_ids": [
+            "publish-checkpoint"
+          ],
+          "declared_external_system_ids": [
+            "publication-system"
+          ],
+          "dirty_paths": [
+            "user-notes.md"
+          ],
+          "disposition": "ADAPTER_READY",
+          "evaluation_id": "adapter-evaluation-coding",
+          "evidence_files": {
+            "adapter-boundary.json": {
+              "delegated": {
+                "approval_policy": "never",
+                "external_action_grants": [
+                  {
+                    "actions": [
+                      "publish"
+                    ],
+                    "grant_id": "grant-publish",
+                    "scope_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "source_pointer": "authority.json#grant-publish",
+                    "system_id": "publication-system"
+                  }
+                ],
+                "sandbox_scope_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "source_pointer": "delegation.json#boundary"
+              },
+              "root": {
+                "approval_policy": "never",
+                "external_action_grants": [
+                  {
+                    "actions": [
+                      "publish"
+                    ],
+                    "grant_id": "grant-publish",
+                    "scope_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "source_pointer": "authority.json#grant-publish",
+                    "system_id": "publication-system"
+                  }
+                ],
+                "sandbox_scope_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+                "source_pointer": "authority.json#boundary"
+              },
+              "source_pointer": "authority.json#comparison"
+            },
+            "adapter-definition.json": {
+              "adapter_id": "example-coding-adapter",
+              "approval_checkpoints": [
+                {
+                  "action": "publish",
+                  "checkpoint_id": "publish-checkpoint",
+                  "required": true,
+                  "source_pointer": "adapter.json#publish-checkpoint",
+                  "system_id": "publication-system"
+                }
+              ],
+              "configuration": {
+                "artifact_format": "json",
+                "verification_profile": "python-unit"
+              },
+              "configuration_sha256": "095d9bf25aef842e28c03d350c8e7bf613ee8619a02195749d91949d7f627173",
+              "external_systems": [
+                {
+                  "actions": [
+                    "publish"
+                  ],
+                  "customer_visible": true,
+                  "source_pointer": "adapter.json#publication-system",
+                  "system_id": "publication-system"
+                }
+              ],
+              "final_verification": [
+                {
+                  "argv": [
+                    "python3",
+                    "-B",
+                    "-m",
+                    "unittest",
+                    "discover"
+                  ],
+                  "kind": "command",
+                  "source_pointer": "adapter.json#final-suite",
+                  "target_pointer": "workspace",
+                  "verification_id": "final-suite"
+                }
+              ],
+              "focused_verification": [
+                {
+                  "argv": [
+                    "python3",
+                    "-B",
+                    "-m",
+                    "unittest",
+                    "tests.test_unit"
+                  ],
+                  "kind": "command",
+                  "source_pointer": "adapter.json#focused-unit",
+                  "target_pointer": "workspace",
+                  "verification_id": "focused-unit"
+                }
+              ],
+              "project_kind": "coding",
+              "protected_resources": [
+                "protected/user-work",
+                "semantic:external-publication"
+              ],
+              "schema": "orch-dork/project-adapter/v1",
+              "source_pointer": "adapters/coding.json#v1",
+              "version": "adapter-v1",
+              "workspace_baseline": {
+                "algorithm": "sha256",
+                "dirty_policy": "preserve",
+                "required": true,
+                "source_pointer": "adapter.json#baseline-policy"
+              },
+              "workspace_root": "/workspace/example"
+            },
+            "adapter-outputs.json": {
+              "checkpoint_results": [],
+              "external_action_results": [],
+              "final_verification": [],
+              "focused_verification": [],
+              "ticket_admission": {
+                "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                "binding_status": "BOUND",
+                "blockers": [],
+                "events": [
+                  {
+                    "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                    "source_pointer": "runtime.jsonl#event",
+                    "ticket_id": "issue-94",
+                    "type": "ticket.claimed"
+                  },
+                  {
+                    "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                    "source_pointer": "runtime.jsonl#event",
+                    "ticket_id": "issue-94",
+                    "type": "implementation.started"
+                  },
+                  {
+                    "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                    "operation": "write",
+                    "source_pointer": "runtime.jsonl#event",
+                    "ticket_id": "issue-94",
+                    "type": "resource.access"
+                  }
+                ],
+                "gated": true,
+                "issues": [],
+                "policy_version": "classification-policy/v2",
+                "root_task_id": "root-logical-plan",
+                "schema": "orch-dork/ticket-admission/v2",
+                "source_pointer": "project-adapter#ticket-admission",
+                "status": "PASS",
+                "ticket_id": "issue-94"
+              },
+              "workspace_observation": {
+                "baseline_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                "dirty_paths": [
+                  "user-notes.md"
+                ],
+                "source_pointer": "workspace.json#baseline",
+                "status": "known",
+                "workspace_root": "/workspace/example"
+              }
+            },
+            "adapter-requirement.json": {
+              "expected_adapter_id": "example-coding-adapter",
+              "expected_config_sha256": "095d9bf25aef842e28c03d350c8e7bf613ee8619a02195749d91949d7f627173",
+              "expected_version": "adapter-v1",
+              "required": true,
+              "source_pointer": "project-policy.json#adapter-requirement"
+            }
+          },
+          "evidence_tier": "submitted",
+          "external_action_blocks": [],
+          "final_failures": [],
+          "focused_failures": [],
+          "implementation_permitted": true,
+          "issues": [],
+          "outputs_sha256": "65e3d5af2cd33c5ddf441ee0b37b3c8bf82fb6c858d24eeed7824d255ef7b3b2",
+          "phase": "pre_implementation",
+          "policy_version": "project-adapter-policy/v1",
+          "project_kind": "coding",
+          "protected_resources": [
+            "protected/user-work",
+            "semantic:external-publication"
+          ],
+          "report_sha256": "401cb423d14ace8725b61b9befa71711e87416a9a89de4d78f2b9e8f2b688239",
+          "schema": "orch-dork/project-adapter-report/v1",
+          "status": "PASS",
+          "ticket_admission": {
+            "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+            "binding_status": "BOUND",
+            "blockers": [],
+            "events": [
+              {
+                "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                "source_pointer": "runtime.jsonl#event",
+                "ticket_id": "issue-94",
+                "type": "ticket.claimed"
+              },
+              {
+                "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                "source_pointer": "runtime.jsonl#event",
+                "ticket_id": "issue-94",
+                "type": "implementation.started"
+              },
+              {
+                "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                "operation": "write",
+                "source_pointer": "runtime.jsonl#event",
+                "ticket_id": "issue-94",
+                "type": "resource.access"
+              }
+            ],
+            "gated": true,
+            "issues": [],
+            "policy_version": "classification-policy/v2",
+            "root_task_id": "root-logical-plan",
+            "schema": "orch-dork/ticket-admission/v2",
+            "source_pointer": "project-adapter#ticket-admission",
+            "status": "PASS",
+            "ticket_id": "issue-94"
+          },
+          "ticket_admission_binding_status": "BOUND",
+          "ticket_admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+          "workspace_baseline_policy": {
+            "algorithm": "sha256",
+            "dirty_policy": "preserve",
+            "required": true,
+            "source_pointer": "adapter.json#baseline-policy"
+          },
+          "workspace_baseline_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        }
+      },
+      "raw_input_sha256": "9ebddbf6ec98dc586c932b688612ee68c6976f91edf1a7509cce8939bc32b78a",
+      "raw_output": {
+        "authority_grants_minted": 0,
+        "credential_reads": 0,
+        "decision": "READY_FOR_ACTIVATION",
+        "hosted_calls": 0,
+        "issues": [],
+        "model_calls": 0,
+        "native_action_authorizations": 0,
+        "native_calls": 0,
+        "policy_version": "governed-native-activation-preparation-policy/v1",
+        "prepared_activation_payload": {
+          "enrollment_program": {
+            "binding": {
+              "adapter_command": [
+                "python3",
+                "scripts/adapter.py"
+              ],
+              "adapter_sha256": "34dbb493f753c7da72f356eba8d38b6052613065d281a446d7557e014e5dac92",
+              "generation": 1,
+              "protocol": "orch-dork/project-ground/v1",
+              "required": true,
+              "source_pointer": "issue160#binding"
+            },
+            "expected_registry": {
+              "record_sha256": null,
+              "version": 0
+            },
+            "identity": {
+              "canonical_initial_root": "/tmp/tmp3pa7ux_3",
+              "environment_id": "codex-app",
+              "host_id": "jwj-lab",
+              "project_id": "orch-dork-source",
+              "repository_kind": "git",
+              "saved_project_id": "orch-dork-source",
+              "source_pointer": "issue160#identity",
+              "workspace_id": "issue-160-fixture",
+              "worktree_id": null
+            },
+            "maintenance": {
+              "active_writer": false,
+              "reason": "provider-free controller fixture",
+              "source_pointer": "issue160#maintenance"
+            },
+            "operation": "inspect",
+            "project_root": "/tmp/tmp3pa7ux_3",
+            "registry_root": "/tmp/tmp18v_hk8d/enrollment-registry",
+            "schema": "orch-dork/project-enrollment-program/v1",
+            "source_pointer": "issue160#enrollment"
+          },
+          "hook_trust_receipt_sha256": "a29c778e9bb73e09abd82e1682125a109de00e88c69455fbe03538e54a5bcbd9",
+          "identity": {
+            "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+            "attempt_id": "issue94-attempt-1",
+            "authority_scope_sha256": "aeb2988c2c1b9731aeee42ef13f9d66e5e0939d9431b048133dc181aeaf1d2a1",
+            "enrollment_generation": 1,
+            "fresh_task": true,
+            "hook_definition_sha256": "645457bf99707fde2542024d97f0ce21a4ff879f8d2dfd1b1653caadbe82f1b1",
+            "hook_registration_sha256": "bd87338452f4c66635bbaab6a41255dec546cbe1318718d472b438ffc20a210a",
+            "installed_plugin_version": "0.1.0+codex.20260905211325",
+            "native_adapter_sha256": "4c80b5aee88e0eab1c517787934146bc6149f1b32c6ea053f9e629cf92a2eae2",
+            "plan_sha256": "1dea11a65ebe3ac58d70930b2f9b9d2d4e2a96c2f9fa3c686232e3ef07b65885",
+            "project_id": "orch-dork-source",
+            "root_effort": "ultra",
+            "root_model": "gpt-5.6-sol",
+            "root_session_id": "issue160-root-session",
+            "root_thread_id": "root-logical-plan",
+            "run_id": "issue94-run",
+            "source_version": "0.1.0+codex.20260905211325",
+            "task_loaded_version": "0.1.0+codex.20260905211325",
+            "task_specs_sha256": "c61cd896517ee3bd5331c8f24a0cc771cfec3acdf002da65f6e6a2ec604327f8",
+            "ticket_id": "issue-94"
+          },
+          "project_ground_state": {
+            "program": {
+              "completion": {
+                "final_verification_sha256": null,
+                "final_verification_valid": false,
+                "governed_controller_status": "PENDING",
+                "independent_observation": "UNBOUND"
+              },
+              "event": {
+                "agent_id": null,
+                "agent_type": null,
+                "code_mode_nested": false,
+                "cwd": "/tmp/tmp3pa7ux_3",
+                "hook_event_name": "SessionStart",
+                "model": "gpt-5.6-sol",
+                "permission_mode": "dontAsk",
+                "session_id": "issue160-root-session",
+                "source": "resume",
+                "stop_hook_active": false,
+                "tool_input": {},
+                "tool_name": null,
+                "tool_response": null,
+                "tool_use_id": null,
+                "turn_id": null
+              },
+              "gateways": [],
+              "protected_resources": [
+                ".orch-dork/project-adapter.json",
+                "execution-lease.json",
+                "semantic:adapter-snapshot",
+                "semantic:coordinator-capsule",
+                "semantic:evidence-seal",
+                "semantic:execution-lease",
+                "semantic:hook-state",
+                "semantic:project-binding",
+                "semantic:project-enrollment-record",
+                "semantic:ticket-admission"
+              ],
+              "schema": "orch-dork/project-ground-enforcement-program/v1",
+              "source_pointer": "fixture.json#issue-42",
+              "state": {
+                "hook": {
+                  "enabled": true,
+                  "expected_sha256": "645457bf99707fde2542024d97f0ce21a4ff879f8d2dfd1b1653caadbe82f1b1",
+                  "managed": false,
+                  "matching_decisions": [
+                    "allow"
+                  ],
+                  "observed_sha256": "645457bf99707fde2542024d97f0ce21a4ff879f8d2dfd1b1653caadbe82f1b1",
+                  "source": "plugin",
+                  "status": "ready",
+                  "timeout_ms": 10000,
+                  "trusted": true
+                },
+                "lifecycle": {
+                  "binding_revalidated": true,
+                  "compacted": false,
+                  "concurrent_writers": 1,
+                  "duplicate_task": false,
+                  "expected_mutation_seq": 0,
+                  "mutation_seq": 0,
+                  "resumed": true,
+                  "session_health": null
+                },
+                "prerequisites": {
+                  "active_controller": {
+                    "report_sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+                    "status": "PASS"
+                  },
+                  "adapter": {
+                    "decision": "ALLOW",
+                    "report_sha256": "401cb423d14ace8725b61b9befa71711e87416a9a89de4d78f2b9e8f2b688239",
+                    "snapshot_sha256": "5475e84006a6fe8e74252976820179c2fbddde667caeeb6501730787b08247ef",
+                    "status": "PASS"
+                  },
+                  "authority": {
+                    "grants_sha256": "7777777777777777777777777777777777777777777777777777777777777777",
+                    "narrowed": true,
+                    "scope_sha256": "aeb2988c2c1b9731aeee42ef13f9d66e5e0939d9431b048133dc181aeaf1d2a1",
+                    "writable_scope_sha256": "6666666666666666666666666666666666666666666666666666666666666666"
+                  },
+                  "capsule": {
+                    "capsule_sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+                    "status": "PASS"
+                  },
+                  "enrollment": {
+                    "decision": "ACTIVE",
+                    "generation": 1,
+                    "manifest_sha256": "054f560dddc4d9b385077ffb040d64bde54f6ce0cb3e04fd5e99589b920eb045",
+                    "project_id": "orch-dork-source",
+                    "record_sha256": "8ac7a7f4dde532bb3bd1fda7db8420dc4aa65e321c14200192a3f57b839b5136",
+                    "status": "PASS"
+                  },
+                  "execution_readiness": {
+                    "report_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+                    "status": "PASS"
+                  },
+                  "lease": {
+                    "cas_valid": true,
+                    "checkpoint_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+                    "current_thread_id": "root-logical-plan",
+                    "owner_thread_id": "root-logical-plan",
+                    "status": "active_successor",
+                    "version": 3
+                  },
+                  "ticket_admission": {
+                    "admission_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                    "decision": "ATOMIC_ADMITTED",
+                    "implementation_permitted": true,
+                    "plan_sha256": "1dea11a65ebe3ac58d70930b2f9b9d2d4e2a96c2f9fa3c686232e3ef07b65885",
+                    "status": "PASS",
+                    "ticket_id": "issue-94"
+                  },
+                  "workspace": {
+                    "baseline_sha256": "8888888888888888888888888888888888888888888888888888888888888888",
+                    "baseline_valid": true,
+                    "current_sha256": "8888888888888888888888888888888888888888888888888888888888888888"
+                  }
+                },
+                "sandbox": {
+                  "covered_classes": [
+                    "child_process",
+                    "computer_use",
+                    "external_process",
+                    "hosted",
+                    "specialized",
+                    "write_stdin"
+                  ],
+                  "profile": "narrow-local",
+                  "source_pointer": "sandbox.json#profile",
+                  "status": "PASS",
+                  "writable_roots": [
+                    "/tmp/tmp3pa7ux_3"
+                  ]
+                },
+                "source_pointer": "state.json#current"
+              },
+              "tool_policy": {
+                "gateway_only_classes": [
+                  "child_process",
+                  "computer_use",
+                  "external_process",
+                  "hosted",
+                  "specialized",
+                  "write_stdin"
+                ],
+                "max_tool_input_bytes": 100000,
+                "read_only_tools": [
+                  "view_image"
+                ],
+                "supported_hook_classes": [
+                  "apply_patch",
+                  "code_mode_nested",
+                  "local_function",
+                  "mcp",
+                  "shell"
+                ]
+              }
+            },
+            "program_sha256": "9714e4ed53edc395be33875de3ed69ae45a6f4ec454072783b6e69141e00afd1",
+            "schema": "orch-dork/project-ground-hook-state/v1"
+          },
+          "task_specs": [
+            {
+              "logical_worker_id": "worker-000",
+              "task_spec": {
+                "acceptance_checks": [
+                  {
+                    "description": "Runtime evidence is present",
+                    "id": "runtime-check",
+                    "required": true
+                  }
+                ],
+                "allowed_tools": [
+                  "inspect"
+                ],
+                "budgets": {
+                  "context_tokens": 1000,
+                  "handoff_tokens": 1200,
+                  "output_tokens": 200,
+                  "retries": 0,
+                  "tool_calls": 10
+                },
+                "deliverable": {
+                  "description": "Typed evidence-backed probe result",
+                  "media_type": "application/json",
+                  "schema": "orch-dork/probe-result/v1"
+                },
+                "dependencies": [],
+                "executor": "subagent",
+                "failure_policy": {
+                  "on_blocked": "return_receipt",
+                  "on_budget_exhausted": "return_receipt",
+                  "on_failed": "return_receipt"
+                },
+                "goal": "Complete the bounded work assigned to worker-000",
+                "id": "worker-000",
+                "input_refs": [],
+                "kind": "probe",
+                "may_request_decomposition": false,
+                "model_profile": "qwen_executor",
+                "non_goals": [
+                  "Return untyped prose"
+                ],
+                "rationale": "Bind runtime evidence to the frozen logical worker",
+                "read_scope": [
+                  "resource/**"
+                ],
+                "risk": {
+                  "level": "low",
+                  "reasons": [
+                    "read_only"
+                  ]
+                },
+                "schema": "orch-dork/task-spec/v2",
+                "write_scope": [
+                  "resource/worker-000"
+                ]
+              }
+            },
+            {
+              "logical_worker_id": "worker-001",
+              "task_spec": {
+                "acceptance_checks": [
+                  {
+                    "description": "Runtime evidence is present",
+                    "id": "runtime-check",
+                    "required": true
+                  }
+                ],
+                "allowed_tools": [
+                  "inspect"
+                ],
+                "budgets": {
+                  "context_tokens": 1000,
+                  "handoff_tokens": 1200,
+                  "output_tokens": 200,
+                  "retries": 0,
+                  "tool_calls": 10
+                },
+                "deliverable": {
+                  "description": "Typed evidence-backed probe result",
+                  "media_type": "application/json",
+                  "schema": "orch-dork/probe-result/v1"
+                },
+                "dependencies": [],
+                "executor": "subagent",
+                "failure_policy": {
+                  "on_blocked": "return_receipt",
+                  "on_budget_exhausted": "return_receipt",
+                  "on_failed": "return_receipt"
+                },
+                "goal": "Complete the bounded work assigned to worker-001",
+                "id": "worker-001",
+                "input_refs": [],
+                "kind": "probe",
+                "may_request_decomposition": false,
+                "model_profile": "qwen_executor",
+                "non_goals": [
+                  "Return untyped prose"
+                ],
+                "rationale": "Bind runtime evidence to the frozen logical worker",
+                "read_scope": [
+                  "resource/**"
+                ],
+                "risk": {
+                  "level": "low",
+                  "reasons": [
+                    "read_only"
+                  ]
+                },
+                "schema": "orch-dork/task-spec/v2",
+                "write_scope": [
+                  "resource/worker-001"
+                ]
+              }
+            }
+          ]
+        },
+        "prepared_activation_payload_sha256": "da24e8ce72ca77ab9bd92728df2e49054b05db6140a825caa639dfd2d4fce11c",
+        "project_adapter_report_sha256": "401cb423d14ace8725b61b9befa71711e87416a9a89de4d78f2b9e8f2b688239",
+        "project_ground_report_sha256": "0215cc1e8cc561a29effcb7c3c17d5fefe8176bc9b8185fce0b24879c854fb7f",
+        "provider_free": true,
+        "report_sha256": "98153df6c5315cca105170eb392c7fbba680c5648af8305f7c03342bb66bb513",
+        "schema": "orch-dork/governed-native-activation-preparation-report/v1",
+        "status": "PASS",
+        "task_creations": 0,
+        "worker_creations": 0
+      },
+      "raw_output_sha256": "1280a33e845864ecdea82fbb8e49b03d91a00c56afabae425df257095826e903",
+      "validator": "validate_activation_preparation_report"
+    },
+    {
+      "constructor": "prepare_governed_native_activation",
+      "expected_status": "BLOCKED",
+      "id": "activation-preparation-refused",
+      "raw_input": {
+        "activation_payload": {},
+        "project_adapter_report": {}
+      },
+      "raw_input_sha256": "3e59d40182280dbc6b7c8f6f9ad571920405a6cd3adf0306d687c4d8ebeae1a8",
+      "raw_output": {
+        "authority_grants_minted": 0,
+        "credential_reads": 0,
+        "decision": "REFUSED",
+        "hosted_calls": 0,
+        "issues": [
+          "preparation.activation_identity_invalid",
+          "preparation.activation_payload:missing:enrollment_program",
+          "preparation.activation_payload:missing:hook_trust_receipt_sha256",
+          "preparation.activation_payload:missing:identity",
+          "preparation.activation_payload:missing:project_ground_state",
+          "preparation.activation_payload:missing:task_specs",
+          "preparation.adapter_report.adapter_definition_sha256:sha256_invalid",
+          "preparation.identity.admission_sha256:sha256_invalid",
+          "preparation.identity.plan_sha256:sha256_invalid",
+          "preparation.identity.root_thread_id:invalid",
+          "preparation.identity.ticket_id:invalid",
+          "preparation:adapter_not_permitting",
+          "preparation:adapter_report_invalid",
+          "preparation:project_ground_event_invalid",
+          "preparation:project_ground_prerequisites_invalid",
+          "preparation:project_ground_state_invalid",
+          "preparation:ticket_binding_invalid",
+          "preparation:ticket_binding_mismatch"
+        ],
+        "model_calls": 0,
+        "native_action_authorizations": 0,
+        "native_calls": 0,
+        "policy_version": "governed-native-activation-preparation-policy/v1",
+        "project_adapter_report_sha256": null,
+        "project_ground_report_sha256": null,
+        "provider_free": true,
+        "report_sha256": "541ef8be67ab587ccf638720be722b359e3db3fa93feb0adfdcb6bf8cb25c4d9",
+        "schema": "orch-dork/governed-native-activation-preparation-report/v1",
+        "status": "BLOCKED",
+        "task_creations": 0,
+        "worker_creations": 0
+      },
+      "raw_output_sha256": "21ce2e9d96c8b3bbacc05037bfbc53bd48fc7c4a163dfa4ed5a08812fd145962",
+      "validator": "validate_activation_preparation_report"
+    }
+  ],
+  "schema": "orch-dork/production-adapter-fixture-corpus/v1"
+}

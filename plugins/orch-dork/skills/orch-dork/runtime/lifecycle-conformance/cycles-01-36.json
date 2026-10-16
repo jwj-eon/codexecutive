@@ -1,0 +1,3067 @@
+{
+  "cycles": [
+    {
+      "case_id": "cycle-01",
+      "cycle": 1,
+      "evidence": {
+        "artifacts": [
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-01-artifact-01",
+            "kind": "preserved_task_rollout; semantic claim validation requires exact record selection",
+            "name": "rollout-2026-08-31T02-44-45-01a05734-fd69-7a63-b1fe-806b6c73b65e.jsonl",
+            "sha256": "6cab4b38d6d5567b9a95f07a247176b39cc7c8aaeee0cbfcd48edf940f1d0546",
+            "size_bytes": 11419006
+          }
+        ],
+        "availability": "host_local_references",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "0212d169471d14f6840663003889486596c4dda0020bdf018808039ccb86bd4b",
+            "heading": "#### Cycle 1 terminal qualification and Cycle 2 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Raw host artifacts are not opened by replay; digests bind preserved references, not fresh host attestation.",
+        "preserved_digest_claims": [
+          "089bfb325e34e7135ebaf99fd89444979b169c6f5a1b446e7b4d5eaf384d409c",
+          "3da172639e98e2d389cbaf14fa5b60fecc015396cff4df79f4520c5e7ce5e61f",
+          "9913eb49ebfe7d8d7d53606ec1cf13e24b68ec547fab4230aa8340e5b6a24cf6",
+          "9c7d8cf5ae86fdbcce7a869363c2a2d366f79dee2b64bd7092735d37b3c73ec0",
+          "9fe0571eadde8133fb215bed12b70c0da280ae61cf5dff926c6aca5352e77bc7"
+        ]
+      },
+      "facts": {},
+      "failure": {
+        "code": "preflight:canary_tool_calls_observed",
+        "code_kind": "error_code",
+        "stage": "route_canary"
+      },
+      "generation": "0.1.0+codex.20260831091302",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-01",
+        "mode": "guard_refusal",
+        "rationale": "Tool-free route candidate rejects a tool-bearing observation; model semantic compliance itself remains external.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "preflight:canary_tool_calls_observed",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-02",
+      "cycle": 2,
+      "evidence": {
+        "artifacts": [
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-02-artifact-01",
+            "kind": "preserved_task_rollout; semantic claim validation requires exact record selection",
+            "name": "rollout-2026-08-31T05-56-04-01a057e4-24e9-7b80-a52d-a7555f55e9a0.jsonl",
+            "sha256": "5ff6fdf3ba8dcaceeac3e6088e1b3e9130c3f768526fcbff82c2dcc4e39ccd9b",
+            "size_bytes": 3842437
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-02-artifact-02",
+            "kind": "preserved_task_rollout; semantic claim validation requires exact record selection",
+            "name": "rollout-2026-08-31T06-21-38-01a057fb-8c5e-73d0-9182-ea65bad447b3.jsonl",
+            "sha256": "95b232e37b376051d7a1806fe329d563c171c6564e826d13a32658f48d1ae023",
+            "size_bytes": 26483341
+          }
+        ],
+        "availability": "host_local_references",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "4d7906ad7a5bccfb6bcf2ded690c543249a89611f9f5f6b75d1071c1e22a4098",
+            "heading": "#### Cycle 2 terminal qualification and Cycle 3 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Raw host artifacts are not opened by replay; digests bind preserved references, not fresh host attestation.",
+        "preserved_digest_claims": [
+          "3f1cbb7cf3bb5755f8fb01b68d9396aed459fc36bb08f4cb573542c3224e5899",
+          "4d81e6ae6abb21776eb19b09cac2235d789dde31623c78c7cb6cdc02b7485771",
+          "6382b1ec333ea6e4abea8c8c65a9afc3901821cb5984c29366b3e5956e6d5f54",
+          "68489b6889a5d0365c4d9e24056e90096a950fbe7910444aefa6cb16f50fe009",
+          "b13b5e12fe37a7b0422ab5ebb7f725e7c3da195b36adb6953d14fcffd7e80b55",
+          "b5ae5392faf54b6883b66334e059882b0b4bdc0fd6cdd1b2975b9ac38379729d",
+          "bd2b8fb6ffb1b37893785ee1be7c0bb45e4e2b86dafbc4cd0a8b653de49f4b21",
+          "c27391af4269b7fb234f0f8309ae20911ddbbf8bb3aa085f9ef63202555ef2ef",
+          "c7c8d79f5523c880d7d986ffbc1a58312d6313b442396a655d615651689a5cbc"
+        ]
+      },
+      "facts": {},
+      "failure": {
+        "code": "PRE_SPAWN_REFUSED",
+        "code_kind": "recorded_disposition",
+        "stage": "pre_spawn_bridge"
+      },
+      "generation": "0.1.0+codex.20260831122807",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "refused",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-02:activate.controller.refused.evidence",
+        "mode": "refused",
+        "rationale": "Required host readiness was refused before activation.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "initial_catalogue_refusal",
+          "ordinal": 1
+        },
+        {
+          "id": "changed_construction_probe",
+          "ordinal": 2
+        },
+        {
+          "id": "sole_structural_canary_pass",
+          "ordinal": 3
+        },
+        {
+          "id": "installed_plugin_locator_refusal",
+          "ordinal": 4
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-03",
+      "cycle": 3,
+      "evidence": {
+        "artifacts": [
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-03-artifact-01",
+            "kind": "preserved_task_rollout; semantic claim validation requires exact record selection",
+            "name": "rollout-2026-08-31T08-35-26-01a05876-0bf3-77c1-baaf-6d8bb7584bd4.jsonl",
+            "sha256": "219869ae9bb0a5e4938cc8e7c8f0b0a79da266dbe925714a3d6e68b26fe77b19",
+            "size_bytes": 6671456
+          }
+        ],
+        "availability": "host_local_references",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "7cee47f89128b66cbab94a923333c14d6d92491dd9a2607dec635afc7c38b129",
+            "heading": "#### Cycle 3 terminal qualification and Cycle 4 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Raw host artifacts are not opened by replay; digests bind preserved references, not fresh host attestation.",
+        "preserved_digest_claims": [
+          "03b84f191c3045f1751aed4d4d76c8e6af56a413cb49df94d55c76b4f7c8a551",
+          "0773407ac74e582cd8f4b6a927c564ec7e5d845bc42ac36984ab74a216745605",
+          "07c53549addd0c33e9ed49dec290a3df6459a77aa289edc97f400c123f6e5b62",
+          "5137e5ecbc93d15fd5a2dd1d4a94252cf889fd2fe2e239445deba099a3154c31",
+          "80485cd4d63843d9147062b75b7716e03222c103e860f3f74957955499810b99",
+          "870834bce49cb803a6baf64089392aaea7c4e894a3085cc3f9d9ca340dcc5ff8",
+          "882bdba7a6af3b5afd48ef3e8423a7d3039d3e1303c2db48b8778234605a607d",
+          "999d9c608bc249c2c1007f4a4d31f9391ee38f5527ae4afd73e9291d944373f1",
+          "d6e59e9adf4efb3e0c94394bb6c61b8749af4517f8cb0fd9cf1323dedbfe19b8",
+          "d8c2a5946e3371cf77ea6a38bd4842833277084c1c330ab6a0584600186a82a3",
+          "f041d1c76b310efcc2e23d811dd0ac6e3744547e20e1912f5721be3179146ddf"
+        ]
+      },
+      "facts": {},
+      "failure": {
+        "code": "program:schema_invalid",
+        "code_kind": "error_code",
+        "stage": "capacity_program_construction"
+      },
+      "generation": "0.1.0+codex.20260831150601",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-03",
+        "mode": "guard_refusal",
+        "rationale": "A malformed capacity program cannot supply a grant observation.",
+        "stage": "grant.spec"
+      },
+      "observations": [
+        {
+          "id": "program:schema_invalid",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-04",
+      "cycle": 4,
+      "evidence": {
+        "artifacts": [
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-04-artifact-01",
+            "kind": "preserved_task_rollout; semantic claim validation requires exact record selection",
+            "name": "rollout-2026-08-31T10-44-49-01a058ec-7e6c-76f2-b767-daa0b5d6512d.jsonl",
+            "sha256": "83280c0283332de21a67191542df07cc5a2d9f24899ce65864e3757bdbbfb94b",
+            "size_bytes": 12978037
+          }
+        ],
+        "availability": "host_local_references",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "8a47ababde748e4bcb1d04464a7d9f79c9b649978828692c1429cb1eca6e390e",
+            "heading": "#### Cycle 4 terminal qualification and Cycle 5 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Raw host artifacts are not opened by replay; digests bind preserved references, not fresh host attestation.",
+        "preserved_digest_claims": [
+          "04c8ae4e8f623913f96451608eaa163696bf8bf49bc418e826bfc14eefb323a8",
+          "0b8c2659deeecb463c471f7353cb94bc75a5224f37e5a760c6123a23f5eb6833",
+          "20dda098b6839702f04c87cdb57fd268f79c925f43526c985bd186a9ee543297",
+          "2683198fd91e7c08c71b816c5f209b9d77ac350efac66e9dc526e49593a594ee",
+          "2e79011675974cca54fbb90349b5d34ade75bfa9ce78c1c3ad6a3c5172512568",
+          "32be5374eabda5ebbd65e272f2d8ce0ae0fd61adb7a97d9f2d1528c4e5f836e2",
+          "441536cde863f07634f76647ecdd3285f860a57be5300fbce2d02f27cc2bdfe1",
+          "4ab77dc078d1c9c7c17e2307c48c6987add7d117a9ec3dc51ad5a7cb93aa24f0",
+          "4dbf54b1efa996ea67c596bb706e352cb70a5504783fb0725671064476672438",
+          "6988d969ba4eb63fc7a31664f39a31324eb9bdee2df9e2d8f7eab6642cb1460f",
+          "6a17f02105ea02a097cb6a7cc12223e31e8f030bda9c0cd3991c470030f0b405",
+          "6ed9aef6cae0f7cd9769a4577edd5a971f6e8285646af02bc8bad5a22db3b641",
+          "70f0c374592bb268e7695b357b99a54b48f1da176b8043f18f1c1bdd27aa70b6",
+          "78d7e6e9e1b11f27e65f7487f1f89a36ab9ff8ec88fdd9ca7cd863250f05b23f",
+          "790cbcba2d0ff7c24fe50469f8e854101920b30cf4e5c5d7fe79a98356dbfc56",
+          "84dfd9bdd3def9ac3015545003c204b56e92350751cacc9dbb7bc9a42652bbe7",
+          "879f19fc5859d11587341d199c3d8a1ba2316384b28807887586af24304e5258",
+          "9293d6a12085e57446d474a987d0a7720d2f79df6fa167b05c14699aec012c14",
+          "a63a2413c4e41401db682126d98292d85af7feccdca8fdab69f0fddba7edb2d2",
+          "b5fbfc91815f91a7eeddc282358232d800d164261563b98f5a9c9d0db972f323",
+          "b7b948df307c366531f9b901d7d863e84beec724ae51502becd17157c1d02fbc",
+          "cca8c00a4972d63d94c02f7ed2a1f7ca2904ef40f70dfe431b10815b81478c83",
+          "d13bf3a07f72a3e1109c858f074170203042f22b59fde639a50bfcd45d563140",
+          "e912ac5a32e89f155458d5fa27e3a5e65eeaee34ae06f61c0f2bccd66b078d97"
+        ]
+      },
+      "facts": {},
+      "failure": {
+        "code": "ACTION_EVIDENCE_CONTRADICTORY",
+        "code_kind": "recorded_disposition",
+        "stage": "first_native_action"
+      },
+      "generation": "0.1.0+codex.20260831171856",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "unknown",
+            "stage": "spawn.spec",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-04:spawn.spec.spec.unknown.evidence",
+        "mode": "unknown",
+        "rationale": "A physical spawn without sufficient observation retains unresolved obligations.",
+        "stage": "spawn.spec"
+      },
+      "observations": [
+        {
+          "id": "ACTION_EVIDENCE_CONTRADICTORY",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-05",
+      "cycle": 5,
+      "evidence": {
+        "artifacts": [
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-05-artifact-01",
+            "kind": "preserved_task_rollout; semantic claim validation requires exact record selection",
+            "name": "rollout-2026-08-31T14-49-04-01a059cc-1deb-7c40-92b8-cb8ff13b2449.jsonl",
+            "sha256": "45312e929d31976a73b53e5a6b690485126ea114da352bef06d176546576d26b",
+            "size_bytes": 2251563
+          }
+        ],
+        "availability": "host_local_references",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "1591cc6646e3db2a2dc5c63da60faeefd12fbdf5ad90b1149fb4da16684345d4",
+            "heading": "#### Cycle 5 terminal qualification and Cycle 6 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Raw host artifacts are not opened by replay; digests bind preserved references, not fresh host attestation.",
+        "preserved_digest_claims": [
+          "024f1c1b793aca99b806b8a33777b16e906dad6ab2c484b66407ccaa49511ec8",
+          "4f17a19ef5661bb3188d8cc61b8bdf83c1acd9254ecd77a2d18866bdb11a1103",
+          "84dfd9bdd3def9ac3015545003c204b56e92350751cacc9dbb7bc9a42652bbe7",
+          "a5bef650a4dbfb0eb8ccba830a20947d5dfdd974c639b03de58f60154e86ca13",
+          "f8f7a0eb727d099a621dddaad5f7f5936119e010754d0c6eab0451f8ef368397"
+        ]
+      },
+      "facts": {},
+      "failure": {
+        "code": "adaptive_contract_invalid:task_spec.budgets.tool_calls:invalid",
+        "code_kind": "error_code",
+        "stage": "route_task_spec_construction"
+      },
+      "generation": "0.1.0+codex.20260831203929",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-05",
+        "mode": "guard_refusal",
+        "rationale": "A malformed route budget cannot supply an activation observation.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "nonpositive_budget_refusal",
+          "ordinal": 1
+        },
+        {
+          "id": "predecessor_inspection_and_authorized_grant",
+          "ordinal": 2
+        },
+        {
+          "id": "capacity_authority_unavailable",
+          "ordinal": 3
+        },
+        {
+          "id": "external_descendant_observation_unavailable",
+          "ordinal": 4
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-06",
+      "cycle": 6,
+      "evidence": {
+        "artifacts": [
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-06-artifact-01",
+            "kind": "preserved_task_rollout; semantic claim validation requires exact record selection",
+            "name": "rollout-2026-08-31T16-27-28-01a05a26-348d-7330-865a-70b29f3b8e88.jsonl",
+            "sha256": "01ea54018256c490333a25d23b12ad380d6ed959378da3874e7b2991136cb387",
+            "size_bytes": 6900932
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-06-artifact-02",
+            "kind": "standalone_terminal_packet",
+            "name": "terminal-failure-packet.json",
+            "sha256": "413d643968303b1dab752dad2bb839bbf96713b17eb53f1378ea4d244e2c7bef",
+            "size_bytes": 6537
+          }
+        ],
+        "availability": "host_local_references",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "ed42da8fd2eba43a840977be33dd2e79d624cafd38ce90640a8d81b618c3dc83",
+            "heading": "#### Cycle 6 terminal qualification and Cycle 7 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Raw host artifacts are not opened by replay; digests bind preserved references, not fresh host attestation.",
+        "preserved_digest_claims": [
+          "27b2085a033865ef1c7cadef7edc87a6936cb60252eb728612127e030811be55",
+          "2925b12e46ef455c4963f01cc94375963ca17cae6ca88385054b584c775816c2",
+          "3c6b480e38eae28a96dc007302ebff79e930d602b2c66d6dcb0ea48172496eaa",
+          "413d643968303b1dab752dad2bb839bbf96713b17eb53f1378ea4d244e2c7bef",
+          "4f17a19ef5661bb3188d8cc61b8bdf83c1acd9254ecd77a2d18866bdb11a1103",
+          "84dfd9bdd3def9ac3015545003c204b56e92350751cacc9dbb7bc9a42652bbe7"
+        ]
+      },
+      "facts": {},
+      "failure": {
+        "code": "qualification-operator-dispatch-error",
+        "code_kind": "recorded_failure_class",
+        "stage": "governed-native-activation-submit"
+      },
+      "generation": "0.1.0+codex.20260831230009",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "refused",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-06:activate.controller.refused.evidence",
+        "mode": "refused",
+        "rationale": "The activation dispatch failed; no successful activation is inferred.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "qualification-operator-dispatch-error",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-07",
+      "cycle": 7,
+      "evidence": {
+        "artifacts": [
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-07-artifact-01",
+            "kind": "preserved_task_rollout; semantic claim validation requires exact record selection",
+            "name": "rollout-2026-08-31T18-12-08-01a05a86-092c-7b50-bd69-288b02e48000.jsonl",
+            "sha256": "5a682d38a383a725d272b1423b4393dc8899ea0c783f8b1da40e117348c93733",
+            "size_bytes": 6412016
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-07-artifact-02",
+            "kind": "standalone_terminal_packet",
+            "name": "terminal-failure-packet.json",
+            "sha256": "e0547a8b54f4ffb6ae4b6bc2f0a96f07bc640dad4493f6cbde160ca2510a1691",
+            "size_bytes": 10618
+          }
+        ],
+        "availability": "host_local_references",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "4109e2fb37154cdd7fed4887222ff32adb9d066334c8074cb457e70bda312c88",
+            "heading": "#### Cycle 7 terminal qualification and Cycle 8 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Raw host artifacts are not opened by replay; digests bind preserved references, not fresh host attestation.",
+        "preserved_digest_claims": [
+          "0947edbc56f700cd00e06285910456903f3309348b38396b9fc221ee504f6599",
+          "27b0b3671e1ffb016548db76d1f65665f39e3e116358ca0197064be2918db0a0",
+          "59239e555b14fb706148b63d1dd31f47edc1746e1c20570241c0bde1a21dab4d",
+          "ae9cb7a0cb92d06c1c4b217f15619603232487e8361c49a088073aac1c7a28bb",
+          "e0547a8b54f4ffb6ae4b6bc2f0a96f07bc640dad4493f6cbde160ca2510a1691",
+          "eadcb5da1fae30252c0954212a94cd41a47c80d87a5705448079cc39f434686e"
+        ]
+      },
+      "facts": {},
+      "failure": {
+        "code": "observation:hook_report_required",
+        "code_kind": "error_code",
+        "stage": "first-governed-native-action"
+      },
+      "generation": "0.1.0+codex.20260901000744",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "missing",
+            "stage": "spawn.spec",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-07:spawn.spec.spec.missing.evidence",
+        "mode": "missing",
+        "rationale": "Missing hook evidence cannot prove a native action outcome.",
+        "stage": "spawn.spec"
+      },
+      "observations": [
+        {
+          "id": "observation:hook_report_required",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-08",
+      "cycle": 8,
+      "evidence": {
+        "artifacts": [
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-08-artifact-01",
+            "kind": "preserved_task_rollout; semantic claim validation requires exact record selection",
+            "name": "rollout-2026-08-31T19-45-59-01a05adb-f617-7ee2-8cb9-cacfe80cdb74.jsonl",
+            "sha256": "14f4563cbe51bca3877bb82383ca9360d723ff2df3d9ae50b7d7772f7a34f475",
+            "size_bytes": 5551257
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-08-artifact-02",
+            "kind": "standalone_terminal_packet",
+            "name": "terminal-failure-packet.json",
+            "sha256": "2f0fddef2adc20b8919556d46216874b7b302c42d9734c181346398677ec6760",
+            "size_bytes": 6722
+          }
+        ],
+        "availability": "host_local_references",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "60b6e2359fd2386b12e85182248c2b8a231c42adcb5d8f3338a01906b6516296",
+            "heading": "#### Cycle 8 terminal qualification and Cycle 9 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Raw host artifacts are not opened by replay; digests bind preserved references, not fresh host attestation.",
+        "preserved_digest_claims": [
+          "2364f308f8d953582a26f5866666d8269f2702c8bacdae8be96f80c729fe2c55",
+          "27b0b3671e1ffb016548db76d1f65665f39e3e116358ca0197064be2918db0a0",
+          "2f0fddef2adc20b8919556d46216874b7b302c42d9734c181346398677ec6760",
+          "4bdff10c8cdace4f7c28d5eac07a8a45376421e8b22efe2efa56259ef4e50ef4",
+          "937bc294602a1892762d491ad81338513c334a9f04da29516f76c0cd7a5a51e3",
+          "97abfee57860f76855e169ce3c98f786fb7007a8e2426d31370ac2f4320bb62e",
+          "9a81d46afa6e941572535061a9ff03f8bc5da455fdfc378ad3bc6f4271e9c38c",
+          "a7ebb28e6a20aec190f24fc7ada8b3c2e4d8633235e2f43f4dd4e527207eee02",
+          "c0803920b3dac6c2cc0cf9caa1cbed675b1ebe929dd3912398e5e0a4c39614e9",
+          "cd3412dd7c67b3bd9685b9e1ac7b2992266e674f0bd766aefb8a26cc1f394f71"
+        ]
+      },
+      "facts": {},
+      "failure": {
+        "code": "-32600",
+        "code_kind": "numeric_host_error",
+        "stage": "installed-structural-preflight-capacity-observer"
+      },
+      "generation": "0.1.0+codex.20260901014910",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "unknown",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-08:activate.controller.unknown.evidence",
+        "mode": "unknown",
+        "rationale": "A host transport refusal leaves readiness unresolved.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "-32600",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-09",
+      "cycle": 9,
+      "evidence": {
+        "artifacts": [
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-09-artifact-01",
+            "kind": "preserved_task_rollout; semantic claim validation requires exact record selection",
+            "name": "rollout-2026-08-31T21-17-40-01a05b2f-e622-7c52-aed0-47b4e39d753c.jsonl",
+            "sha256": "9a32d15dd29a0b36998f1d598e7aae052111b6c1c15fb7441003c31a0c03e46c",
+            "size_bytes": 1336389
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-09-artifact-02",
+            "kind": "dedicated_owner_run_report",
+            "name": "issue163-cycle9-run-result.json",
+            "sha256": "f949bfb9d788465d2057387d389f7be0f0186bd2e8984cd72d5ba9878ff160ff",
+            "size_bytes": 713
+          }
+        ],
+        "availability": "host_local_references",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "df95ca1267a6d2e79d50c6f77dfcac53c1d12551006764b7af566be796ca1f1d",
+            "heading": "#### Cycle 9 terminal qualification and Cycle 10 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Raw host artifacts are not opened by replay; digests bind preserved references, not fresh host attestation.",
+        "preserved_digest_claims": [
+          "10cec7255c9ce20baee0cfddeda6323d287d4c75a66f121400d5daa839a0fd7a",
+          "4cca14129bc4cd2c913ab0815bc92a90d281ca40698a311adae2ab55b1c4167a",
+          "61ef9a91d6b20099309c9540b11df6e785293d1b8a944d2a9a7afff2256549bf",
+          "853625613867f1378f74b309f40937648b22c42505e07c14156f5a042f2f0245"
+        ]
+      },
+      "facts": {},
+      "failure": {
+        "code": "task_owner:socket_unavailable",
+        "code_kind": "error_code",
+        "stage": "first_task_owner_observation"
+      },
+      "generation": "0.1.0+codex.20260901031926",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "missing",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-09:activate.controller.missing.evidence",
+        "mode": "missing",
+        "rationale": "Missing owner socket observation cannot prove readiness.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "task_owner:socket_unavailable",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-10",
+      "cycle": 10,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "e0feab5c8aaa04da424fd34ec569a865875f99e85aee95c0ebad3e11e432369d",
+            "heading": "#### Cycle 10 terminal qualification and Cycle 11 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          },
+          {
+            "excerpt_sha256": "df95ca1267a6d2e79d50c6f77dfcac53c1d12551006764b7af566be796ca1f1d",
+            "heading": "#### Cycle 9 terminal qualification and Cycle 10 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "0de6a8f9326e9b9dc8ba5ed5893a8a5681584354a7535a4fb09d56d1196fb456",
+          "case_id": "issue163-cycle10",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v1"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "failure_evidence_sha256": "d51fa0eb3bcded684955c4e55f8f81c37fd2f84e0ee6adaf2c5baca6cb1047e6",
+          "terminal_packet_sha256": "099b1f753db00762d8aa1b13ebb1bb84af1c8c91d1d081a8a12e0c901724e4ea"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "route_preflight:task_spec_template_invalid",
+        "code_kind": "error_code",
+        "stage": "route_task_spec_construction"
+      },
+      "generation": "0.1.0+codex.20260901042828",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-10",
+        "mode": "guard_refusal",
+        "rationale": "An invalid task template cannot supply an activation observation.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "route_preflight:task_spec_template_invalid",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-11",
+      "cycle": 11,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "4a7b7267d38845a43cb0c05e242942294874cc9be528aa7c3e6e5d8e99e326b3",
+            "heading": "#### Cycle 11 terminal qualification and Cycle 12 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "d478074c03a0e0a48c39be25f09b6323d4bb1820e9bbe1877711706927eb733f",
+          "case_id": "issue163-cycle11",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v1"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "failure_evidence_sha256": "714fe3ba0c3d25fde864f1131c4da6ee3b6bc3c6519706f798b6c01419266f2c",
+          "terminal_packet_sha256": "74265e6a2abcd29ca7ca76dacb5fcab23547c547347451ed0400363fb58fef86"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "candidate_validation:unknown_field:candidate_sha256",
+        "code_kind": "error_code",
+        "stage": "candidate_validation_binding"
+      },
+      "generation": "0.1.0+codex.20260901051927",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-11",
+        "mode": "guard_refusal",
+        "rationale": "An unknown candidate field refuses before a model transition.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "candidate_validation:unknown_field:candidate_sha256",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-12",
+      "cycle": 12,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "3a50e8e54d6cb25a2e3a01ee10f5d3883e260137179dcbe4c3e1499a9b3c3c4a",
+            "heading": "#### Cycle 12 release, terminal qualification, and Cycle 13 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "94e16b73f94e246d0a10dd8cdcb7f484afab2d3753bd98df2ec13e1c5bffc1c4",
+          "case_id": "issue163-cycle12",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v1"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "failure_evidence_sha256": "880943423550227e06546b33e10d377d9684be3f28e7e295f87b36612c68f050",
+          "terminal_packet_sha256": "975a4dd3abde90695bbd41bada38e71dbd72ac75346d48347d892e45f53cd9ba"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "qualification_preflight:runtime_global_unavailable",
+        "code_kind": "error_code",
+        "stage": "approval_preflight_sealing"
+      },
+      "generation": "0.1.0+codex.20260901070232",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "missing",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-12:activate.controller.missing.evidence",
+        "mode": "missing",
+        "rationale": "Missing runtime globals cannot prove readiness.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "qualification_preflight:runtime_global_unavailable",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-13",
+      "cycle": 13,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "41359475d2f0a774d9c2ca3cddf6ed8028ae8a9ec22750c01daeed8dae2a823a",
+            "heading": "#### Cycle 13 release, terminal qualification, and Cycle 14 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "66fa50fdff2838b8ccefdb9967b29ffe27e092532317ca0386a20d581bc5de78",
+          "case_id": "issue163-cycle13",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v1"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "failure_evidence_sha256": "fecb9d778328d516a89a65a3aaf0dc03b1093ac77c3b6e5f289d70471e7457d2",
+          "terminal_packet_sha256": "d2e1f96c67b7af8ab0b83cd314fad3356f14907e582b02d75ec36ff9a3b981bb"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "qualification_rehearsal:ephemeral_transport_unavailable",
+        "code_kind": "error_code",
+        "stage": "installed_validator_transport"
+      },
+      "generation": "0.1.0+codex.20260901084152",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "missing",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-13:activate.controller.missing.evidence",
+        "mode": "missing",
+        "rationale": "Unavailable validator transport cannot prove readiness.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "qualification_rehearsal:ephemeral_transport_unavailable",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-14",
+      "cycle": 14,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "5b56c1d6f64c25c9332c2eb619e4fabcf38259fd3de1623df2c770800183158d",
+            "heading": "#### Cycle 14 release, terminal qualification, and Cycle 15 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "a7dd998d0dc2c4bc29cad9b98ec082ba025bc4c07e17150ac2f1a7dae42553cc",
+          "case_id": "issue163-cycle14",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v1"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "failure_evidence_sha256": "17a363a77e3d98c56b352a7c72a4eec7980d3949d1de5808c73f36bc5f7863e0",
+          "terminal_packet_sha256": "938dc554fda549caa99cb39ae5f37c17bd6537b27c6a868b0d5f95b46fe09c9a"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "PRELIVE_SENSITIVE_RUNTIME_METADATA_READ",
+        "code_kind": "error_code",
+        "stage": "route_canary_endpoint_resolution"
+      },
+      "generation": "0.1.0+codex.20260901094559",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-14",
+        "mode": "guard_refusal",
+        "rationale": "Unadmitted endpoint metadata cannot supply readiness evidence.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "PRELIVE_SENSITIVE_RUNTIME_METADATA_READ",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-15",
+      "cycle": 15,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "cabab454c88471162bfd96e18979e63798057a5e394d929f584c4a1a06e1d7f7",
+            "heading": "#### Cycle 15 release, terminal qualification, and Cycle 16 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "13b4004422219137f547445c437f9e8a8225205938829bbdc089f1c91be10bfb",
+          "case_id": "issue163-cycle15",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v2"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "failure_evidence_sha256": "953c5221c748a4f1878949c7918978d95a890f4a2f4db4cf67d6457169b8e348",
+          "terminal_packet_sha256": "706ab3690efdc20ebd063faf39c01d66840ead5edc5eb09b44b407769189a456"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "research:claim_source_missing",
+        "code_kind": "error_code",
+        "stage": "pre_spawn_input_build"
+      },
+      "generation": "0.1.0+codex.20260901110715",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-15",
+        "mode": "guard_refusal",
+        "rationale": "Missing claim sources cannot supply an activation observation.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "research:claim_source_missing",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-16",
+      "cycle": 16,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "8a5b82d8f470e740c9867f0c2ea363ca92277e1a7175b382a318c2451b4916ae",
+            "heading": "#### Cycle 16 terminal qualification and Cycle 17 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "956386624c40c153a68a96864b17d4a021def9b73368e8d710e7852f6153a96f",
+          "case_id": "issue163-cycle16",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v3"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "failure_evidence_sha256": "58b4d17ad63ff38f68dcaa04a0d6e7418edbb1e778c1692945017dda641f763a",
+          "terminal_packet_sha256": "5650c0befe22fbde0fdba69399c95f9f16cd6f92203dfd231bff1291965388a1"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "program:schema_invalid",
+        "code_kind": "error_code",
+        "stage": "ticket_admission"
+      },
+      "generation": "0.1.0+codex.20260901132833",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-16",
+        "mode": "guard_refusal",
+        "rationale": "An invalid admission schema refuses before activation.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "program:schema_invalid",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-17",
+      "cycle": 17,
+      "evidence": {
+        "artifacts": [],
+        "availability": "ledger_only",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "7f0bb9d91383a6768f7babfeecaec2dd2b8cfd08798159b63ae1953837c3b979",
+            "heading": "#### Cycle 17 terminal CI and Cycle 18 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Only the preserved ledger claim is validated; original CI bytes were not found.",
+        "preserved_digest_claims": []
+      },
+      "facts": {},
+      "failure": {
+        "code": "owned_file:unsafe",
+        "code_kind": "error_code",
+        "stage": "CI_projected_qualification_rehearsal"
+      },
+      "generation": "0.1.0+codex.20260901163727",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-17",
+        "mode": "guard_refusal",
+        "rationale": "Unsafe interpreter custody cannot supply readiness; only the historical ledger claim survives.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "owned_file:unsafe",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-18",
+      "cycle": 18,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "2c0879af9ce0ed29883d47d4f098e395ef5ba77b844b0a19248ecf582e957cb5",
+            "heading": "#### Cycle 18 terminal qualification and Cycle 19 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "e800c5fc1c01d8d0674a1765b9271fd86be3e5bde0b88a6f5c1a0f5f9d1f9e0b",
+          "case_id": "issue163-cycle18",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v4"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "failure_evidence_sha256": "f372fa3a5808987a7a65c429603210a9c41d5351f4d4aa46caff1b087bafdd06",
+          "terminal_packet_sha256": "611b709576099cbc7bc585015974f0633d581f987dd8322f7ce953310362e96e"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "activation:enrollment_not_active",
+        "code_kind": "error_code",
+        "stage": "governed_native_controller_activation"
+      },
+      "generation": "0.1.0+codex.20260901165859",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "refused",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-18:activate.controller.refused.evidence",
+        "mode": "refused",
+        "rationale": "Inactive enrollment refuses activation.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "activation:enrollment_not_active",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-19",
+      "cycle": 19,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "72fc28e3d0d05d1eff79dccaf5fb139d5f07298dc239f81b13ca45d9a689de60",
+            "heading": "#### Cycle 19 terminal qualification and Cycle 20 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "b1c2e764a11047a8b46113875eda5a55c909da0b3d47b09839729e91bebcb49c",
+          "case_id": "issue163-cycle19",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v5"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "failure_evidence_sha256": "ecfb1ab79060367ef0f231ffa92ab7c26ff50427fb476f6e2c9cdea834c91968",
+          "terminal_packet_sha256": "c53ce20e338cc6eab58c914323e45e9d37f690a8e4660b578165989257320bfb"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "activation:hook_trust_receipt_missing",
+        "code_kind": "error_code",
+        "stage": "governed_native_controller_activation"
+      },
+      "generation": "0.1.0+codex.20260901184438",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "missing",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-19:activate.controller.missing.evidence",
+        "mode": "missing",
+        "rationale": "Missing hook trust evidence cannot prove activation.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "activation:hook_trust_receipt_missing",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-20",
+      "cycle": 20,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "34d992d18eb7f1a6e68df3042bcb84d768a96f7f81b76f5ac2a5278c0e15ada7",
+            "heading": "#### Cycle 20 terminal qualification and Cycle 21 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "0d74936372b037ebc0a6b3bff0b0d480ac6b6fbcb10b2aeec8a1f8c898982770",
+          "case_id": "issue163-cycle20",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v6"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "controller_inspection_report_sha256": "97c00475d83cb0ba246c4f20cbf8d36513531b188dfdefa26530c40edc289c81",
+          "controller_stage_report_sha256": "59454103c3b8c432e165fa0e7f9f2cfe50667ed80df19481426381b82e5ef15d",
+          "failure_evidence_sha256": "59454103c3b8c432e165fa0e7f9f2cfe50667ed80df19481426381b82e5ef15d",
+          "terminal_packet_sha256": "1ba6e42347158cb84cb65d1bba58697ea4cd8f1cac67c6c64321ff52cda6a10b"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "hard_admission:component:capability:expired",
+        "code_kind": "error_code",
+        "stage": "governed_native_controller_pre_spawn"
+      },
+      "generation": "0.1.0+codex.20260901202623",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "refused",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-20:grant.spec.spec.refused.evidence",
+        "mode": "refused",
+        "rationale": "Expired admission cannot authorize a spawn grant.",
+        "stage": "grant.spec"
+      },
+      "observations": [
+        {
+          "id": "hard_admission:component:capability:expired",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-21",
+      "cycle": 21,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "ae5cbced6f7b10bc17a9558b3a1d14626a56f7b4d040aaafb5ebd491ad527262",
+            "heading": "#### Cycle 21 terminal qualification and Cycle 22 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "9179fe915be4c39658a75812f23df900244d745ad37995a06960fcd0e302b84c",
+          "case_id": "issue163-cycle21",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v7"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "controller_inspection_report_sha256": "97c00475d83cb0ba246c4f20cbf8d36513531b188dfdefa26530c40edc289c81",
+          "controller_stage_report_sha256": "59454103c3b8c432e165fa0e7f9f2cfe50667ed80df19481426381b82e5ef15d",
+          "failure_evidence_sha256": "af268d9d812ac159d64c7bf4bf1c3c1623b60f3d0386c43bc26aba420848845d",
+          "terminal_controller_report_sha256": "af268d9d812ac159d64c7bf4bf1c3c1623b60f3d0386c43bc26aba420848845d",
+          "terminal_inspection_report_sha256": "dc5f5badd221e762e5a06f5714ba202641426d58b0156772261e2c6953cd3867",
+          "terminal_packet_sha256": "e9be7aa8ffe3c73606f415140896dce2817cea440d9c70918b8580434b60f2f4"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "observation:hook_report_required",
+        "code_kind": "error_code",
+        "stage": "native_spawn_hook_custody"
+      },
+      "generation": "0.1.0+codex.20260901215103",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "missing",
+            "stage": "spawn.spec",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-21:spawn.spec.spec.missing.evidence",
+        "mode": "missing",
+        "rationale": "Disabled hooks leave the returned spawn without required evidence.",
+        "stage": "spawn.spec"
+      },
+      "observations": [
+        {
+          "id": "observation:hook_report_required",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-22",
+      "cycle": 22,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "c4890d8ace503382de2cf4104c8154f8c467d2c30ceba765b08812a086e59072",
+            "heading": "#### Cycle 22 terminal qualification and Cycle 23 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          },
+          {
+            "excerpt_sha256": "ae8f76cd95b3d62e1e6c2c6308f7762f0e08e3876ffa0bc2ba3747ec9bea3321",
+            "heading": "Cycle 22 generation `0.1.0+codex.20260901235400` passed its focused and",
+            "limitation": "Exact generation line in accepted ledger at af21d7a.",
+            "source": "TICKETS.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "1762be82e2b4e89b785ffb4e6eb835cd9da66851d0cfcb8b3af11f20d2c1ebc6",
+          "case_id": "issue163-cycle22",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v8"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "controller_inspection_report_sha256": "97c00475d83cb0ba246c4f20cbf8d36513531b188dfdefa26530c40edc289c81",
+          "controller_stage_report_sha256": "59454103c3b8c432e165fa0e7f9f2cfe50667ed80df19481426381b82e5ef15d",
+          "failure_evidence_sha256": "7a09f6473134fc30ca4868327a9d19a45adbab299887d2e598d7a68ff5fb3942",
+          "terminal_controller_report_sha256": "af268d9d812ac159d64c7bf4bf1c3c1623b60f3d0386c43bc26aba420848845d",
+          "terminal_inspection_report_sha256": "dc5f5badd221e762e5a06f5714ba202641426d58b0156772261e2c6953cd3867",
+          "terminal_packet_sha256": "36d6ea69775741bb8708a8d09a7a0d6a4208b4dc9429b869e7861028416ccc7d"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "native_controller:root_session_mismatch",
+        "code_kind": "error_code",
+        "stage": "fresh_task_session_start"
+      },
+      "generation": "0.1.0+codex.20260901235400",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-22",
+        "mode": "guard_refusal",
+        "rationale": "Mismatched root-session evidence refuses before activation.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "native_controller:root_session_mismatch",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-23",
+      "cycle": 23,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "bcea859480f3a65eac6037bfdbd3a535ea018a254a828e84e5ad726d793bba2c",
+            "heading": "#### Cycle 23 release, terminal qualification, and Cycle 24 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "513073aa8825e4cef0f3bab9fcea6e4db913dfbee6fe9a1c4b8af68ccf8bb4fd",
+          "case_id": "issue163-cycle23",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v9"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "controller_inspection_report_sha256": "97c00475d83cb0ba246c4f20cbf8d36513531b188dfdefa26530c40edc289c81",
+          "controller_stage_report_sha256": "59454103c3b8c432e165fa0e7f9f2cfe50667ed80df19481426381b82e5ef15d",
+          "failure_evidence_sha256": "8a46475f021d8da42787c91f21e909781032cb211de5559f141bd42f0f8ef8e5",
+          "terminal_controller_report_sha256": "af268d9d812ac159d64c7bf4bf1c3c1623b60f3d0386c43bc26aba420848845d",
+          "terminal_inspection_report_sha256": "dc5f5badd221e762e5a06f5714ba202641426d58b0156772261e2c6953cd3867",
+          "terminal_packet_sha256": "3364e9f5d921c5e8d8b12a786ff4c6be51a954d280438d5819ff1b4178995ed5"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "native_controller:exact_action_required",
+        "code_kind": "error_code",
+        "stage": "fresh_task_first_runtime_observer"
+      },
+      "generation": "0.1.0+codex.20260902013011",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-23",
+        "mode": "guard_refusal",
+        "rationale": "A caller-proposed action differing from the current action refuses.",
+        "stage": "spawn.spec"
+      },
+      "observations": [
+        {
+          "id": "native_controller:exact_action_required",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-24",
+      "cycle": 24,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "0fa9efa8d4482c95641621286a9c089834a766db69835fadd578abd89fb7b8a2",
+            "heading": "#### Cycle 24 release, terminal qualification, and Cycle 25 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "82d58331092f85aee15c22f28e0e22c8374e7052961a8319d00cdae519253581",
+          "case_id": "issue163-cycle24",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v10"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "controller_inspection_report_sha256": "97c00475d83cb0ba246c4f20cbf8d36513531b188dfdefa26530c40edc289c81",
+          "controller_stage_report_sha256": "59454103c3b8c432e165fa0e7f9f2cfe50667ed80df19481426381b82e5ef15d",
+          "failure_evidence_sha256": "0bd657f22b2b89bcf35fccf8d5d2206870f44641559e077844c24a0a5197d0a7",
+          "terminal_controller_report_sha256": "af268d9d812ac159d64c7bf4bf1c3c1623b60f3d0386c43bc26aba420848845d",
+          "terminal_inspection_report_sha256": "dc5f5badd221e762e5a06f5714ba202641426d58b0156772261e2c6953cd3867",
+          "terminal_packet_sha256": "0bd657f22b2b89bcf35fccf8d5d2206870f44641559e077844c24a0a5197d0a7"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "successor_startup:session_health_unavailable",
+        "code_kind": "error_code",
+        "stage": "idle_task_before_first_turn_session_start"
+      },
+      "generation": "0.1.0+codex.20260902025254",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "missing",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-24:activate.controller.missing.evidence",
+        "mode": "missing",
+        "rationale": "Absent predecessor session-health evidence leaves readiness unresolved.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "successor_startup:session_health_unavailable",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-25",
+      "cycle": 25,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "81b07a02bc165bb2a6b897345f3dabe828f31ba3a407d6156a8776949ee36c6f",
+            "heading": "#### Cycle 25 release, terminal qualification, and Cycle 26 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "b99fc4eddca0803d61020d2c9408f477b52f792fbf3d9eae51f23dac09b0104a",
+          "case_id": "issue163-cycle25",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v11"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "capacity_controller_report_sha256": "74f59a110a0a82c5e098c622bedb4b5011163e2840c594942dbd7baa0855c4f0",
+          "capacity_inspection_report_sha256": "d530f2471ac858ca5ff6b80f222009caa27dbac6fb13b875a53decf74d9d2261",
+          "controller_inspection_report_sha256": "97c00475d83cb0ba246c4f20cbf8d36513531b188dfdefa26530c40edc289c81",
+          "controller_stage_report_sha256": "59454103c3b8c432e165fa0e7f9f2cfe50667ed80df19481426381b82e5ef15d",
+          "failure_evidence_sha256": "74f59a110a0a82c5e098c622bedb4b5011163e2840c594942dbd7baa0855c4f0",
+          "terminal_controller_report_sha256": "af268d9d812ac159d64c7bf4bf1c3c1623b60f3d0386c43bc26aba420848845d",
+          "terminal_inspection_report_sha256": "dc5f5badd221e762e5a06f5714ba202641426d58b0156772261e2c6953cd3867",
+          "terminal_packet_sha256": "85753964a5a6b32029ec53dc07bdc8dda0e4512181d5dd5679b77b4129663e87"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "proposed_action:not_object",
+        "code_kind": "error_code",
+        "stage": "capacity_admission_without_atomic_spawn_intent"
+      },
+      "generation": "0.1.0+codex.20260902033538",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-25",
+        "mode": "guard_refusal",
+        "rationale": "A missing proposed-action object cannot supply a grant observation.",
+        "stage": "grant.spec"
+      },
+      "observations": [
+        {
+          "id": "proposed_action:not_object",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-26",
+      "cycle": 26,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "11bb7a98b35e0aee0a617ca2561e8a2ad87f219d24cd5d01fc4b48ef912079c3",
+            "heading": "#### Cycle 26 release, terminal qualification, and Cycle 27 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "6fef45fc006f4a242bd29a3be16870983b2217ce3a90cdfb5db7987159bcc979",
+          "case_id": "issue163-cycle26",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v12"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "capacity_authority_state_sha256": "ab11fb6466853553e5d6d5eb28074708b05816a3b32ce95e1b4ec79e6311cef9",
+          "capacity_controller_report_sha256": "74f59a110a0a82c5e098c622bedb4b5011163e2840c594942dbd7baa0855c4f0",
+          "capacity_inspection_report_sha256": "d530f2471ac858ca5ff6b80f222009caa27dbac6fb13b875a53decf74d9d2261",
+          "controller_inspection_report_sha256": "97c00475d83cb0ba246c4f20cbf8d36513531b188dfdefa26530c40edc289c81",
+          "controller_stage_report_sha256": "59454103c3b8c432e165fa0e7f9f2cfe50667ed80df19481426381b82e5ef15d",
+          "failure_evidence_sha256": "35f5f9b5280e65886f7d209ae9274dcf24e9ce219dcae5c2a1a9d8fd2cfb0df3",
+          "terminal_controller_report_sha256": "74f59a110a0a82c5e098c622bedb4b5011163e2840c594942dbd7baa0855c4f0",
+          "terminal_inspection_report_sha256": "d530f2471ac858ca5ff6b80f222009caa27dbac6fb13b875a53decf74d9d2261",
+          "terminal_packet_sha256": "fc0be9f6a7e8682172947df1418bb436bd750c45d53e730bd713d4697d063a87"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "activation:active_controller_conflict",
+        "code_kind": "error_code",
+        "stage": "successor_activation_with_unsettled_terminal_capacity"
+      },
+      "generation": "0.1.0+codex.20260902044643",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "refused",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-26:activate.controller.refused.evidence",
+        "mode": "refused",
+        "rationale": "Unsettled predecessor capacity cannot be treated as successful activation.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "activation:active_controller_conflict",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-27",
+      "cycle": 27,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "90b9a7ecdf2bee4ab32c97615c80fe8e31502b27fa42768134f77321a2a7f93a",
+            "heading": "#### Cycle 27 release, terminal qualification, and Cycle 28 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "e7c4c69bda0324311903380e182833d36bf38c14f5a9e9df78e1a37e66ce7c46",
+          "case_id": "issue163-cycle27",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v13"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "capacity_authority_state_sha256": "c12164cbd22652cff7cfda16cac38454de2e6b7f74e3eb85aed0312b5db64f2d",
+          "capacity_controller_report_sha256": "74f59a110a0a82c5e098c622bedb4b5011163e2840c594942dbd7baa0855c4f0",
+          "capacity_inspection_report_sha256": "d530f2471ac858ca5ff6b80f222009caa27dbac6fb13b875a53decf74d9d2261",
+          "controller_inspection_report_sha256": "97c00475d83cb0ba246c4f20cbf8d36513531b188dfdefa26530c40edc289c81",
+          "controller_stage_report_sha256": "59454103c3b8c432e165fa0e7f9f2cfe50667ed80df19481426381b82e5ef15d",
+          "failure_evidence_sha256": "61e0b3a210bcf967e57fcf310e1ccf88cf40de9685f476f199fa849e1b702b86",
+          "first_action_bridge_report_sha256": "61e0b3a210bcf967e57fcf310e1ccf88cf40de9685f476f199fa849e1b702b86",
+          "pre_turn_report_sha256": "d0e9765b225f70dcf66d58c2c2c67119f1a503c2d9448ad2d7caf3a4cd4c0333",
+          "predecessor_settlement_report_sha256": "f00b1967d218745b0b75b55021e5f51da00cbb1b3287e797d985a065fddefbc2",
+          "terminal_controller_report_sha256": "74f59a110a0a82c5e098c622bedb4b5011163e2840c594942dbd7baa0855c4f0",
+          "terminal_inspection_report_sha256": "d530f2471ac858ca5ff6b80f222009caa27dbac6fb13b875a53decf74d9d2261",
+          "terminal_packet_sha256": "ab6070342394041e1256143091ccce6bef4ff1a34d241a6f34ba87e4841809ac"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "successor_first_action_host_bridge:evaluation_failed",
+        "code_kind": "error_code",
+        "stage": "successor_first_action_mcp_host_bridge"
+      },
+      "generation": "0.1.0+codex.20260902054821",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "unknown",
+            "stage": "spawn.spec",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-27:spawn.spec.spec.unknown.evidence",
+        "mode": "unknown",
+        "rationale": "A failed native host bridge cannot establish a spawn outcome.",
+        "stage": "spawn.spec"
+      },
+      "observations": [
+        {
+          "id": "successor_first_action_host_bridge:evaluation_failed",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-28",
+      "cycle": 28,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "4ed5a73d090951516750865741ef719ecfe4b40207f7569a8dbb45459a65618e",
+            "heading": "#### Cycle 28 release, terminal qualification, and Cycle 29 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "0e19b3cf9cf3b57477eddd30f7759c9391c25749d5cb1afc9462f5ecdd455224",
+          "case_id": "issue163-cycle28",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v14"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "capacity_authority_state_sha256": "c12164cbd22652cff7cfda16cac38454de2e6b7f74e3eb85aed0312b5db64f2d",
+          "capacity_controller_report_sha256": "74f59a110a0a82c5e098c622bedb4b5011163e2840c594942dbd7baa0855c4f0",
+          "capacity_inspection_report_sha256": "d530f2471ac858ca5ff6b80f222009caa27dbac6fb13b875a53decf74d9d2261",
+          "controller_inspection_report_sha256": "97c00475d83cb0ba246c4f20cbf8d36513531b188dfdefa26530c40edc289c81",
+          "controller_stage_report_sha256": "59454103c3b8c432e165fa0e7f9f2cfe50667ed80df19481426381b82e5ef15d",
+          "cycle27_controller_event_sha256": "c27a063b13634b0a9cd0e46543d9d83324b78bd9eb52d107484740957f80b7f0",
+          "cycle28_corrected_capacity_read_sha256": "8c79c828f064dedb53d3a446f756099528eec5aad11ba1e8a47d412175df2bc5",
+          "cycle28_dedicated_result_sha256": "5a4c000c58feb1375d41c7e80861594d507ef33028f15952b7ec22a2cbfcba1e",
+          "cycle28_predecessor_authority_sha256": "8346151992b3b711f33f9a4b9241ce864a51fdac32495db44d220b08e928d4a1",
+          "failure_evidence_sha256": "5a4c000c58feb1375d41c7e80861594d507ef33028f15952b7ec22a2cbfcba1e",
+          "first_action_bridge_report_sha256": "61e0b3a210bcf967e57fcf310e1ccf88cf40de9685f476f199fa849e1b702b86",
+          "pre_turn_report_sha256": "d0e9765b225f70dcf66d58c2c2c67119f1a503c2d9448ad2d7caf3a4cd4c0333",
+          "predecessor_settlement_report_sha256": "f00b1967d218745b0b75b55021e5f51da00cbb1b3287e797d985a065fddefbc2",
+          "terminal_controller_report_sha256": "74f59a110a0a82c5e098c622bedb4b5011163e2840c594942dbd7baa0855c4f0",
+          "terminal_inspection_report_sha256": "d530f2471ac858ca5ff6b80f222009caa27dbac6fb13b875a53decf74d9d2261",
+          "terminal_packet_sha256": "ab6070342394041e1256143091ccce6bef4ff1a34d241a6f34ba87e4841809ac"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "successor_startup:predecessor_not_clean_terminal",
+        "code_kind": "error_code",
+        "stage": "successor_pre_turn_predecessor_validation"
+      },
+      "generation": "0.1.0+codex.20260902072949",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "refused",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-28:activate.controller.refused.evidence",
+        "mode": "refused",
+        "rationale": "An unclean predecessor refuses successor activation.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "successor_startup:predecessor_not_clean_terminal",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-29",
+      "cycle": 29,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "1ccd6519b5d4c8ca566b960d3ac06615b721c7e18f7f71b9c95271ba85df5505",
+            "heading": "#### Cycle 29 release, terminal qualification, and Cycle 30 diagnosis",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "26f5c67ddb76e1e67665be5bc13aeee1983274409f412d37f6dcf25ac0ffaf04",
+          "case_id": "issue163-cycle29",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v15"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "cycle29_capacity_state_sha256": "b65bc9072e2fe6a22292c1e08000f9e802e76f78cba09f1195d53803a0ba16bd",
+          "cycle29_dedicated_result_sha256": "be1001ec613f2ed4f77677f1ec7e6c5f857ae706663a05cd2ff7f493e43500d2",
+          "cycle29_first_action_sha256": "ceb961b5eb6ee4d5f172ffd0d86e724cdf6f455720ef43356c2ab2f415560ef7",
+          "cycle29_posttool_report_sha256": "5c5e25d3ed45501ba7696fb39d75e44bf389fd4ca42109775b53e101968c7669",
+          "cycle29_result_sha256": "60e61cbbd34f5bf7c84a9e0a4310a5f06208e36e49efc7889d7b8c4a58e44c34",
+          "cycle29_root_rollout_sha256": "0b65857d697d7aa024f556bfe984b42acb3da68693cf3171cad9ca69cd8ff0cd",
+          "cycle29_terminal_report_sha256": "caff15d4e5552a69f10ff841ac70cc6a36ae4cde6326259ee5affe277c8b58d6",
+          "cycle29_terminal_snapshot_sha256": "bc72c96b6f885fa1a1a5a5119b7b88b3e03d0266ae135f6b479cd151d2c0e8ec",
+          "cycle29_worker_report_sha256": "4d6ea57142b6e2f36e9f87d1edd647f06f2f563b283484440a59e30d1f39ce46",
+          "cycle29_worker_rollout_sha256": "516e3624bae9c9ae58bb7ca4a732414df86114e0b3e8a533ab2eb9e745c4cc7f",
+          "cycle29_worker_state_sha256": "a8f3cbf55bb16ed1257fcb245eb4170cfbb226472b3f15c4ebc5aaf3ae870784",
+          "failure_evidence_sha256": "5c5e25d3ed45501ba7696fb39d75e44bf389fd4ca42109775b53e101968c7669",
+          "terminal_packet_sha256": "bc72c96b6f885fa1a1a5a5119b7b88b3e03d0266ae135f6b479cd151d2c0e8ec"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "native_controller:native_result_unavailable",
+        "code_kind": "error_code",
+        "stage": "first_native_action_posttool_observation"
+      },
+      "generation": "0.1.0+codex.20260902093900",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "missing",
+            "stage": "spawn.spec",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-29:spawn.spec.spec.missing.evidence",
+        "mode": "missing",
+        "rationale": "Unavailable native result leaves physical spawn outcome unresolved.",
+        "stage": "spawn.spec"
+      },
+      "observations": [
+        {
+          "id": "native_controller:native_result_unavailable",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-30",
+      "cycle": 30,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "9cac119b23b3ea9fb21b433ed6a53c70af430b9cab2c759c00e1461e487b23d1",
+            "heading": "#### Cycle 30 terminal qualification and Cycle 31 source checkpoint",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "440e8ea1568afac4c4399d799816f846a4013568a7bbc7de5f3507a804d97d8f",
+          "case_id": "issue163-cycle30",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v16"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "cycle29_first_action_sha256": "ceb961b5eb6ee4d5f172ffd0d86e724cdf6f455720ef43356c2ab2f415560ef7",
+          "cycle30_activation_refusal_sha256": "8cf553357886edfbc55e64d0cb407c1a2ffaf62b5e75ec55a5b1633e31bbe8db",
+          "cycle30_canary_report_sha256": "1f2b883a0e2c77bf9b15452fa0e6ce34b8c453bed2db96e92a3d897e314dd694",
+          "cycle30_dedicated_result_sha256": "d5ff6cc3c94a9d6d6b1d2fdac9796452621feda0f22303929a2db33ec071d520",
+          "cycle30_predecessor_settlement_report_sha256": "24b44de5a1a5e4054f1e090526daf1009c7830d533e0936c4f17d1bf12d4f368",
+          "failure_evidence_sha256": "8cf553357886edfbc55e64d0cb407c1a2ffaf62b5e75ec55a5b1633e31bbe8db",
+          "terminal_packet_sha256": "d5ff6cc3c94a9d6d6b1d2fdac9796452621feda0f22303929a2db33ec071d520"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "activation:active_controller_conflict",
+        "code_kind": "error_code",
+        "stage": "successor_activation_after_partial_native_recovery"
+      },
+      "generation": "0.1.0+codex.20260902122518",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "refused",
+            "stage": "activate",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-30:activate.controller.refused.evidence",
+        "mode": "refused",
+        "rationale": "Partially recovered predecessor capacity still refuses activation.",
+        "stage": "activate"
+      },
+      "observations": [
+        {
+          "id": "activation:active_controller_conflict",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-31",
+      "cycle": 31,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "9fac7ae63d7b656379cceedf1a86b4788708acaeb619c5453d18b0ca829b8bf4",
+            "heading": "#### Cycle 31 terminal qualification and Cycle 32 release",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "66613a2f4ef7aff9af94f2faf7fa947270c7da9b4d706f88e10a8f91d1981137",
+          "case_id": "issue163-cycle31",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v17"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "cycle31_action_batch_event_sha256": "65c8b5823e018767c78d4ecef4e5246facc8dce363f1b0440526c570a199d7e5",
+          "cycle31_attempt_envelope_sha256": "dbb6ccf772d8488d0d2457dc8964b06112936a3732bf667ec600a559888ea78f",
+          "cycle31_dedicated_result_sha256": "4c72812c3e29587fb56c345d7c3b1609d272112fc0a1a3fa2cbaa2a3a65210ff",
+          "cycle31_pre_turn_artifact_sha256": "f57f2deb25293b829afd720ff408d70e46a6246e91747515fe58e491020388a7",
+          "cycle31_pre_turn_report_sha256": "4893cdff156b29204f399ed53e9df5794ed3918487ae9e4f70a25a5ab0b4898c",
+          "cycle31_refused_stage_event_sha256": "7cb8d697d636fd3836b28016b4e97e0ddecd9fb3db585842d8b9c191a07c3e25",
+          "cycle31_root_rollout_sha256": "31d19aef010461758d3e530e5ee61936a1966751b2b6d07285b4a0b9558280ee",
+          "cycle31_spec_rollout_sha256": "434cee81af7f89a94d5139e8ee7dfdecae2ca3fbaace938b3bee2548efa626ab",
+          "cycle31_standards_rollout_sha256": "9709c3026d79e1938b6872c641bd6ab690406f1eaa80c07d684711caf62cb839",
+          "failure_evidence_sha256": "7cb8d697d636fd3836b28016b4e97e0ddecd9fb3db585842d8b9c191a07c3e25",
+          "terminal_packet_sha256": "4c72812c3e29587fb56c345d7c3b1609d272112fc0a1a3fa2cbaa2a3a65210ff"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "program:operation_invalid",
+        "code_kind": "error_code",
+        "stage": "caller_authored_post_spawn_stage"
+      },
+      "generation": "0.1.0+codex.20260902201733",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "spawn.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "grant.standards",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "spawn.standards",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-31",
+        "mode": "guard_refusal",
+        "rationale": "A caller-authored next stage cannot replace the current controller observation.",
+        "stage": "ack"
+      },
+      "observations": [
+        {
+          "id": "program:operation_invalid",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-32",
+      "cycle": 32,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "3a75555b9b421ba8bdddc5bc5fbfad0643935a8f68f5bb9b5288d15a4b5968f5",
+            "heading": "#### Cycle 32 terminal qualification and Cycle 33 repair",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "96988c174f5e9ecab79611d21a689ae3b4b578f1a72005594a80dd2a406b17f5",
+          "case_id": "issue163-cycle32",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v18"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "cycle32_action_batch_event_sha256": "4e6339699bbe7c226ec33347ea17e869219331995ffa7da045a82e4d4b5c9af2",
+          "cycle32_attempt_envelope_sha256": "a8239807565740da85536634a9249ffc7b61df6cecf657a16edaa968d49f993d",
+          "cycle32_authorization_report_sha256": "6d2cb2e62fb3b47de8421730717ce979d8b82187c5f42700022eba24292fa108",
+          "cycle32_bridge_refusal_report_sha256": "c9ab42de26e48ae4b5cac70e8f5426f192399f6a747f2cae4b871c46c97b63af",
+          "cycle32_dedicated_result_sha256": "68161abf83e85c04a2f11fc2c143546e70d5ddf915ac677db7b3acdc65438852",
+          "cycle32_first_action_advance_report_sha256": "fae5e7e4df16046e2db6902c56ab9280b85456a45a4c3487a752ea1d8bbbdcc5",
+          "cycle32_pre_turn_artifact_sha256": "b53c1a32da10c673117d5772b4b5fe613c6e897e2461acc499b91d0166c0cdff",
+          "cycle32_pre_turn_report_sha256": "73f11453acee484562d388ecf1b34e3e3a7228aaa2238f1411e6c73c7eaeefe4",
+          "cycle32_root_rollout_sha256": "2e60bb5d16435c118abcdcb7d98aa667367f67edb36b346360f9df7d6e574fcf",
+          "cycle32_spec_rollout_sha256": "402545257f289e86136cb3585b2b928cdc1068f2238325c5727ddf77b361dd31",
+          "cycle32_standards_rollout_sha256": "75b8411bc838ba1abfbf563805c7f06598ab04d2e6e3bb0617b9d962b4ad2c40",
+          "failure_evidence_sha256": "c9ab42de26e48ae4b5cac70e8f5426f192399f6a747f2cae4b871c46c97b63af",
+          "terminal_packet_sha256": "68161abf83e85c04a2f11fc2c143546e70d5ddf915ac677db7b3acdc65438852"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "successor_action_advance:codex_home_unavailable",
+        "code_kind": "error_code",
+        "stage": "worker_acknowledgement_rollout_discovery"
+      },
+      "generation": "0.1.0+codex.20260902231352",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "spawn.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "grant.standards",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "spawn.standards",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "missing",
+            "stage": "ack",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-32:ack.spec.missing.evidence",
+        "mode": "missing",
+        "rationale": "Unresolvable worker rollout leaves acknowledgement unobserved.",
+        "stage": "ack"
+      },
+      "observations": [
+        {
+          "id": "successor_action_advance:codex_home_unavailable",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-33",
+      "cycle": 33,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "8055d365fd2ef4aa196bc51185071bb350dafa3a577e2a5e46c393d1f7b68dbf",
+            "heading": "#### Cycle 33 terminal qualification and Cycle 34 repair",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "e30c5fd0d4d8f16fdef845c0bcee34554281ddb840d346ae9bb16d589ab30e99",
+          "case_id": "issue163-cycle33",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v19"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "cycle33_attempt_envelope_sha256": "4bc85852663f7f111ed2cb3591f99ac09ea949d25a70e9683917d940b48bb85a",
+          "cycle33_bridge_refusal_report_sha256": "8de1dcf14f57651048d3512521f578c92a4a57b4e4d23cba1c8cd535d074c638",
+          "cycle33_dedicated_result_sha256": "32bd7678dc955706390493828a08fd1e9459b26c879a693340b84d4472e48a69",
+          "cycle33_first_action_advance_report_sha256": "e6db51dc564f608888ff4f83ffaddd09f4dfd3fca942417025843f2760be3f3a",
+          "cycle33_first_action_authorization_report_sha256": "c615d988d9aab0279e54480c8965296d9ad3462ed4e2c631627dae63c2c7fff2",
+          "cycle33_pre_turn_artifact_sha256": "229a1bd9fc4b1518c5720a43901aa834e1514b5ef388a05b50d65fe7d943108c",
+          "cycle33_pre_turn_report_sha256": "311c5e5b48750ba46ea19b81245360d72dbc0a72adc9114bd9911c8bad965338",
+          "cycle33_root_rollout_sha256": "a244a329bad410e991a9af5e386695890118a7a4fd2d791baf47e5ff9d57ac0e",
+          "cycle33_spec_rollout_sha256": "af5ae53cb63326c92ceba79ef0bca66e1658dc80f8ebe814c87606a775b1c093",
+          "cycle33_standards_rollout_sha256": "7f45e3d605d2dd78a13b2f98687752398adf708e51a9a01cc5a2937ac47fbe1a",
+          "failure_evidence_sha256": "8de1dcf14f57651048d3512521f578c92a4a57b4e4d23cba1c8cd535d074c638",
+          "terminal_packet_sha256": "32bd7678dc955706390493828a08fd1e9459b26c879a693340b84d4472e48a69"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "successor_action_advance:worker_rollout_invalid",
+        "code_kind": "error_code",
+        "stage": "worker_acknowledgement_rollout_mode_validation"
+      },
+      "generation": "0.1.0+codex.20260903011835",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "spawn.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "grant.standards",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "spawn.standards",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-33",
+        "mode": "guard_refusal",
+        "rationale": "Unsafe rollout custody cannot supply an acknowledgement observation.",
+        "stage": "ack"
+      },
+      "observations": [
+        {
+          "id": "successor_action_advance:worker_rollout_invalid",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-34",
+      "cycle": 34,
+      "evidence": {
+        "artifacts": [],
+        "availability": "legacy_fixture",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "2bb0f6faf4ac5b3aefa7c4f2d6b2c93539dcd0bac203d23dfb684cfe86594fab",
+            "heading": "#### Cycle 34 terminal qualification and Cycle 35 repair",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": {
+          "canonical_case_sha256": "e1bef1bdacedc729123fc9ec0499c595ae69f4fbcdccb03285022e8ce809dc82",
+          "case_id": "issue163-cycle34",
+          "corpus_sha256": "f993c1cc533527e20d3d25279d65c3059906a8b0de47c24f5c78481e46ce123b",
+          "path": "skills/orch-dork/runtime/qualification-rehearsal-replays-v1.json",
+          "schema": "orch-dork/qualification-rehearsal-replay/v20"
+        },
+        "limitation": "The unchanged tracked legacy fixture is verified; original host artifacts were not re-audited.",
+        "preserved_digest_claims": {
+          "cycle34_action_authorization_report_sha256": "253690acc34c6c8679d2196418aaae0b63fea8f444d3522c309d125252973fad",
+          "cycle34_attempt_envelope_sha256": "24d75531f0e75b3ba2efc28509a1d356b747628f10efc20df2e20a9a1a04609d",
+          "cycle34_continuation_action_sha256": "2a22bca0e81a64e9169fd9d1c212a7c66115ccc54ce6722f757ec297d767da91",
+          "cycle34_continuation_tool_input_sha256": "181614559bc3c86b50585e5918cf38bc7f53bc8498084168d84f4800948c0e21",
+          "cycle34_dedicated_result_sha256": "7b273c8220ec11dbf50a6ca0614c6e90e31cad58d3cb26c796849b06e5b2dcae",
+          "cycle34_last_pass_bridge_report_sha256": "32909985b0342eec42ed1ded0e9e931fbe86c4ee7b8e8c596642901499662164",
+          "cycle34_pre_turn_artifact_sha256": "5d8067bfd20dab6344d0c35eb4500ddfdc5d2e4401e7040209cbe2d0911e4a91",
+          "cycle34_pre_turn_report_sha256": "b90c4eb4061461b42052632c4e5a4c8ecf1ce8358b5e47ce2e428e3c5071cc78",
+          "cycle34_pretool_denial_artifact_sha256": "6aca846ecd38122f3f17a8eedc6308b227363ade1ec0b2a61300bea2c788dda2",
+          "cycle34_pretool_denial_durable_record_sha256": "a8c7aadc91d66baf491500419ca2ee31083bce238936a6a9d385cb37d2401da7",
+          "cycle34_pretool_denial_report_sha256": "109d4302c2d292ff67ce281d72e8fe39e926ea0b7222bcdf66072c95e0b2854c",
+          "cycle34_root_rollout_sha256": "8a3e9254147bad218eafdccc13b9e7ba83ba85d31e82e320334991ac8d99e84d",
+          "cycle34_spec_rollout_sha256": "70bca1254f34d9f2804b08e080089f5cd7d77b30eb4322595c79aa1ce64cf9a6",
+          "cycle34_standards_rollout_sha256": "e5b50c29aaf0213bc8c9f5bacb14405a7809b27a2b7a9ae89f49ade8ca98bd9b",
+          "failure_evidence_sha256": "109d4302c2d292ff67ce281d72e8fe39e926ea0b7222bcdf66072c95e0b2854c",
+          "terminal_packet_sha256": "7b273c8220ec11dbf50a6ca0614c6e90e31cad58d3cb26c796849b06e5b2dcae"
+        }
+      },
+      "facts": {},
+      "failure": {
+        "code": "native_controller:exact_action_required",
+        "code_kind": "error_code",
+        "stage": "first_controller_authorized_continuation_pretool"
+      },
+      "generation": "0.1.0+codex.20260903025431",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "spawn.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "grant.standards",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "spawn.standards",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "ack",
+            "variant": "SUCCESS"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "ack",
+            "variant": "SUCCESS"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-34",
+        "mode": "guard_refusal",
+        "rationale": "Changed continuation authority refuses before execution.",
+        "stage": "continue.spec"
+      },
+      "observations": [
+        {
+          "id": "native_controller:exact_action_required",
+          "ordinal": 1
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-35",
+      "cycle": 35,
+      "evidence": {
+        "artifacts": [
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-35-artifact-01",
+            "kind": "refused_recovery_with_zero_mutation_readback",
+            "name": "cycle35-recovery-refusal.json",
+            "sha256": "e4b604712910bd36daf3a9368dc41e350d85d80059c73df20817e71299b5d112",
+            "size_bytes": 5607
+          }
+        ],
+        "availability": "host_local_references",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "6f932e8790e197e92d5b5c1cd5e6f0b0cd4b87fa6f277a05eabf427179576835",
+            "heading": "#### Cycle 35 recovery refusal and Cycle 36 repair",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Raw host artifacts are not opened by replay; digests bind preserved references, not fresh host attestation.",
+        "preserved_digest_claims": [
+          "e4b604712910bd36daf3a9368dc41e350d85d80059c73df20817e71299b5d112"
+        ]
+      },
+      "facts": {
+        "effects": {
+          "capacity_events_appended": 0,
+          "controller_events_appended": 0,
+          "grant_transitions": 0,
+          "native_actions": 0,
+          "provider_calls": 0,
+          "recovery_invocations": 1,
+          "retries": 0
+        },
+        "historical_runtime": {
+          "generation": "0.1.0+codex.20260903025431",
+          "package_digest": "e4f36764e71e217411405f6dee1a37bdd97288fdd51bc862373fcc24d3f286b1"
+        },
+        "unchanged_live_state": {
+          "capacity_ledger_tip": {
+            "event_hash": "57908cbc8432960ffea35c76f9bdca27a545e1981e410369ae64b5b3c4174e1c",
+            "seq": 18
+          },
+          "controller_tip": {
+            "event_hash": "7184e9ca209091f4a9895273ebe671af6ce5b144a7236a8db219f61e2bd52d7b",
+            "seq": 11
+          },
+          "grant": {
+            "action_id": "issue94-worker-start-5f09eaee8a0645d4339c7fac",
+            "action_sha256": "2a22bca0e81a64e9169fd9d1c212a7c66115ccc54ce6722f757ec297d767da91",
+            "state": "AUTHORIZED",
+            "tool_input_sha256": "181614559bc3c86b50585e5918cf38bc7f53bc8498084168d84f4800948c0e21",
+            "tool_name": "multi_agent_v1__send_input"
+          },
+          "owner": {
+            "controller_id": "issue163-cycle34-controller",
+            "controller_run_id": "nativecontroller-a9f6fe08526a13624c2389c6"
+          },
+          "project_ground_current_sha256": "833fcc6469245e0c9eaf35738231b41f5fa2e6d9b0b1f041eaa92646e967ab04",
+          "recovery_output_created": false
+        }
+      },
+      "failure": {
+        "code": "post_ack_bridge_failure_recovery:terminalization_refused",
+        "code_kind": "error_code",
+        "stage": "pre_install_recovery"
+      },
+      "generation": "0.1.0+codex.20260903044651",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "spawn.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "grant.standards",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "spawn.standards",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "ack",
+            "variant": "SUCCESS"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "ack",
+            "variant": "SUCCESS"
+          }
+        ],
+        "mapping": "lc-inv:issue-167:cycle-35",
+        "mode": "guard_refusal",
+        "rationale": "An unadmitted recovery observation leaves the authorized continuation and all model state unchanged.",
+        "stage": "continue.spec"
+      },
+      "observations": [
+        {
+          "id": "one_recovery_invocation_refused",
+          "ordinal": 1
+        },
+        {
+          "id": "zero_mutation_readback",
+          "ordinal": 2
+        }
+      ],
+      "retry_same_generation_permitted": false
+    },
+    {
+      "case_id": "cycle-36",
+      "cycle": 36,
+      "evidence": {
+        "artifacts": [
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-01",
+            "kind": "qualification_failure_manifest",
+            "name": "failure-manifest.json",
+            "sha256": "1aa391cf008a908f720e5f094377de059c55688d644949fa0fc92e4724a3b64a",
+            "size_bytes": 5185
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-02",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "attempt-envelope.json",
+            "sha256": "95215c885f3abb288138d3b4c0c98d14943e15e65ea290b0654addcae9801f3f",
+            "size_bytes": 2803
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-03",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "dedicated-run.json",
+            "sha256": "b4c210870a67d90bbcb39a09c0a91428b75f26912b6728debf2a844ba22118b6",
+            "size_bytes": 1504
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-04",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "live-preflight.json",
+            "sha256": "d53983beac5f930e6ddafbde61b47844e8ca4834b68f51cde4f5007db4bfb2b4",
+            "size_bytes": 4132
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-05",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "provider-free-rehearsal.json",
+            "sha256": "9d8267afa1b5109a3968abb16809ead8388890f39f25ef96e08778c573b469a9",
+            "size_bytes": 70426
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-06",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "cleanup-replay.sqlite3",
+            "sha256": "ff5d41a7eb5cdf9d578a57dc40751d6df34b1a459de46724b26af9ce877fde4b",
+            "size_bytes": 12288
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-07",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "controller.sqlite3",
+            "sha256": "24be6940190402ef1cfbc3d761c557621f5a4227d06f1c9a5ee10282b39923c5",
+            "size_bytes": 1277952
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-08",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "observer-trust.json",
+            "sha256": "976807f6db0a75219325431de540d2e8657be2bc40b63b439996626bdee44e80",
+            "size_bytes": 355
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-09",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "pre-turn.json",
+            "sha256": "05cc9ecf05fe94fc2edbe36bbd0e4c5ccc9c75b125d886836047bbf42e31e3a1",
+            "size_bytes": 29885
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-10",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "project-ground-current.json",
+            "sha256": "c6879d96fe5db5b0516a687d427e12ce435d129c6f74b245fad9a577cbd2fb90",
+            "size_bytes": 5383
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-11",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "root-rollout.jsonl",
+            "sha256": "86790ba81f716b4e95716509d544cc5d5e4848994aaf0913a3b13731ab039385",
+            "size_bytes": 892610
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-12",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "spec-rollout.jsonl",
+            "sha256": "92a460c298013de9a45555e06df4b3227d5118b94603cd8fa384a042b5c1d571",
+            "size_bytes": 173530
+          },
+          {
+            "custody": "host-local-reference-only",
+            "id": "cycle-36-artifact-13",
+            "kind": "manifest_bound_preserved_artifact",
+            "name": "standards-rollout.jsonl",
+            "sha256": "2e9cba25e4270e4e7528cef119dd2e4cf5738605542e94988700ea80743d3942",
+            "size_bytes": 99006
+          }
+        ],
+        "availability": "host_local_references",
+        "ledger_anchors": [
+          {
+            "excerpt_sha256": "6f932e8790e197e92d5b5c1cd5e6f0b0cd4b87fa6f277a05eabf427179576835",
+            "heading": "#### Cycle 35 recovery refusal and Cycle 36 repair",
+            "limitation": "Recorded historical claims; raw artifact availability is listed separately.",
+            "source": "issue163-ledger-evidence.md"
+          }
+        ],
+        "legacy_ref": null,
+        "limitation": "Raw host artifacts are not opened by replay; digests bind preserved references, not fresh host attestation.",
+        "preserved_digest_claims": [
+          "e4b604712910bd36daf3a9368dc41e350d85d80059c73df20817e71299b5d112"
+        ]
+      },
+      "facts": {
+        "attempt": {
+          "attempt_envelope_sha256": "95215c885f3abb288138d3b4c0c98d14943e15e65ea290b0654addcae9801f3f",
+          "candidate_commit": "618048de7ee031cfd884f77a7881a2414acafe58",
+          "dedicated_run_sha256": "b4c210870a67d90bbcb39a09c0a91428b75f26912b6728debf2a844ba22118b6",
+          "generation": "0.1.0+codex.20260903054022",
+          "live_preflight_sha256": "d53983beac5f930e6ddafbde61b47844e8ca4834b68f51cde4f5007db4bfb2b4",
+          "provider_free_rehearsal_sha256": "9d8267afa1b5109a3968abb16809ead8388890f39f25ef96e08778c573b469a9",
+          "runtime_package_digest": "43c3139222ad75e7bbf249940ebfd4af003f5312d4ef8430901ad546c29af893",
+          "source_branch": "codex/issue-94-repair"
+        },
+        "boundary": {
+          "continuing_authority": false,
+          "failure_class": "post_first_continuation_bridge_validation",
+          "native_retries": 0,
+          "promotion_receipt_created": false,
+          "provider_boundary_crossed": true,
+          "replacement_workers": 0,
+          "root_turn_completed": false,
+          "terminal_failure": true
+        },
+        "capacity": {
+          "active_lane_ids": [
+            "01a065d8-81ae-77c1-bb06-1a6251eca391-issue94-run:spec",
+            "01a065d8-81ae-77c1-bb06-1a6251eca391-issue94-run:standards"
+          ],
+          "continuity_verified": true,
+          "event_hash": "f84dcdaa774f203d5966a9114489614b622c80706b82681432470aecc5aa6c87",
+          "run_id": "ct-laneledgerv2",
+          "seq": 20,
+          "state_sha256": "67a6ca8c6311d6555b1b8ed8ac8b5409e01952f64964825b5f2d71b46328ec89",
+          "status": "VERIFIED"
+        },
+        "controller": {
+          "controller_id": "issue163-cycle36-controller",
+          "event_hash": "b82d2879de4836790482baaef561d36dce0a6113550884451a12630cbe8ceb0d",
+          "run_id": "nativecontroller-851ee03a3f2b40222f83e500",
+          "seq": 13,
+          "terminal": false
+        },
+        "failure": {
+          "bridge_refused_at": "2026-09-03T06:00:51.992Z",
+          "decision": "REFUSED",
+          "issues": [
+            "successor_action_advance:report_invalid"
+          ],
+          "report_sha256": "3a434f2f6544e9845879282ed6853e503675c925355e277c147d34701cac7283",
+          "status": "BLOCKED",
+          "stop_issue": "native_controller:terminal_state_required"
+        },
+        "grants": {
+          "completed_first_continuation": {
+            "action_id": "issue94-worker-start-f44e444ea9baa07266d09a57",
+            "action_sha256": "dd0f8056ecbcc13ee5e6436ac6c767481cb4e18f89c009dd69721cbdf5ce82d0",
+            "posttool_report_sha256": "089d39110a9bf9414b1a55f035a84f807487e363054c9514abdc6dddaf536486",
+            "pretool_report_sha256": "095b91334784cc3d156ff737af68d4181e6b8ca554f3ae751a0bc56aee865a87",
+            "result_binding_sha256": "e72faf5d9e7967ed726c9961139d0f1061fdfd6c84cd1151aa8ebc9c77de0296",
+            "result_sha256": "df015ddf22041195b00879b6375dc538a31910b9563acdfc69f2fe64ed556e8c",
+            "state": "POST_OBSERVED",
+            "tool_input_sha256": "572f763f69a1beadd760bbb44d13b2f957f3cb3f301cbd7e588d122711b5b233",
+            "tool_name": "multi_agent_v1__send_input",
+            "tool_use_id": "call_WfKkld4hZYGGzIatbws0NxLO"
+          },
+          "pending_second_continuation": {
+            "action_id": "native-d5cc9c351a37eb91abf2eb30ad88d153",
+            "action_sha256": "9c094ee406c4d1af27e0254e10a434be3e96fae83d9a4883fdbf98d1d5f0ad88",
+            "state": "AUTHORIZED",
+            "tool_input_sha256": "a43c0fa4c8a4d6ed5b0e3d3bd7aa454a88e932184ae9eabebcd5483e8d1d2625",
+            "tool_name": "multi_agent_v1__send_input"
+          }
+        },
+        "patch_accepted": false,
+        "protected_patch_sha256": "8fa0988817be94160412bd6acaaaa1795c48e1d0ce2b4dcbe71d0c927a97594d",
+        "workers": {
+          "spec": {
+            "acknowledgement_observed": true,
+            "substantive_continuation_delivered": true,
+            "typed_result_present": true
+          },
+          "standards": {
+            "acknowledgement_observed": true,
+            "substantive_continuation_delivered": false,
+            "typed_result_present": false
+          }
+        }
+      },
+      "failure": {
+        "code": "successor_action_advance:report_invalid",
+        "code_kind": "error_code",
+        "stage": "post_first_continuation_bridge_validation"
+      },
+      "generation": "0.1.0+codex.20260903054022",
+      "normalized": {
+        "choices": [
+          {
+            "target": "shared"
+          },
+          {
+            "target": "spec"
+          },
+          {
+            "target": "standards"
+          },
+          {
+            "lane": "controller",
+            "outcome": "accepted",
+            "stage": "activate",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "grant.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "spawn.spec",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "grant.standards",
+            "variant": "evidence"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "spawn.standards",
+            "variant": "evidence"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "ack",
+            "variant": "SUCCESS"
+          },
+          {
+            "lane": "standards",
+            "outcome": "accepted",
+            "stage": "ack",
+            "variant": "SUCCESS"
+          },
+          {
+            "lane": "spec",
+            "outcome": "accepted",
+            "stage": "continue.spec",
+            "variant": "direct"
+          },
+          {
+            "lane": "standards",
+            "outcome": "not_dispatched",
+            "stage": "continue.standards",
+            "variant": "evidence"
+          }
+        ],
+        "mapping": "lc-trans:cycle-36:continue.standards.standards.not_dispatched.evidence",
+        "mode": "not_dispatched",
+        "rationale": "The first continuation has a typed result; the second authorized continuation is observed as not dispatched.",
+        "stage": "continue.standards"
+      },
+      "observations": [
+        {
+          "id": "first_continuation_post_observed_typed_spec_result",
+          "ordinal": 1
+        },
+        {
+          "id": "second_continuation_authorized_not_dispatched",
+          "ordinal": 2
+        },
+        {
+          "id": "bridge_report_refused",
+          "ordinal": 3
+        }
+      ],
+      "retry_same_generation_permitted": false
+    }
+  ],
+  "schema": "orch-dork/lifecycle-historical-corpus/v1",
+  "source_inventory_sha256": "4c3e5a557d4aca9027d588d9cb1f2bb5a49e4e9704f6b7f7a86382419820e1cd"
+}

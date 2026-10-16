@@ -1,0 +1,29 @@
+{
+  "name": "orch-dork",
+  "version": "0.1.0+codex.20261015223833",
+  "description": "Coordinate decomposable Codex work with frozen plans and explicit advisory versus governed evidence.",
+  "author": {
+    "name": "clawton-sub"
+  },
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "delegation",
+    "orchestration",
+    "observability",
+    "policy"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Orch Dork",
+    "shortDescription": "Observable subagent orchestration",
+    "longDescription": "Orch Dork classifies work, freezes bounded delegation plans, coordinates disjoint subagents, and validates submitted traces. Hard completion claims require the separately qualified governed controller and independent terminal evidence.",
+    "developerName": "clawton-sub",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "defaultPrompt": "Use Orch Dork to coordinate this task with observable subagents."
+  },
+  "mcpServers": "./.mcp.json"
+}

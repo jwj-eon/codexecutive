@@ -1,0 +1,164 @@
+{
+  "campaigns": [
+    {
+      "auxiliary_files": [
+        {
+          "name": "AUTHORITY.txt",
+          "sha256": "92ec1177c9c306a738bc3a79c7ced54b84f1f68a967fa6ff316d1c16fdfa1ecd"
+        }
+      ],
+      "campaign_id": "issue111-stage1-pilot-v4",
+      "campaign_sha256": "56b339bbba696cadeac8737caf3531b6e01ed3e2860077c9a346bdf5d268aad1",
+      "canonical_file": {
+        "name": "campaign.jsonl",
+        "sha256": "c8e653f0c93de7ec7f85494c5ee54d511e7db10942a3157bd21ac9ade54be882"
+      },
+      "directory": "issue111-stage1-pilot-v4",
+      "expected_records": null,
+      "expected_state": "INCOMPLETE",
+      "grant_sha256": "d235dda7d61b55763e388b46e7c57c4905c5e240dc103a721f43e4abd23a0ce1",
+      "shard_files": {
+        "contract_audit": {
+          "name": "contract_audit.jsonl",
+          "sha256": "38ac9cba5a4aed27a8dc4d34880baaa13fd8b7a092ad7be0838bd9f24d257c85"
+        },
+        "dependency_graph": {
+          "name": "dependency_graph.jsonl",
+          "sha256": "7ba036641ecf594e8712bd3549d6009fd181600272abbc5360d57fa05a144131"
+        },
+        "evidence_extraction": {
+          "name": "evidence_extraction.jsonl",
+          "sha256": "e8151f91cada49178d86e7afa793b5c440c49d68a061a5090b9b6c2253f4ce72"
+        }
+      }
+    },
+    {
+      "auxiliary_files": [
+        {
+          "name": "AUTHORITY.txt",
+          "sha256": "f4239fc21724fd7e22b81fcec56060496cd8d9978a00e77a2c30a0328693a39c"
+        }
+      ],
+      "campaign_id": "issue111-stage1-pilot-v5",
+      "campaign_sha256": "64e9fc529c73d8bfe0e6925951d7327846ddeb85e421de348698ea4dcad5b55b",
+      "canonical_file": {
+        "name": "campaign.jsonl",
+        "sha256": "1b2f86f4a3112e62409ae80d404711fd204f267d909c7d350124b52194095fb2"
+      },
+      "directory": "issue111-stage1-pilot-v5",
+      "expected_records": null,
+      "expected_state": "INCOMPLETE_FAILURE",
+      "grant_sha256": "780d7a615368d5fdd26a45ddccce6e4013a2a598be4cd164272c51c29fb9ad20",
+      "shard_files": {
+        "contract_audit": {
+          "name": "contract_audit.jsonl",
+          "sha256": "3e1dd4c9fdaabc19742656905ed8c44d68300451b8b5b2370095bc4461824842"
+        },
+        "dependency_graph": {
+          "name": "dependency_graph.jsonl",
+          "sha256": "9fa24836aca0abd894c06d2f09f95ac75307ec8d9d43b4a06b2bc3c7b2521d67"
+        },
+        "evidence_extraction": {
+          "name": "evidence_extraction.jsonl",
+          "sha256": "52222ff27be9cdd71a3e99c8f159e63b692ee17da55535f9b54fed0afe289994"
+        }
+      }
+    },
+    {
+      "auxiliary_files": [
+        {
+          "name": "AUTHORITY.txt",
+          "sha256": "fb86c5e5b66508b8b103e65c5eb3565a95c4030bb3210891e63bfd375062f2de"
+        }
+      ],
+      "campaign_id": "issue111-stage1-pilot-v6",
+      "campaign_sha256": "9711e736c8ba629edff4e19f52a7bd452fb618f1be1da623a0b68de41b338d29",
+      "canonical_file": {
+        "name": "campaign.jsonl",
+        "sha256": "fa1400d742a15469c24a5e14af4df4e664e012f800f09c4be98d7df0640698b4"
+      },
+      "directory": "issue111-stage1-pilot-v6",
+      "expected_records": null,
+      "expected_state": "INCOMPLETE_FAILURE",
+      "grant_sha256": "10b5d12c0d1e1de88579e085f54fa474d049ca1da4c1122b9549c7ed6bcbf0e2",
+      "shard_files": {
+        "contract_audit": {
+          "name": "contract_audit.jsonl",
+          "sha256": "355852d428c4f026dd96786e5e64c8e14cf849207d51ac8a8e5c82954163f2a3"
+        },
+        "dependency_graph": {
+          "name": "dependency_graph.jsonl",
+          "sha256": "55811dae81086f746a5bfea47ac65e58e9493407301f93180569f4b9105affcd"
+        },
+        "evidence_extraction": {
+          "name": "evidence_extraction.jsonl",
+          "sha256": "c946475401905ddeea649faaf75335b2632aadfe637d97ac84f0b7e53a8d4514"
+        }
+      }
+    },
+    {
+      "auxiliary_files": [
+        {
+          "name": "AUTHORITY.txt",
+          "sha256": "07a1598e50f67968352e1d944d75102daa004058974e82e3bbc36662a1ca764b"
+        },
+        {
+          "name": "creation-intents.log",
+          "sha256": "d3ee688e1b257a70e60dc5fc831724335e49210cc1889aca0c087f28372dc758"
+        },
+        {
+          "name": "custody-receipts.jsonl",
+          "sha256": "83ab978ab16cba3eea23cf28cf2bd54ee4461a8649c245ad4df8b052cedbb0b5"
+        },
+        {
+          "name": "wave-outcomes.jsonl",
+          "sha256": "fc6a2a4ebb08b9b563cade82b2ea2c08ef2d00d4891096eb1463b412f3cdb3b4"
+        }
+      ],
+      "campaign_id": "issue111-stage1-pilot-v7",
+      "campaign_sha256": "4960f5f7d042608f34f466e760ebff47f22d09c8b98450705f0463e7e784f0dc",
+      "canonical_file": {
+        "name": "campaign.jsonl",
+        "sha256": "ec4daed816caf4b7372c8a7c9098245b6a03c7e425f695ad850c7e480f8bbb2f"
+      },
+      "directory": "issue111-stage1-pilot-v7",
+      "expected_records": {
+        "completions": [
+          "ba41f7c9ab7cb6e6608d8a3cc17ecb6fdc34855b5b8ca90d19b9fb8fe6dc6050",
+          "f3eb551b341c0a859b1759dda9a9e5a110a7a82f79471a40e755e4f5913e8618",
+          "6baf756d33934ff82f0927a3be817a8f2813cee02df90a2887ce19f10261bab5"
+        ],
+        "registration": "aadada596f7597f6a1153d952ee354cc56b36b690509fbe1cbfd2ec8d63129bd",
+        "replay_plan": "dd718874b020588d05973368638aa8c43339a9f236281ef3bf009a42a8b70c77",
+        "reservations": [
+          "32b7b5947906958897eb8cba1cfdcff4f3b73358423378ea21b68bd6dd1aaf46",
+          "cda5ed4dd32bfce0e5ed3fdf326acb23b968d2e2b78d0c14a3cd9d5239587d35",
+          "b92a4742b1cc5ec2b9197b1f4dcafa6409fbf4fde75cf418ce5a7e0ae27f0610",
+          "73b34cc29232a13041d56325271d076bb43d7b96a35ed219e0f8f7f1814bd6f5"
+        ],
+        "start": "d3f2b474f5c8ed29e1f731bc839adf825f081bd23cf6f2fef420055c44a67889",
+        "terminal": "9da3a6bbfd821bfd27be902485fffeeec26a101fa795b9bba68c40b5626ec16e"
+      },
+      "expected_state": "INCOMPLETE_FAILURE",
+      "grant_sha256": "0ce247a2907167649e7a86aac2e38e84dc35216af396c393306ccf5aab14512e",
+      "shard_files": {
+        "evidence_extraction": {
+          "name": "evidence_extraction.jsonl",
+          "sha256": "a1b3c1de6bd259b8a7526e699aa958875b076100163db16f224b8f48ea4ef6ad"
+        }
+      }
+    }
+  ],
+  "schema": "orch-dork/issue111-v8-history-spec/v1",
+  "spec_sha256": "d473605226c27c5872faf4019397c521f5456479b11d5520186a28a39f2e0b25",
+  "v7_failure": {
+    "campaign_id": "issue111-stage1-pilot-v7",
+    "failure_record_sha256": "4a9c63391e659f4bc335039c3bd547a3879568ab2bbfd8abbd3272180645a967",
+    "file": {
+      "name": "CONTRACT_FAILURE_75b245f48525.json",
+      "sha256": "759203d0e408f0f944767dfcfc2ad864c39942471c504f40909a8c25c23b3fa6"
+    },
+    "request_sha256": "75b245f4852586101da29cc63b6dcc5642d7ed936f0600628d3f4cf2b0dd2d5d",
+    "reservation_record_sha256": "73b34cc29232a13041d56325271d076bb43d7b96a35ed219e0f8f7f1814bd6f5"
+  }
+}

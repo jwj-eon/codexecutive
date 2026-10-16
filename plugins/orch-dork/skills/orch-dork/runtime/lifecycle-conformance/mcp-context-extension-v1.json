@@ -1,0 +1,918 @@
+{
+  "cases": [
+    {
+      "expected_canonical": {
+        "appContext": null,
+        "arguments": {
+          "marker": "review-fixture"
+        },
+        "durationMs": 62,
+        "error": null,
+        "id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "pluginId": null,
+        "readOnlyHint": null,
+        "result": {
+          "_meta": null,
+          "content": [
+            {
+              "text": "fixture stored",
+              "type": "text"
+            }
+          ],
+          "structuredContent": null
+        },
+        "server": "semantic_probe",
+        "status": "completed",
+        "tool": "submit_review",
+        "type": "mcpToolCall"
+      },
+      "expected_disposition": "ACCEPTED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "completed-dict",
+      "kind": "completed_mcp_tool_call",
+      "origin": "captured_whole_item",
+      "parent_case": null,
+      "raw_input": {
+        "appContext": null,
+        "arguments": {
+          "marker": "review-fixture"
+        },
+        "durationMs": 62,
+        "error": null,
+        "id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "pluginId": null,
+        "readOnlyHint": null,
+        "result": {
+          "_meta": null,
+          "content": [
+            {
+              "text": "fixture stored",
+              "type": "text"
+            }
+          ],
+          "structuredContent": null
+        },
+        "server": "semantic_probe",
+        "status": "completed",
+        "tool": "submit_review",
+        "type": "mcpToolCall"
+      },
+      "raw_input_sha256": "3d41e8ceb670a7eedbbc672bca3fdfe16fe9254feb72fa6eeb36b8dca40b999a",
+      "raw_output": {
+        "decision": "ACCEPTED",
+        "value": {
+          "appContext": null,
+          "arguments": {
+            "marker": "review-fixture"
+          },
+          "durationMs": 62,
+          "error": null,
+          "id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+          "pluginId": null,
+          "readOnlyHint": null,
+          "result": {
+            "_meta": null,
+            "content": [
+              {
+                "text": "fixture stored",
+                "type": "text"
+              }
+            ],
+            "structuredContent": null
+          },
+          "server": "semantic_probe",
+          "status": "completed",
+          "tool": "submit_review",
+          "type": "mcpToolCall"
+        }
+      },
+      "raw_output_sha256": "f212375c8c7abb7c2dca4c2fd1691e46bc37daaf95bcbd3be69b8aee6eea7a22"
+    },
+    {
+      "expected_canonical": {
+        "appContext": null,
+        "arguments": {
+          "marker": "review-fixture"
+        },
+        "durationMs": 62,
+        "error": null,
+        "id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "pluginId": null,
+        "readOnlyHint": null,
+        "result": {
+          "_meta": null,
+          "content": [
+            {
+              "text": "fixture stored",
+              "type": "text"
+            }
+          ],
+          "structuredContent": null
+        },
+        "server": "semantic_probe",
+        "status": "completed",
+        "tool": "submit_review",
+        "type": "mcpToolCall"
+      },
+      "expected_disposition": "ACCEPTED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "completed-json",
+      "kind": "completed_mcp_tool_call",
+      "origin": "fixture_serialization",
+      "parent_case": "completed-dict",
+      "raw_input": "{\"appContext\":null,\"arguments\":{\"marker\":\"review-fixture\"},\"durationMs\":62,\"error\":null,\"id\":\"exec-d54433fc-3797-47df-8814-7b7dde46323e\",\"pluginId\":null,\"readOnlyHint\":null,\"result\":{\"_meta\":null,\"content\":[{\"text\":\"fixture stored\",\"type\":\"text\"}],\"structuredContent\":null},\"server\":\"semantic_probe\",\"status\":\"completed\",\"tool\":\"submit_review\",\"type\":\"mcpToolCall\"}",
+      "raw_input_sha256": "3e5829ef4f38b87f5ed07562681121c6c81ab985887c863004615f2ec77ce47a",
+      "raw_output": {
+        "decision": "ACCEPTED",
+        "value": {
+          "appContext": null,
+          "arguments": {
+            "marker": "review-fixture"
+          },
+          "durationMs": 62,
+          "error": null,
+          "id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+          "pluginId": null,
+          "readOnlyHint": null,
+          "result": {
+            "_meta": null,
+            "content": [
+              {
+                "text": "fixture stored",
+                "type": "text"
+              }
+            ],
+            "structuredContent": null
+          },
+          "server": "semantic_probe",
+          "status": "completed",
+          "tool": "submit_review",
+          "type": "mcpToolCall"
+        }
+      },
+      "raw_output_sha256": "f212375c8c7abb7c2dca4c2fd1691e46bc37daaf95bcbd3be69b8aee6eea7a22"
+    },
+    {
+      "expected_canonical": {
+        "effort": "xhigh",
+        "model": "gpt-5.6-sol",
+        "schema": "orch-dork/host-mcp-call-context/v1",
+        "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "source_meta_sha256": "5d1bdfd5611c837f887f50359e2f6495f12db94ad653b986b909cf2567030aea",
+        "task_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "tool_call_id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+        "turn_started_at_unix_ms": 1788686877198
+      },
+      "expected_disposition": "ACCEPTED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "metadata-dict",
+      "kind": "mcp_call_context",
+      "origin": "sanitized_capture",
+      "parent_case": null,
+      "raw_input": {
+        "callId": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "itemId": "fc_fixture",
+        "progressToken": 1,
+        "threadId": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "x-codex-turn-metadata": {
+          "auto_review_enabled": false,
+          "model": "gpt-5.6-sol",
+          "node_repl_auto_review_required": false,
+          "node_repl_disabled": false,
+          "reasoning_effort": "xhigh",
+          "sandbox": "none",
+          "sandbox_mode": "danger-full-access",
+          "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "thread_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+          "turn_started_at_unix_ms": 1788686877198,
+          "workspaces": {
+            "/fixture/owned-workspace": {
+              "has_changes": false
+            }
+          }
+        }
+      },
+      "raw_input_sha256": "5d1bdfd5611c837f887f50359e2f6495f12db94ad653b986b909cf2567030aea",
+      "raw_output": {
+        "decision": "ACCEPTED",
+        "value": {
+          "effort": "xhigh",
+          "model": "gpt-5.6-sol",
+          "schema": "orch-dork/host-mcp-call-context/v1",
+          "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "source_meta_sha256": "5d1bdfd5611c837f887f50359e2f6495f12db94ad653b986b909cf2567030aea",
+          "task_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "tool_call_id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+          "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+          "turn_started_at_unix_ms": 1788686877198
+        }
+      },
+      "raw_output_sha256": "915ef4a946296e7fe4019d44c01b5c42bf6b78740c9ecb44d8bab03d012b6d6b"
+    },
+    {
+      "expected_canonical": {
+        "effort": "xhigh",
+        "model": "gpt-5.6-sol",
+        "schema": "orch-dork/host-mcp-call-context/v1",
+        "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "source_meta_sha256": "5d1bdfd5611c837f887f50359e2f6495f12db94ad653b986b909cf2567030aea",
+        "task_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "tool_call_id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+        "turn_started_at_unix_ms": 1788686877198
+      },
+      "expected_disposition": "ACCEPTED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "metadata-json",
+      "kind": "mcp_call_context",
+      "origin": "fixture_serialization",
+      "parent_case": "metadata-dict",
+      "raw_input": "{\"callId\":\"exec-d54433fc-3797-47df-8814-7b7dde46323e\",\"itemId\":\"fc_fixture\",\"progressToken\":1,\"threadId\":\"01a0760b-c202-7322-894a-f2a3ea29b072\",\"x-codex-turn-metadata\":{\"auto_review_enabled\":false,\"model\":\"gpt-5.6-sol\",\"node_repl_auto_review_required\":false,\"node_repl_disabled\":false,\"reasoning_effort\":\"xhigh\",\"sandbox\":\"none\",\"sandbox_mode\":\"danger-full-access\",\"session_id\":\"01a0760b-c202-7322-894a-f2a3ea29b072\",\"thread_id\":\"01a0760b-c202-7322-894a-f2a3ea29b072\",\"turn_id\":\"01a0760b-c20d-7101-9f13-864b6a54b33e\",\"turn_started_at_unix_ms\":1788686877198,\"workspaces\":{\"/fixture/owned-workspace\":{\"has_changes\":false}}}}",
+      "raw_input_sha256": "6d172cd9420d0a7bf7175a500cc84b02a387e62d1e557a1767b07f66e87d9f67",
+      "raw_output": {
+        "decision": "ACCEPTED",
+        "value": {
+          "effort": "xhigh",
+          "model": "gpt-5.6-sol",
+          "schema": "orch-dork/host-mcp-call-context/v1",
+          "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "source_meta_sha256": "5d1bdfd5611c837f887f50359e2f6495f12db94ad653b986b909cf2567030aea",
+          "task_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "tool_call_id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+          "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+          "turn_started_at_unix_ms": 1788686877198
+        }
+      },
+      "raw_output_sha256": "915ef4a946296e7fe4019d44c01b5c42bf6b78740c9ecb44d8bab03d012b6d6b"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "completed-bool-duration",
+      "kind": "completed_mcp_tool_call",
+      "origin": "synthetic_mutation",
+      "parent_case": "completed-dict",
+      "raw_input": {
+        "appContext": null,
+        "arguments": {
+          "marker": "review-fixture"
+        },
+        "durationMs": true,
+        "error": null,
+        "id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "pluginId": null,
+        "readOnlyHint": null,
+        "result": {
+          "_meta": null,
+          "content": [
+            {
+              "text": "fixture stored",
+              "type": "text"
+            }
+          ],
+          "structuredContent": null
+        },
+        "server": "semantic_probe",
+        "status": "completed",
+        "tool": "submit_review",
+        "type": "mcpToolCall"
+      },
+      "raw_input_sha256": "034f6b587bf1a1d909a6f5ccea5ae6ba2f7857ec5d51fc96ebcb843b176257f5",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:mcp_tool_call"
+      },
+      "raw_output_sha256": "6038c484bf7bb8e196fac11bfde392ac59a4c51243b66996abf182adf5555ae4"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "completed-inflight",
+      "kind": "completed_mcp_tool_call",
+      "origin": "synthetic_mutation",
+      "parent_case": "completed-dict",
+      "raw_input": {
+        "appContext": null,
+        "arguments": {
+          "marker": "review-fixture"
+        },
+        "durationMs": 62,
+        "error": null,
+        "id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "pluginId": null,
+        "readOnlyHint": null,
+        "result": {
+          "_meta": null,
+          "content": [
+            {
+              "text": "fixture stored",
+              "type": "text"
+            }
+          ],
+          "structuredContent": null
+        },
+        "server": "semantic_probe",
+        "status": "inProgress",
+        "tool": "submit_review",
+        "type": "mcpToolCall"
+      },
+      "raw_input_sha256": "69dc62b86ea6bed5797c200e9b3bb7d551a264fd8832c1cc1ae1f0927ac07c12",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:mcp_tool_call"
+      },
+      "raw_output_sha256": "6038c484bf7bb8e196fac11bfde392ac59a4c51243b66996abf182adf5555ae4"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "completed-unknown-field",
+      "kind": "completed_mcp_tool_call",
+      "origin": "synthetic_mutation",
+      "parent_case": "completed-dict",
+      "raw_input": {
+        "appContext": null,
+        "arguments": {
+          "marker": "review-fixture"
+        },
+        "durationMs": 62,
+        "error": null,
+        "id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "pluginId": null,
+        "readOnlyHint": null,
+        "result": {
+          "_meta": null,
+          "content": [
+            {
+              "text": "fixture stored",
+              "type": "text"
+            }
+          ],
+          "structuredContent": null
+        },
+        "server": "semantic_probe",
+        "status": "completed",
+        "tool": "submit_review",
+        "type": "mcpToolCall",
+        "unregistered": true
+      },
+      "raw_input_sha256": "2b3d1cb85a32f7f30599de3ca0ba3f4c0622da15ca270fe4a580937e4bdba9ac",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:observation_fields"
+      },
+      "raw_output_sha256": "a007b2f4b37b585a4e691ae76e5c333bb030f396ae1f9d78e871dc427643d369"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "completed-missing-result",
+      "kind": "completed_mcp_tool_call",
+      "origin": "synthetic_mutation",
+      "parent_case": "completed-dict",
+      "raw_input": {
+        "appContext": null,
+        "arguments": {
+          "marker": "review-fixture"
+        },
+        "durationMs": 62,
+        "error": null,
+        "id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "pluginId": null,
+        "readOnlyHint": null,
+        "server": "semantic_probe",
+        "status": "completed",
+        "tool": "submit_review",
+        "type": "mcpToolCall"
+      },
+      "raw_input_sha256": "b0427f3b7233e9c4432440c54b6b7546562b12d8e952aa893d090ed5068d980f",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:observation_fields"
+      },
+      "raw_output_sha256": "a007b2f4b37b585a4e691ae76e5c333bb030f396ae1f9d78e871dc427643d369"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "completed-wrong-result-content",
+      "kind": "completed_mcp_tool_call",
+      "origin": "synthetic_mutation",
+      "parent_case": "completed-dict",
+      "raw_input": {
+        "appContext": null,
+        "arguments": {
+          "marker": "review-fixture"
+        },
+        "durationMs": 62,
+        "error": null,
+        "id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "pluginId": null,
+        "readOnlyHint": null,
+        "result": {
+          "_meta": null,
+          "content": "prose",
+          "structuredContent": null
+        },
+        "server": "semantic_probe",
+        "status": "completed",
+        "tool": "submit_review",
+        "type": "mcpToolCall"
+      },
+      "raw_input_sha256": "3585489aa2b12ff8be9b5ae992c1afa18b2ef0d0ec186db62cbc1da4b6a03b7f",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:mcp_tool_call_result"
+      },
+      "raw_output_sha256": "8cff0e082c492968664558ef80d645d4ee65ccceead11041c7407e3355305eba"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "completed-error-outcome",
+      "kind": "completed_mcp_tool_call",
+      "origin": "synthetic_mutation",
+      "parent_case": "completed-dict",
+      "raw_input": {
+        "appContext": null,
+        "arguments": {
+          "marker": "review-fixture"
+        },
+        "durationMs": 62,
+        "error": {
+          "message": "fixture error"
+        },
+        "id": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "pluginId": null,
+        "readOnlyHint": null,
+        "result": {
+          "_meta": null,
+          "content": [
+            {
+              "text": "fixture stored",
+              "type": "text"
+            }
+          ],
+          "structuredContent": null
+        },
+        "server": "semantic_probe",
+        "status": "completed",
+        "tool": "submit_review",
+        "type": "mcpToolCall"
+      },
+      "raw_input_sha256": "78f3b8940b7de4c9f9b1a413e76eb16f0658bb7cad51e1077463270b79f38c0f",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:mcp_tool_call"
+      },
+      "raw_output_sha256": "6038c484bf7bb8e196fac11bfde392ac59a4c51243b66996abf182adf5555ae4"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "metadata-wrong-thread",
+      "kind": "mcp_call_context",
+      "origin": "synthetic_mutation",
+      "parent_case": "metadata-dict",
+      "raw_input": {
+        "callId": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "itemId": "fc_fixture",
+        "progressToken": 1,
+        "threadId": "foreign-thread",
+        "x-codex-turn-metadata": {
+          "auto_review_enabled": false,
+          "model": "gpt-5.6-sol",
+          "node_repl_auto_review_required": false,
+          "node_repl_disabled": false,
+          "reasoning_effort": "xhigh",
+          "sandbox": "none",
+          "sandbox_mode": "danger-full-access",
+          "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "thread_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+          "turn_started_at_unix_ms": 1788686877198,
+          "workspaces": {
+            "/fixture/owned-workspace": {
+              "has_changes": false
+            }
+          }
+        }
+      },
+      "raw_input_sha256": "d0cf2f2adc4f5b85dc63612e1bab0d9eaa9a78bc02f78b168afef4cb0b119ffc",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:mcp_call_context"
+      },
+      "raw_output_sha256": "afd91a60b62efc75a372b3b71e330bb30776d99fff9bf31d60d5c694e32acbf9"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "metadata-bool-progress",
+      "kind": "mcp_call_context",
+      "origin": "synthetic_mutation",
+      "parent_case": "metadata-dict",
+      "raw_input": {
+        "callId": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "itemId": "fc_fixture",
+        "progressToken": true,
+        "threadId": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "x-codex-turn-metadata": {
+          "auto_review_enabled": false,
+          "model": "gpt-5.6-sol",
+          "node_repl_auto_review_required": false,
+          "node_repl_disabled": false,
+          "reasoning_effort": "xhigh",
+          "sandbox": "none",
+          "sandbox_mode": "danger-full-access",
+          "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "thread_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+          "turn_started_at_unix_ms": 1788686877198,
+          "workspaces": {
+            "/fixture/owned-workspace": {
+              "has_changes": false
+            }
+          }
+        }
+      },
+      "raw_input_sha256": "eb822717ba8f4ba0fa35293c8a2c3deab19cc285f0618b3f6bb81688332970ee",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:mcp_call_context"
+      },
+      "raw_output_sha256": "afd91a60b62efc75a372b3b71e330bb30776d99fff9bf31d60d5c694e32acbf9"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "metadata-bool-start-time",
+      "kind": "mcp_call_context",
+      "origin": "synthetic_mutation",
+      "parent_case": "metadata-dict",
+      "raw_input": {
+        "callId": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "itemId": "fc_fixture",
+        "progressToken": 1,
+        "threadId": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "x-codex-turn-metadata": {
+          "auto_review_enabled": false,
+          "model": "gpt-5.6-sol",
+          "node_repl_auto_review_required": false,
+          "node_repl_disabled": false,
+          "reasoning_effort": "xhigh",
+          "sandbox": "none",
+          "sandbox_mode": "danger-full-access",
+          "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "thread_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+          "turn_started_at_unix_ms": true,
+          "workspaces": {
+            "/fixture/owned-workspace": {
+              "has_changes": false
+            }
+          }
+        }
+      },
+      "raw_input_sha256": "9851655c066f7e494b31c02766e79536f8a4305d6f9f3b006112c927d7540c16",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:mcp_call_context"
+      },
+      "raw_output_sha256": "afd91a60b62efc75a372b3b71e330bb30776d99fff9bf31d60d5c694e32acbf9"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "metadata-missing-turn",
+      "kind": "mcp_call_context",
+      "origin": "synthetic_mutation",
+      "parent_case": "metadata-dict",
+      "raw_input": {
+        "callId": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "itemId": "fc_fixture",
+        "progressToken": 1,
+        "threadId": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "x-codex-turn-metadata": {
+          "auto_review_enabled": false,
+          "model": "gpt-5.6-sol",
+          "node_repl_auto_review_required": false,
+          "node_repl_disabled": false,
+          "reasoning_effort": "xhigh",
+          "sandbox": "none",
+          "sandbox_mode": "danger-full-access",
+          "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "thread_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "turn_started_at_unix_ms": 1788686877198,
+          "workspaces": {
+            "/fixture/owned-workspace": {
+              "has_changes": false
+            }
+          }
+        }
+      },
+      "raw_input_sha256": "aae222cdfb4d6e65bd35d08bc1ab42f4e07f09804d1df993eb2031028a38a7e2",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:observation_fields"
+      },
+      "raw_output_sha256": "a007b2f4b37b585a4e691ae76e5c333bb030f396ae1f9d78e871dc427643d369"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "metadata-relative-workspace",
+      "kind": "mcp_call_context",
+      "origin": "synthetic_mutation",
+      "parent_case": "metadata-dict",
+      "raw_input": {
+        "callId": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "itemId": "fc_fixture",
+        "progressToken": 1,
+        "threadId": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "x-codex-turn-metadata": {
+          "auto_review_enabled": false,
+          "model": "gpt-5.6-sol",
+          "node_repl_auto_review_required": false,
+          "node_repl_disabled": false,
+          "reasoning_effort": "xhigh",
+          "sandbox": "none",
+          "sandbox_mode": "danger-full-access",
+          "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "thread_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+          "turn_started_at_unix_ms": 1788686877198,
+          "workspaces": {
+            "relative": {
+              "has_changes": false
+            }
+          }
+        }
+      },
+      "raw_input_sha256": "aae7e7e2e193d1a8983255ebf785156e8fd7ef8428755e36ad6c313370ec9203",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:mcp_call_context"
+      },
+      "raw_output_sha256": "afd91a60b62efc75a372b3b71e330bb30776d99fff9bf31d60d5c694e32acbf9"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "metadata-scalar-workspace-state",
+      "kind": "mcp_call_context",
+      "origin": "synthetic_mutation",
+      "parent_case": "metadata-dict",
+      "raw_input": {
+        "callId": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "itemId": "fc_fixture",
+        "progressToken": 1,
+        "threadId": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "x-codex-turn-metadata": {
+          "auto_review_enabled": false,
+          "model": "gpt-5.6-sol",
+          "node_repl_auto_review_required": false,
+          "node_repl_disabled": false,
+          "reasoning_effort": "xhigh",
+          "sandbox": "none",
+          "sandbox_mode": "danger-full-access",
+          "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "thread_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+          "turn_started_at_unix_ms": 1788686877198,
+          "workspaces": {
+            "/fixture/owned-workspace": {
+              "has_changes": 0
+            }
+          }
+        }
+      },
+      "raw_input_sha256": "5cfa876cadabf5a4a51753ea6f7dfdf2c218d1f8af918b13bcf3f2691fdca881",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:mcp_call_context"
+      },
+      "raw_output_sha256": "afd91a60b62efc75a372b3b71e330bb30776d99fff9bf31d60d5c694e32acbf9"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "metadata-unknown-field",
+      "kind": "mcp_call_context",
+      "origin": "synthetic_mutation",
+      "parent_case": "metadata-dict",
+      "raw_input": {
+        "callId": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "itemId": "fc_fixture",
+        "progressToken": 1,
+        "threadId": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "unregistered": true,
+        "x-codex-turn-metadata": {
+          "auto_review_enabled": false,
+          "model": "gpt-5.6-sol",
+          "node_repl_auto_review_required": false,
+          "node_repl_disabled": false,
+          "reasoning_effort": "xhigh",
+          "sandbox": "none",
+          "sandbox_mode": "danger-full-access",
+          "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "thread_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+          "turn_started_at_unix_ms": 1788686877198,
+          "workspaces": {
+            "/fixture/owned-workspace": {
+              "has_changes": false
+            }
+          }
+        }
+      },
+      "raw_input_sha256": "de1953454be06d0a2c947eeaba61a588428681e390cd0527fbc6df84f4b6a93e",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:observation_fields"
+      },
+      "raw_output_sha256": "a007b2f4b37b585a4e691ae76e5c333bb030f396ae1f9d78e871dc427643d369"
+    },
+    {
+      "expected_canonical": null,
+      "expected_disposition": "REFUSED",
+      "host_profile": {
+        "codex_cli": "0.153.4",
+        "host": "codex-desktop-functions",
+        "os": "Linux",
+        "python": "3.12.3"
+      },
+      "id": "metadata-unknown-context-field",
+      "kind": "mcp_call_context",
+      "origin": "synthetic_mutation",
+      "parent_case": "metadata-dict",
+      "raw_input": {
+        "callId": "exec-d54433fc-3797-47df-8814-7b7dde46323e",
+        "itemId": "fc_fixture",
+        "progressToken": 1,
+        "threadId": "01a0760b-c202-7322-894a-f2a3ea29b072",
+        "x-codex-turn-metadata": {
+          "auto_review_enabled": false,
+          "model": "gpt-5.6-sol",
+          "node_repl_auto_review_required": false,
+          "node_repl_disabled": false,
+          "reasoning_effort": "xhigh",
+          "sandbox": "none",
+          "sandbox_mode": "danger-full-access",
+          "session_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "thread_id": "01a0760b-c202-7322-894a-f2a3ea29b072",
+          "turn_id": "01a0760b-c20d-7101-9f13-864b6a54b33e",
+          "turn_started_at_unix_ms": 1788686877198,
+          "unregistered": true,
+          "workspaces": {
+            "/fixture/owned-workspace": {
+              "has_changes": false
+            }
+          }
+        }
+      },
+      "raw_input_sha256": "7d6140385b21a97cb63d1bcc111ba20265f8e6b1a5f72e7846bec05d997a5b77",
+      "raw_output": {
+        "decision": "REFUSED",
+        "reason": "host_adapter:observation_fields"
+      },
+      "raw_output_sha256": "a007b2f4b37b585a4e691ae76e5c333bb030f396ae1f9d78e871dc427643d369"
+    }
+  ],
+  "owner": "issue-170-host-mcp",
+  "profile": {
+    "codex_cli": "0.153.4",
+    "host": "codex-desktop-functions",
+    "os": "Linux",
+    "python": "3.12.3"
+  },
+  "provenance": {
+    "capture": "Codex0.153.4 owned local-loopback MCP metadata probe",
+    "captured_files_sha256": {
+      "execution-manifest.json": "9525f61bcfbc7305027149c1f53431e1400ab25104de84a7fa1bba97a59a0644",
+      "host-result.json": "808261e7e2cffb48aa15effe9239c8f4a017283f1c11f53f5a7f397c2d3fdfb7",
+      "native-mcp-meta.json": "bc67ea41f85c10ddc4cb27f66a7801e0eaee6c6b7748da93839413ce9a2cfcda",
+      "whole-mcp-call.json": "8959f2320bc73afaf0bcea8a43ad01fffab7998ec90eac9c69769e04081b717f"
+    },
+    "external_provider_calls": 0,
+    "metadata_selection": "/_meta",
+    "note": "Only fixture workspace key is replaced; whole captured source digests identify preserved host-local originals. Negative and serialization cases are explicitly synthetic, not historical failures.",
+    "qualification": false,
+    "sanitization": [
+      {
+        "original_value_sha256": "50ae74599f4b892a4e6c589de2de2c8ba3a70b4d51546593a7702ffea62c3e58",
+        "pointer": "/x-codex-turn-metadata/workspaces",
+        "replacement": {
+          "/fixture/owned-workspace": {
+            "has_changes": false
+          }
+        }
+      }
+    ]
+  },
+  "schema": "orch-dork/host-mcp-extension-fixture-corpus/v1",
+  "supported_kinds": [
+    "completed_mcp_tool_call",
+    "mcp_call_context"
+  ]
+}

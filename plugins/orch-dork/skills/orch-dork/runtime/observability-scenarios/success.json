@@ -1,0 +1,77 @@
+{
+  "schema": "orch-dork/observability-scenario/v1",
+  "scenario_id": "success",
+  "title": "Governed success",
+  "mode": "governed",
+  "summary": "A later independent controller binds a terminal attempt, verifies its sealed receipt, and permits the exact success claim.",
+  "disposition": {
+    "kind": "success",
+    "reason": "The externally observed attempt is bound, terminal, conformant, and fully verified.",
+    "evidence_class": "sealed",
+    "evidence_tier": "sealed-runtime",
+    "source_pointer": "runtime-observer#terminal_state",
+    "source_sha256": "880c57b267d5a6108ee23488da3a7f832454e26c0f1ee1f2e69d1fafd556857e"
+  },
+  "claims": [
+    {
+      "claim_id": "runtime-terminal",
+      "label": "Runtime terminal state",
+      "value": "completed",
+      "required": true,
+      "evidence_class": "runtime",
+      "evidence_tier": "runtime-observed",
+      "source_pointer": "runtime-observer#terminal_state",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "submitted-conformance",
+      "label": "Submitted trace conformance",
+      "value": "PASS",
+      "required": true,
+      "evidence_class": "submitted",
+      "evidence_tier": "submitted",
+      "source_pointer": "submitted-qualification#status",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "first-finisher",
+      "label": "Integrator selected from first completed lane",
+      "value": "api",
+      "required": true,
+      "evidence_class": "inferred",
+      "evidence_tier": "runtime-observed",
+      "source_pointer": "runtime-observer#integration",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "subagents-ui",
+      "label": "Human-visible Subagents panel",
+      "value": "visible",
+      "required": false,
+      "evidence_class": "ui",
+      "evidence_tier": "runtime-observed",
+      "source_pointer": "ui-observation#subagents-panel",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "receipt-seal",
+      "label": "Receipt integrity",
+      "value": "verified",
+      "required": true,
+      "evidence_class": "sealed",
+      "evidence_tier": "sealed-runtime",
+      "source_pointer": "governed-report#receipt-seal",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "orch-dork/observability-scenario/v1",
+  "scenario_id": "cancellation",
+  "title": "Cancellation with cleanup",
+  "mode": "governed",
+  "summary": "A cancellation is observed, owned processes terminate, and the history stays cancelled rather than becoming success.",
+  "disposition": {
+    "kind": "cancelled",
+    "reason": "The controller observed a cancellation trigger before completion.",
+    "evidence_class": "sealed",
+    "evidence_tier": "sealed-runtime",
+    "source_pointer": "recovery-report#terminal-trigger",
+    "source_sha256": null
+  },
+  "claims": [
+    {
+      "claim_id": "cancel-trigger",
+      "label": "Cancellation trigger",
+      "value": "cancel.requested",
+      "required": true,
+      "evidence_class": "runtime",
+      "evidence_tier": "runtime-observed",
+      "source_pointer": "recovery-events#cancel-requested",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "cleanup",
+      "label": "Cleanup status",
+      "value": "complete",
+      "required": true,
+      "evidence_class": "sealed",
+      "evidence_tier": "sealed-runtime",
+      "source_pointer": "recovery-report#cleanup",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    }
+  ]
+}

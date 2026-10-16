@@ -1,0 +1,41 @@
+{
+  "schema": "orch-dork/observability-scenario/v1",
+  "scenario_id": "budget-exhaustion",
+  "title": "Budget exhaustion before start",
+  "mode": "governed",
+  "summary": "A hard hosted-call ceiling is exhausted, so the next node remains not started.",
+  "disposition": {
+    "kind": "blocked",
+    "reason": "The candidate reservation exceeds the exact hard hosted-call limit.",
+    "evidence_class": "sealed",
+    "evidence_tier": "sealed-runtime",
+    "source_pointer": "budget-report#decision",
+    "source_sha256": null
+  },
+  "claims": [
+    {
+      "claim_id": "hosted-calls-remaining",
+      "label": "Hosted calls remaining",
+      "value": 0,
+      "required": true,
+      "evidence_class": "runtime",
+      "evidence_tier": "runtime-observed",
+      "source_pointer": "budget-ledger#hosted-calls",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "candidate-state",
+      "label": "Candidate node state",
+      "value": "NOT_STARTED",
+      "required": true,
+      "evidence_class": "sealed",
+      "evidence_tier": "sealed-runtime",
+      "source_pointer": "budget-report#candidate-state",
+      "source_sha256": null,
+      "unknown_reason": null,
+      "contradictory_values": null
+    }
+  ]
+}

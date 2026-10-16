@@ -1,0 +1,77 @@
+{
+  "schema": "orch-dork/observability-scenario/v1",
+  "scenario_id": "issue17-timeout",
+  "title": "Issue 17 preserved canary timeout",
+  "mode": "governed",
+  "summary": "The one-shot canary reached its hard cutoff. Correctness results remain visible, lifecycle qualification failed, usage is unknown, cleanup completed, and the grant is nonreusable.",
+  "disposition": {
+    "kind": "failure",
+    "reason": "The canary exceeded its 600-second task cutoff and cannot be retried or relabeled.",
+    "evidence_class": "sealed",
+    "evidence_tier": "sealed-runtime",
+    "source_pointer": "issue17-terminal#status",
+    "source_sha256": "76234a291680bc3f92c3b62f15e7151cad6c0d68ffb94888dafe667dab0dda08"
+  },
+  "claims": [
+    {
+      "claim_id": "canary-cutoff",
+      "label": "Canary lifecycle result",
+      "value": "TASK_CUTOFF",
+      "required": true,
+      "evidence_class": "runtime",
+      "evidence_tier": "sealed-runtime",
+      "source_pointer": "issue17-terminal#canary",
+      "source_sha256": "76234a291680bc3f92c3b62f15e7151cad6c0d68ffb94888dafe667dab0dda08",
+      "unknown_reason": null,
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "correctness",
+      "label": "Candidate correctness",
+      "value": {"public": "20/20", "hidden": "100/100"},
+      "required": false,
+      "evidence_class": "sealed",
+      "evidence_tier": "sealed-runtime",
+      "source_pointer": "issue17-terminal#canary/correctness",
+      "source_sha256": "76234a291680bc3f92c3b62f15e7151cad6c0d68ffb94888dafe667dab0dda08",
+      "unknown_reason": null,
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "exact-usage",
+      "label": "Exact attempt usage",
+      "value": null,
+      "required": true,
+      "evidence_class": "unknown",
+      "evidence_tier": "sealed-runtime",
+      "source_pointer": "issue17-recovery#persisted_usage",
+      "source_sha256": "760238e3bdf15fa2de8bd7a69781959afbcdb99ed81ba793db1e4e5a7df60c46",
+      "unknown_reason": "token data was unavailable after the task cutoff",
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "cleanup",
+      "label": "Recovery cleanup",
+      "value": "TIMED_OUT_CLEAN",
+      "required": true,
+      "evidence_class": "sealed",
+      "evidence_tier": "sealed-runtime",
+      "source_pointer": "issue17-recovery#status",
+      "source_sha256": "760238e3bdf15fa2de8bd7a69781959afbcdb99ed81ba793db1e4e5a7df60c46",
+      "unknown_reason": null,
+      "contradictory_values": null
+    },
+    {
+      "claim_id": "grant-reusable",
+      "label": "Issue 17 grant reusable",
+      "value": false,
+      "required": true,
+      "evidence_class": "sealed",
+      "evidence_tier": "sealed-runtime",
+      "source_pointer": "issue17-authorization#state",
+      "source_sha256": "a3af9b74824f0dad10c826734f6e16ac1efb8367c3a8ff4b912b7b10b898abf0",
+      "unknown_reason": null,
+      "contradictory_values": null
+    }
+  ]
+}

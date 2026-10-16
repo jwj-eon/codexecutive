@@ -1,0 +1,20 @@
+{
+  "name": "codexecutive",
+  "interface": {
+    "displayName": "Codexecutive"
+  },
+  "plugins": [
+    {
+      "name": "orch-dork",
+      "source": {
+        "source": "local",
+        "path": "./plugins/orch-dork"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

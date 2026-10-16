@@ -1,0 +1,1384 @@
+{
+  "schema": "orch-dork/agent-lifecycle-map/v1",
+  "map_generation": "agent-lifecycle-map/v1",
+  "authority": "navigation_only",
+  "journeys": [
+    {
+      "id": "invocation-classification",
+      "title": "Classify and admit a triggered request",
+      "trigger_class": "triggered_request",
+      "when": "A request triggers Orch Dork. Decide atomic, orchestrated, or refused before the first implementation mutation.",
+      "prerequisites": [
+        "A request triggered Orch Dork through explicit delegation or an applicable instruction.",
+        "Fresh classification-policy evidence bound to the exact ticket and scope."
+      ],
+      "entry": {
+        "tool": "evaluate_ticket_admission",
+        "operation": null,
+        "input_schema": "orch-dork/ticket-admission-program/v2"
+      },
+      "steps": [
+        {
+          "tool": "evaluate_ticket_admission",
+          "purpose": "Bind fresh classification-policy evidence to the exact ticket."
+        },
+        {
+          "tool": "audit_orchestration_classification",
+          "purpose": "Record the judgment, confidence, authority, and override."
+        }
+      ],
+      "report_schemas": [
+        "orch-dork/ticket-admission/v2"
+      ],
+      "evidence_boundary": "Admission is non-authoritative provider-free policy. ATOMIC_ADMITTED keeps work in root with zero workers and no trace; it never creates a worker.",
+      "terminal_statuses": [
+        "ATOMIC_ADMITTED"
+      ],
+      "typed_stops": [
+        "REFUSED"
+      ],
+      "primary_tools": [
+        "audit_orchestration_classification",
+        "evaluate_ticket_admission",
+        "evaluate_learned_policy"
+      ],
+      "supporting_tools": [],
+      "skill_sections": [
+        "Choose the branch"
+      ],
+      "references": [
+        "policy.md"
+      ],
+      "scenarios": []
+    },
+    {
+      "id": "advisory-scan",
+      "title": "Run a read-only advisory scan",
+      "trigger_class": "read_only_scan",
+      "when": "A read-only project scan splits into two through sixteen independent lanes.",
+      "prerequisites": [
+        "Two through sixteen independent read-only lanes.",
+        "Parent authority for native worker creation, which stays a separate act."
+      ],
+      "entry": {
+        "tool": "evaluate_advisory_scan",
+        "operation": "prepare",
+        "input_schema": "orch-dork/advisory-scan-program/v2"
+      },
+      "steps": [
+        {
+          "tool": "evaluate_advisory_scan",
+          "purpose": "Prepare one finite logical plan and one TaskSpec per lane."
+        },
+        {
+          "tool": "observe_native_advisory_scan",
+          "purpose": "Observe the exact-hash native sessions after termination."
+        },
+        {
+          "tool": "evaluate_advisory_scan",
+          "purpose": "Finalize with the sealed observation and typed handoffs."
+        }
+      ],
+      "report_schemas": [
+        "orch-dork/advisory-scan-report/v2"
+      ],
+      "evidence_boundary": "COMPLETED_ADVISORY leaves qualification_status ADVISORY_ONLY and claim_permitted false. Native worker creation stays a separate parent-authorized act.",
+      "terminal_statuses": [
+        "COMPLETED_ADVISORY"
+      ],
+      "typed_stops": [
+        "REFUSED",
+        "FAILED",
+        "DRAINED_WITH_FAILURES"
+      ],
+      "primary_tools": [
+        "evaluate_advisory_scan",
+        "observe_native_advisory_scan"
+      ],
+      "supporting_tools": [
+        "evaluate_ticket_admission",
+        "observe_current_orchestration_route"
+      ],
+      "skill_sections": [
+        "Use the advisory scan path"
+      ],
+      "references": [
+        "policy.md",
+        "execution.md"
+      ],
+      "scenarios": []
+    },
+    {
+      "id": "planning-control-tower",
+      "title": "Plan, freeze, and run through the Control Tower",
+      "trigger_class": "plan_required",
+      "when": "Admission returned ORCHESTRATION_PLAN_REQUIRED for decomposable work with independently verifiable lanes.",
+      "prerequisites": [
+        "Admission returned ORCHESTRATION_PLAN_REQUIRED.",
+        "A current-turn route observation that is SPAWN_COMPATIBLE."
+      ],
+      "entry": {
+        "tool": "evaluate_orchestration_control_tower",
+        "operation": "prepare",
+        "input_schema": "orch-dork/control-tower-program/v1"
+      },
+      "steps": [
+        {
+          "tool": "recommend_first_wave",
+          "purpose": "Advise lane count before freeze; never freezes or grants capacity."
+        },
+        {
+          "tool": "evaluate_split_decision",
+          "purpose": "Apply the split gate before any two-plus-lane freeze."
+        },
+        {
+          "tool": "evaluate_orchestration_control_tower",
+          "purpose": "Prepare, advance, and inspect the canonical finite-DAG run."
+        }
+      ],
+      "report_schemas": [
+        "orch-dork/control-tower-report/v1"
+      ],
+      "evidence_boundary": "Submitted capacity stays advisory; only host-signed observations bind authoritative capacity. Workers never spawn workers.",
+      "terminal_statuses": [
+        "COMPLETED",
+        "FAILED",
+        "TERMINATED"
+      ],
+      "typed_stops": [
+        "REFUSED"
+      ],
+      "primary_tools": [
+        "recommend_first_wave",
+        "evaluate_split_decision",
+        "evaluate_deepening_policy",
+        "evaluate_admission_kernel",
+        "validate_semantic_plan_v2",
+        "evaluate_task_creation_intent",
+        "evaluate_worker_lifecycle",
+        "adapt_native_capacity_observation",
+        "evaluate_coordinator_capsule",
+        "project_orchestration_live_view",
+        "evaluate_orchestration_control_tower",
+        "validate_logical_worker_program",
+        "run_logical_worker_waves",
+        "evaluate_wave_progress",
+        "evaluate_sol_replan",
+        "evaluate_decomposition_proposal",
+        "evaluate_adaptive_finite_dag",
+        "validate_adaptive_contract",
+        "validate_relay_manifest",
+        "run_active_orchestration_controller",
+        "evaluate_orchestration_limits",
+        "evaluate_orchestration_profile",
+        "evaluate_orchestration_budget",
+        "qualify_orchestration_graph",
+        "validate_orchestration_custody",
+        "validate_orchestration_ownership",
+        "validate_orchestration_admission",
+        "validate_orchestration_spawn_wave",
+        "validate_orchestration_plan"
+      ],
+      "supporting_tools": [
+        "evaluate_ticket_admission",
+        "observe_current_orchestration_route"
+      ],
+      "skill_sections": [
+        "Freeze an orchestrated plan",
+        "Execute and join"
+      ],
+      "references": [
+        "policy.md",
+        "execution.md"
+      ],
+      "scenarios": [
+        "observability-scenarios/blocked-extra-work.json",
+        "observability-scenarios/budget-exhaustion.json"
+      ]
+    },
+    {
+      "id": "governed-native-execution",
+      "title": "Enter governed native execution",
+      "trigger_class": "governed_authority",
+      "when": "Execution readiness returned READY_FOR_AUTHORITY on an enrolled project ground and the host-owned controller must own exact native-action state.",
+      "prerequisites": [
+        "Execution readiness returned READY_FOR_AUTHORITY.",
+        "An enrolled, healthy project ground and the host-owned controller installed before the attempt."
+      ],
+      "entry": {
+        "tool": "prepare_governed_native_activation",
+        "operation": null,
+        "input_schema": "orch-dork/governed-native-activation-preparation-program/v1"
+      },
+      "steps": [
+        {
+          "tool": "prepare_governed_native_activation",
+          "purpose": "Bind the self-sealed pre-implementation adapter report."
+        },
+        {
+          "tool": "advance_governed_native_controller",
+          "purpose": "Apply one closed transition through the host-owned controller."
+        }
+      ],
+      "report_schemas": [
+        "orch-dork/governed-native-activation-preparation-report/v1",
+        "orch-dork/governed-native-controller-report/v1"
+      ],
+      "evidence_boundary": "A read-only MCP response is never enforcement. Native action requires the exact controller grant and hook path; this guidance grants nothing.",
+      "terminal_statuses": [
+        "PRE_NATIVE_FAILURE_TERMINALIZED",
+        "SUCCESS"
+      ],
+      "typed_stops": [
+        "CONTROLLER_REFUSED",
+        "ACTION_EVIDENCE_CONTRADICTORY",
+        "FAILURE"
+      ],
+      "primary_tools": [
+        "evaluate_governed_orchestration_run",
+        "prepare_governed_native_activation",
+        "authorize_issue94_successor_first_action",
+        "submit_issue94_semantic_review",
+        "submit_issue94_bootstrapped_semantic_review",
+        "advance_issue94_successor_after_native_action",
+        "advance_issue94_bootstrapped_after_native_action",
+        "advance_governed_native_controller",
+        "evaluate_project_ground_enforcement",
+        "evaluate_orchestration_project_adapter",
+        "evaluate_orchestration_worker_port"
+      ],
+      "supporting_tools": [
+        "evaluate_execution_readiness",
+        "observe_current_orchestration_route"
+      ],
+      "skill_sections": [
+        "Governed execution"
+      ],
+      "references": [
+        "execution.md",
+        "project-ground.md",
+        "policy.md"
+      ],
+      "scenarios": [
+        "observability-scenarios/success.json",
+        "observability-scenarios/contradiction.json"
+      ]
+    },
+    {
+      "id": "recovery-cancellation-rollover",
+      "title": "Recover, cancel, or roll over a root",
+      "trigger_class": "interruption",
+      "when": "A run was cancelled or timed out, cleanup must be verified, or the root must hand off to a no-history successor.",
+      "prerequisites": [
+        "A cancellation or timeout was observed, or a root rollover trigger fired.",
+        "Runtime cleanup observations for every owned resource."
+      ],
+      "entry": {
+        "tool": "evaluate_orchestration_recovery",
+        "operation": null,
+        "input_schema": "orch-dork/recovery-program/v1"
+      },
+      "steps": [
+        {
+          "tool": "evaluate_orchestration_recovery",
+          "purpose": "Preserve cancellation or timeout history and verify cleanup."
+        },
+        {
+          "tool": "evaluate_root_rollover",
+          "purpose": "Seal an exactly-once successor handoff with lease transfer."
+        }
+      ],
+      "report_schemas": [
+        "orch-dork/recovery-report/v1",
+        "orch-dork/root-rollover-report/v1"
+      ],
+      "evidence_boundary": "Recovery is forward-only. Cleanup is never retry authority; a later attempt needs a separately authorized identity.",
+      "terminal_statuses": [
+        "CANCELLED_CLEAN",
+        "TIMED_OUT_CLEAN",
+        "ROLLOVER_COMPLETE",
+        "CANCELLED"
+      ],
+      "typed_stops": [
+        "CLEANUP_FAILED",
+        "FAILURE"
+      ],
+      "primary_tools": [
+        "evaluate_orchestration_recovery",
+        "evaluate_root_rollover",
+        "evaluate_project_ground_maintenance"
+      ],
+      "supporting_tools": [
+        "evaluate_orchestration_control_tower",
+        "advance_governed_native_controller"
+      ],
+      "skill_sections": [
+        "Conditional procedures"
+      ],
+      "references": [
+        "execution.md"
+      ],
+      "scenarios": [
+        "observability-scenarios/cancellation.json",
+        "observability-scenarios/issue17-timeout.json"
+      ]
+    },
+    {
+      "id": "generation-route-readiness",
+      "title": "Confirm installed generation, route, and readiness",
+      "trigger_class": "pre_freeze_gate",
+      "when": "Before freeze, spawn, or authority: confirm the current turn's route and the exact readiness of the executor and controller.",
+      "prerequisites": [
+        "The installed plugin generation loaded by a fresh task.",
+        "The active task's own session records."
+      ],
+      "entry": {
+        "tool": "observe_current_orchestration_route",
+        "operation": null,
+        "input_schema": null
+      },
+      "steps": [
+        {
+          "tool": "observe_current_orchestration_route",
+          "purpose": "Seal the current turn's root route identity."
+        },
+        {
+          "tool": "evaluate_execution_readiness",
+          "purpose": "Seal one readiness decision before credentials or grants."
+        }
+      ],
+      "report_schemas": [
+        "orch-dork/execution-readiness-receipt/v1"
+      ],
+      "evidence_boundary": "Routing is never inferred from defaults or earlier runs. Only SPAWN_COMPATIBLE permits freeze or spawn.",
+      "terminal_statuses": [],
+      "typed_stops": [
+        "NOT_READY",
+        "RESTART_REQUIRED",
+        "ROUTE_CHANGED",
+        "FAILURE"
+      ],
+      "primary_tools": [
+        "observe_current_orchestration_route",
+        "evaluate_live_route_handoff",
+        "observe_current_local_task_runtime",
+        "evaluate_execution_readiness",
+        "evaluate_project_enrollment",
+        "verify_wave_routing"
+      ],
+      "supporting_tools": [],
+      "skill_sections": [
+        "Verify routing and authority",
+        "Contract generation"
+      ],
+      "references": [
+        "contract-evaluation.md",
+        "project-ground.md"
+      ],
+      "scenarios": [
+        "observability-scenarios/wrong-routing.json"
+      ]
+    },
+    {
+      "id": "evidence-completion",
+      "title": "Close evidence and report completion",
+      "trigger_class": "completion",
+      "when": "Work finished and its evidence must be checked without overstating its tier.",
+      "prerequisites": [
+        "The frozen plan and its normalized submitted trace.",
+        "Any read-custody audit the run produced."
+      ],
+      "entry": {
+        "tool": "qualify_orchestration_trace",
+        "operation": null,
+        "input_schema": "orch-dork/trace/v1"
+      },
+      "steps": [
+        {
+          "tool": "qualify_orchestration_trace",
+          "purpose": "Check submitted structural conformance against the frozen plan."
+        },
+        {
+          "tool": "qualify_read_custody",
+          "purpose": "Check read custody against the audit and exceptions."
+        }
+      ],
+      "report_schemas": [
+        "orch-dork/qualification/v1"
+      ],
+      "evidence_boundary": "Submitted conformance never becomes terminal qualification; an external post-terminal observation is required before any qualified claim.",
+      "terminal_statuses": [
+        "SUCCESS"
+      ],
+      "typed_stops": [
+        "FAIL",
+        "FAILURE",
+        "BLOCKED"
+      ],
+      "primary_tools": [
+        "qualify_orchestration_trace",
+        "qualify_read_custody",
+        "evaluate_evidence_policy",
+        "evaluate_route_policy",
+        "evaluate_campaign_policy",
+        "evaluate_experiment_campaign",
+        "evaluate_orchestration_efficiency"
+      ],
+      "supporting_tools": [
+        "project_orchestration_live_view",
+        "observe_native_advisory_scan"
+      ],
+      "skill_sections": [
+        "Select the evidence mode",
+        "Evidence and completion"
+      ],
+      "references": [
+        "observability.md",
+        "policy.md"
+      ],
+      "scenarios": [
+        "observability-scenarios/success.json",
+        "observability-scenarios/contradiction.json",
+        "observability-scenarios/missing-evidence.json"
+      ]
+    },
+    {
+      "id": "governed-task-from-chat",
+      "title": "Prepare and run governed work from this task",
+      "trigger_class": "governed_run_request",
+      "when": "Start governed work from a plain request or tickets in any format, including work Codex judges worth splitting or independently verifying; read, steer, revise or stop an existing governed run.",
+      "prerequisites": [
+        "The project is enrolled for governed runs with its own checks and standing authority.",
+        "Two different models passed onboarding, including the model named for the governed task.",
+        "For new work, Codex drafted the goal, lanes and checks and shows the returned summary before start. For existing work, use its run_id directly with read, steer, revise or stop; do not prepare or start again. Standing authority admits an in-limit plan."
+      ],
+      "entry": {
+        "tool": "prepare_work_summary",
+        "operation": null,
+        "input_schema": "orch-dork/work-summary-input/v1"
+      },
+      "steps": [
+        {
+          "tool": "prepare_work_summary",
+          "purpose": "Interpret arbitrary supplied text as a draft; the host selects ready disjoint tickets and freezes the summary. Show it before start; raw text is provenance, never the plan digest."
+        },
+        {
+          "tool": "start_governed_run",
+          "purpose": "Admit the frozen plan against the standing authority, then self-test governed mode and start the governed task with zero workers or one worker per lane, or ask with each exceeded limit named."
+        },
+        {
+          "tool": "read_governed_run",
+          "purpose": "Wait for the host-computed verdict and report it with its record location."
+        },
+        {
+          "tool": "stop_governed_run",
+          "purpose": "Stop the run at once when the user says stop; the verdict is Stopped by you."
+        },
+        {
+          "tool": "steer_governed_run",
+          "purpose": "Forward exact user steering from the requesting task without broadening the plan."
+        },
+        {
+          "tool": "revise_governed_run",
+          "purpose": "Answer a specific revision offer and re-admit a changed plan before activation."
+        },
+        {
+          "tool": "propose_ticket_status_update",
+          "purpose": "Only after Verified, propose exact status edits for the selected local tickets; ask the user to confirm the returned diff."
+        },
+        {
+          "tool": "confirm_ticket_status_update",
+          "purpose": "Only after explicit confirmation of that exact proposal, compare the file and apply the proposed status edits once."
+        }
+      ],
+      "report_schemas": [
+        "orch-dork/governed-run-start/v1",
+        "orch-dork/governed-run-read/v1",
+        "orch-dork/governed-run-stop-report/v1",
+        "orch-dork/work-summary-report/v1",
+        "orch-dork/ticket-status-proposal/v1",
+        "orch-dork/ticket-status-update/v1",
+        "orch-dork/governed-run-steer-report/v1",
+        "orch-dork/governed-run-revise-report/v1"
+      ],
+      "evidence_boundary": "The plan binds to the admitted work summary, never raw input. Verified is the host verdict from its checks and hook/owner records. Status edits are proposed only after Verified and applied only after explicit confirmation of the exact diff in the requesting task; standing run authority supplies no status-write confirmation. Changed or revised summaries, other tasks, stale files and active runs refuse status write-back.",
+      "terminal_statuses": [
+        "TERMINAL",
+        "APPLIED"
+      ],
+      "typed_stops": [
+        "REFUSED"
+      ],
+      "primary_tools": [
+        "start_governed_run",
+        "read_governed_run",
+        "stop_governed_run",
+        "prepare_work_summary",
+        "propose_ticket_status_update",
+        "confirm_ticket_status_update",
+        "steer_governed_run",
+        "revise_governed_run"
+      ],
+      "supporting_tools": [],
+      "skill_sections": [
+        "Run governed work from this task"
+      ],
+      "references": [
+        "project-ground.md"
+      ],
+      "scenarios": []
+    },
+    {
+      "id": "guided-enrollment",
+      "title": "Enroll a project for governed runs",
+      "trigger_class": "governed_enrollment_request",
+      "when": "The user asks to enroll a project for governed runs or to change its standing limits, or a governed run was refused because the project is not enrolled or fewer than two models passed onboarding. The user may instead open the packaged local setup and run views, or onboard a typed model in chat.",
+      "prerequisites": [
+        "The user named the project and can answer the enrollment questions in this task."
+      ],
+      "entry": {
+        "tool": "enroll_project",
+        "operation": null,
+        "input_schema": "orch-dork/governed-enrollment-input/v1"
+      },
+      "steps": [
+        {
+          "tool": "enroll_project",
+          "purpose": "Read the project's own check commands and the models Codex reports, and draft the enrollment."
+        },
+        {
+          "tool": "confirm_enrollment",
+          "purpose": "Apply the user's answers: the project-ground enrollment, the standing authority, and onboarding."
+        },
+        {
+          "tool": "read_onboarding",
+          "purpose": "Follow onboarding until the chat model and the second model have each passed or failed."
+        },
+        {
+          "tool": "open_local_ui",
+          "purpose": "Open a private, expiring loopback page; run views are one-way projections and Stop stays in chat."
+        },
+        {
+          "tool": "onboard_model",
+          "purpose": "After explaining its trivial probe and token spend, onboard or explicitly re-onboard a listed or typed model through the shared host-local job seam."
+        }
+      ],
+      "report_schemas": [
+        "orch-dork/governed-enrollment-proposal/v1",
+        "orch-dork/governed-enrollment-confirmation/v1",
+        "orch-dork/onboarding-read/v1",
+        "orch-dork/local-ui-open/v1",
+        "orch-dork/model-onboarding-start/v1"
+      ],
+      "evidence_boundary": "Check commands come only from the project's own declarations or the user's words; an ambiguous or unsupported project stays blocked with a named question, never a guessed check. Governed runs stay refused until two different models pass onboarding.",
+      "terminal_statuses": [
+        "ENROLLED",
+        "DONE",
+        "OPEN"
+      ],
+      "typed_stops": [
+        "FAILED",
+        "REFUSED"
+      ],
+      "primary_tools": [
+        "enroll_project",
+        "confirm_enrollment",
+        "read_onboarding",
+        "open_local_ui",
+        "onboard_model"
+      ],
+      "supporting_tools": [],
+      "skill_sections": [
+        "Run governed work from this task"
+      ],
+      "references": [
+        "project-ground.md"
+      ],
+      "scenarios": []
+    },
+    {
+      "id": "project-improvements",
+      "title": "Review and adopt project improvements",
+      "trigger_class": "project_improvement_request",
+      "when": "Review evidence-backed improvements to the project workflow, worker count or role models; approve or reject a proposal, authorize its canary, or adopt its completed promotion.",
+      "prerequisites": [
+        "An enrolled project with twenty eligible runs and five comparable runs per choice.",
+        "The exact proposal, support and contradiction shown in this requesting task.",
+        "Each decision is explicit user approval; standing run authority supplies none."
+      ],
+      "entry": {
+        "tool": "propose_project_improvements",
+        "operation": null,
+        "input_schema": "orch-dork/project-improvement-propose-input/v1"
+      },
+      "steps": [
+        {
+          "tool": "propose_project_improvements",
+          "purpose": "Compare retained project outcomes under production evidence floors."
+        },
+        {
+          "tool": "read_project_improvement",
+          "purpose": "Show the full proposal, evidence gaps and frozen canary cases."
+        },
+        {
+          "tool": "decide_project_improvement",
+          "purpose": "Record one explicit approve or reject decision without activating defaults."
+        },
+        {
+          "tool": "authorize_project_canary",
+          "purpose": "After offline and shadow evaluation, confirm the frozen canary cases separately; ordinary governed admission still applies."
+        },
+        {
+          "tool": "adopt_project_improvement",
+          "purpose": "Re-derive promotion results from host originals and activate between runs, once, for future work."
+        }
+      ],
+      "report_schemas": [
+        "orch-dork/project-improvement-report/v1"
+      ],
+      "evidence_boundary": "MCP accepts no history or measurements. Local operator tooling derives results from watcher terminals, explicit human review and observed billing. All stages replay FR60 gates with disjoint frozen corpora and a separately approved canary. Approval does not activate. Adoption consumes exact confirmation and refuses active or stale projects. A failed adopted run suspends defaults at the next host intake.",
+      "terminal_statuses": [
+        "REJECTED",
+        "ADOPTED",
+        "INSUFFICIENT_EVIDENCE",
+        "NO_IMPROVEMENT"
+      ],
+      "typed_stops": [
+        "REFUSED"
+      ],
+      "primary_tools": [
+        "propose_project_improvements",
+        "read_project_improvement",
+        "decide_project_improvement",
+        "authorize_project_canary",
+        "adopt_project_improvement"
+      ],
+      "supporting_tools": [],
+      "skill_sections": [
+        "Improve project defaults"
+      ],
+      "references": [
+        "project-improvements.md"
+      ],
+      "scenarios": []
+    }
+  ],
+  "projections": {
+    "evaluate_ticket_admission": {
+      "status_paths": [
+        "decision"
+      ],
+      "rules": {
+        "ATOMIC_ADMITTED": {
+          "disposition": "TERMINAL"
+        },
+        "ORCHESTRATION_PLAN_REQUIRED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "audit_orchestration_classification",
+            "operation": null,
+            "input_schema": "orch-dork/classification-audit/v1"
+          }
+        },
+        "RECLASSIFICATION_REQUIRED": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "evaluate_orchestration_control_tower": {
+      "status_paths": [
+        "result.preparation_status",
+        "result.decision_status",
+        "status"
+      ],
+      "rules": {
+        "READY_TO_FREEZE": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "evaluate_orchestration_control_tower",
+            "operation": "advance",
+            "input_schema": "orch-dork/control-tower-program/v1"
+          }
+        },
+        "PLANNING_REQUIRED": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        },
+        "ADVANCED": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "QUEUED": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "CANCELLATION_PENDING": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "COMPLETED": {
+          "disposition": "TERMINAL"
+        },
+        "FAILED": {
+          "disposition": "TERMINAL"
+        },
+        "TERMINATED": {
+          "disposition": "TERMINAL"
+        },
+        "FAIL": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "evaluate_advisory_scan": {
+      "status_paths": [
+        "decision",
+        "status"
+      ],
+      "rules": {
+        "PREPARED": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "INCOMPLETE": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "COMPLETED_ADVISORY": {
+          "disposition": "TERMINAL"
+        },
+        "DRAINED_WITH_FAILURES": {
+          "disposition": "STOP"
+        },
+        "FAILED": {
+          "disposition": "STOP"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        },
+        "FAIL": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "observe_native_advisory_scan": {
+      "status_paths": [
+        "decision",
+        "status"
+      ],
+      "rules": {
+        "OBSERVED_ADVISORY": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "evaluate_advisory_scan",
+            "operation": "finalize",
+            "input_schema": "orch-dork/advisory-scan-program/v2"
+          }
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        },
+        "FAIL": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "prepare_governed_native_activation": {
+      "status_paths": [
+        "decision"
+      ],
+      "rules": {
+        "READY_FOR_ACTIVATION": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "advance_governed_native_controller",
+            "operation": null,
+            "input_schema": "orch-dork/governed-native-controller-program/v1"
+          }
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "advance_governed_native_controller": {
+      "status_paths": [
+        "decision"
+      ],
+      "rules": {
+        "ACTION_AUTHORIZED": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "ACTIVATED_READ_ONLY": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "ACTIVATION_RECOVERED_READ_ONLY": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "WAITING_FOR_STAGE": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "CHECKPOINT_OBSERVATION_PENDING": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "REVIEW_OBSERVATION_PENDING": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "OUTCOME_UNKNOWN": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "PRE_NATIVE_FAILURE_TERMINALIZED": {
+          "disposition": "TERMINAL"
+        },
+        "POST_SPAWN_FAILURE_TERMINALIZED": {
+          "disposition": "TERMINAL"
+        },
+        "POST_ACK_BRIDGE_FAILURE_TERMINALIZED": {
+          "disposition": "TERMINAL"
+        },
+        "PARTIAL_NATIVE_FAILURE_TERMINALIZED": {
+          "disposition": "TERMINAL"
+        },
+        "OBSERVED_SPAWN_STALL_TERMINALIZED": {
+          "disposition": "TERMINAL"
+        },
+        "ACTIVATION_ONLY_FAILURE_TERMINALIZED": {
+          "disposition": "TERMINAL"
+        },
+        "ACTION_EVIDENCE_CONTRADICTORY": {
+          "disposition": "STOP"
+        },
+        "STAGE_BLOCKED": {
+          "disposition": "STOP"
+        },
+        "CONTROLLER_NOT_ACTIVE": {
+          "disposition": "STOP"
+        },
+        "CONTROLLER_REFUSED": {
+          "disposition": "STOP"
+        },
+        "STAGE_REFUSED": {
+          "disposition": "STOP"
+        },
+        "PROGRAM_REFUSED": {
+          "disposition": "STOP"
+        },
+        "OBSERVATION_REFUSED": {
+          "disposition": "STOP"
+        },
+        "ACTIVATION_REFUSED": {
+          "disposition": "STOP"
+        },
+        "INSPECTION_REFUSED": {
+          "disposition": "STOP"
+        },
+        "HOST_ADAPTER_REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "evaluate_execution_readiness": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "READY_FOR_AUTHORITY": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "NOT_READY": {
+          "disposition": "STOP"
+        },
+        "FAIL": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "observe_current_orchestration_route": {
+      "status_paths": [
+        "disposition"
+      ],
+      "rules": {
+        "SPAWN_COMPATIBLE": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "ROUTING_UNKNOWN": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "RESTART_REQUIRED": {
+          "disposition": "STOP"
+        },
+        "ROUTE_CHANGED": {
+          "disposition": "STOP"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "evaluate_orchestration_recovery": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "CANCELLED_CLEAN": {
+          "disposition": "TERMINAL"
+        },
+        "TIMED_OUT_CLEAN": {
+          "disposition": "TERMINAL"
+        },
+        "RECOVERY_REQUIRED": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "CLEANUP_FAILED": {
+          "disposition": "STOP"
+        },
+        "FAIL": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "evaluate_root_rollover": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "READY_TO_CREATE": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "OUTCOME_UNKNOWN": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "SUCCESSOR_VERIFICATION_REQUIRED": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "PREDECESSOR_TERMINAL_REQUIRED": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "LEASE_TRANSFER_REQUIRED": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "ROLLOVER_COMPLETE": {
+          "disposition": "TERMINAL"
+        },
+        "FAIL": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "qualify_orchestration_trace": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "PASS": {
+          "disposition": "AWAIT_EVIDENCE"
+        },
+        "FAIL": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "start_governed_run": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "STARTED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-read-input/v1"
+          }
+        },
+        "TERMINAL": {
+          "disposition": "TERMINAL"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        },
+        "APPROVAL_REQUIRED": {
+          "disposition": "AWAIT_DECISION"
+        }
+      }
+    },
+    "read_governed_run": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "STARTING": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-read-input/v1"
+          }
+        },
+        "RUNNING": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-read-input/v1"
+          }
+        },
+        "CHECKING": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-read-input/v1"
+          }
+        },
+        "TERMINAL": {
+          "disposition": "TERMINAL"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        },
+        "UNKNOWN": {
+          "disposition": "STOP"
+        },
+        "UNREADABLE": {
+          "disposition": "STOP"
+        },
+        "AWAITING_REVISION": {
+          "disposition": "AWAIT_DECISION"
+        }
+      }
+    },
+    "stop_governed_run": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "STOP_REQUESTED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-read-input/v1"
+          }
+        },
+        "TERMINAL": {
+          "disposition": "TERMINAL"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "enroll_project": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "NEEDS_CONFIRMATION": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "BLOCKED": {
+          "disposition": "AWAIT_DECISION"
+        }
+      }
+    },
+    "confirm_enrollment": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "ONBOARDING": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_onboarding",
+            "operation": null,
+            "input_schema": "orch-dork/onboarding-read-input/v1"
+          }
+        },
+        "ENROLLED": {
+          "disposition": "TERMINAL"
+        },
+        "BLOCKED": {
+          "disposition": "AWAIT_DECISION"
+        }
+      }
+    },
+    "read_onboarding": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "QUEUED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_onboarding",
+            "operation": null,
+            "input_schema": "orch-dork/onboarding-read-input/v1"
+          }
+        },
+        "RUNNING": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_onboarding",
+            "operation": null,
+            "input_schema": "orch-dork/onboarding-read-input/v1"
+          }
+        },
+        "DONE": {
+          "disposition": "TERMINAL"
+        },
+        "FAILED": {
+          "disposition": "STOP"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "prepare_work_summary": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "PREPARED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "start_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-start-input/v1"
+          }
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "propose_ticket_status_update": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "APPROVAL_REQUIRED": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "confirm_ticket_status_update": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "APPLIED": {
+          "disposition": "TERMINAL"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "steer_governed_run": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "QUEUED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-read-input/v1"
+          }
+        },
+        "FORWARDED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-read-input/v1"
+          }
+        },
+        "STOP_REQUESTED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-read-input/v1"
+          }
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "revise_governed_run": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "QUEUED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-read-input/v1"
+          }
+        },
+        "ADMITTED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-read-input/v1"
+          }
+        },
+        "DECLINED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_governed_run",
+            "operation": null,
+            "input_schema": "orch-dork/governed-run-read-input/v1"
+          }
+        },
+        "APPROVAL_REQUIRED": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "propose_project_improvements": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "PROPOSALS_RECORDED": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "disposition": "TERMINAL"
+        },
+        "NO_IMPROVEMENT": {
+          "disposition": "TERMINAL"
+        },
+        "BASELINE_REQUIRED": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "read_project_improvement": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "PROPOSAL": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "decide_project_improvement": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "APPROVED": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "REJECTED": {
+          "disposition": "TERMINAL"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "authorize_project_canary": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "CANARY_AUTHORIZED": {
+          "disposition": "AWAIT_DECISION"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "adopt_project_improvement": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "ADOPTED": {
+          "disposition": "TERMINAL"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "open_local_ui": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "OPEN": {
+          "disposition": "TERMINAL"
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    },
+    "onboard_model": {
+      "status_paths": [
+        "status"
+      ],
+      "rules": {
+        "STARTED": {
+          "disposition": "INVOKE",
+          "next": {
+            "tool": "read_onboarding",
+            "operation": null,
+            "input_schema": "orch-dork/onboarding-read-input/v1"
+          }
+        },
+        "REFUSED": {
+          "disposition": "STOP"
+        }
+      }
+    }
+  },
+  "scenario_projection": {
+    "status_paths": [
+      "displayed_result.status"
+    ],
+    "rules": {
+      "SUCCESS": {
+        "disposition": "TERMINAL"
+      },
+      "CANCELLED": {
+        "disposition": "TERMINAL"
+      },
+      "UNKNOWN": {
+        "disposition": "AWAIT_EVIDENCE"
+      },
+      "FAILURE": {
+        "disposition": "STOP"
+      },
+      "BLOCKED": {
+        "disposition": "STOP"
+      }
+    }
+  }
+}
