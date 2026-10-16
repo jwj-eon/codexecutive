@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codexecutive: Orch Dork for Codex</title>
+<meta name="description" content="Install Orch Dork, governed delegation for Codex, from the Codexecutive plugin marketplace.">
+<style>
+  body { font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem; color: #1b1b1b; background: #fff; }
+  h1 { font-size: 2rem; margin-bottom: .25rem; }
+  .sub { color: #555; margin-top: 0; }
+  pre { background: #f4f4f4; padding: 1rem; overflow-x: auto; border-radius: 6px; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .95em; }
+  footer { margin-top: 3rem; font-size: .9rem; color: #555; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+<h1>Codexecutive</h1>
+<p class="sub">A Codex plugin marketplace carrying <strong>Orch Dork</strong>, governed delegation for Codex.</p>
+<p>Orch Dork freezes a bounded plan of subagents before any work starts, keeps every worker inside its own lane with Codex hooks, and decides each run on host-computed evidence rather than on what a model says it did.</p>
+<h2>Install</h2>
+<pre><code>codex plugin marketplace add jwj-eon/codexecutive
+codex plugin add orch-dork@codexecutive</code></pre>
+<p>Then open Codex, review and trust the plugin's five hooks when Codex asks, and say "enroll this project with Orch Dork" in a chat. The skill walks you through the rest.</p>
+<p>Orch Dork needs a local Codex with the app-server socket and plugin hooks; without them it runs in advisory mode and refuses to claim a governed result. Python 3.9 or later must be on PATH.</p>
+<h2>What is published</h2>
+<p>The package is the exact runtime of qualified generation <code>0.1.0+codex.20261015223833</code> (runtime package digest <code>0499381b9ceaf5825dad55f99c6a42aa4426dc750d5001dc1fbe13b66cf3890d</code>). Nothing in it is edited after qualification; a new generation replaces it as a whole. Source and history: <a href="https://github.com/jwj-eon/codexecutive">github.com/jwj-eon/codexecutive</a>.</p>
+<footer>
+<p><a href="https://orimalabs.com/orch-dork-advisory/privacy/">Privacy</a> · <a href="https://orimalabs.com/orch-dork-advisory/terms/">Terms</a> · <a href="https://orimalabs.com/orch-dork-advisory/support/">Support</a> · MIT license</p>
+</footer>
+</body>
+</html>
