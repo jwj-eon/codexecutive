@@ -183,6 +183,8 @@ RUNTIME_ALLOWLIST: tuple[str, ...] = (
     "skills/orch-dork/scripts/orch_dork_bundle.py",
     # Issue 97 process guard: exact worker-brief preamble renderer/linter.
     "skills/orch-dork/scripts/orch_dork_brief_lint.py",
+    # Issue 277: the numbered-returns check the v3 brief lint shares.
+    "skills/orch-dork/scripts/orch_dork_handoff_returns.py",
     "skills/orch-dork/scripts/orch_dork_campaign_policy.py",
     "skills/orch-dork/scripts/orch_dork_campaign_power.py",
     "skills/orch-dork/scripts/orch_dork_campaign_prereg.py",

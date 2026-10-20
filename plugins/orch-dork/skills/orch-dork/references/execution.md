@@ -2506,7 +2506,7 @@ requires and records which were active.
 
 ### Worker preamble and interface freeze (process layer)
 
-Every lane brief opens with `orch-dork/worker-preamble/v2`. Its canonical
+Every lane brief opens with `orch-dork/worker-preamble/v3`. Its canonical
 topology names `base_checkout` and `lane_workspace`, the exact branch and brief
 path, protected resources, applicable instruction files, a positive bounded
 `context_budget_tokens`, and a calibrated first-patch deadline. When the two
@@ -2515,6 +2515,45 @@ confines writes to the lane workspace. When they are equal, it truthfully says
 path isolation is advisory; it never tells a worker that the shared checkout is
 untouchable. The brief also freezes the `apply_patch` pathway, stop/report
 deadline behavior, post-compaction reread, and no-nesting/no-widening clauses.
+
+### Numbered returns
+
+The brief body carries exactly one `## Returns` section listing what the
+worker must return as numbered one-line items, `R1.` upward without gaps, 1
+to 12 items of at most 300 characters; fenced code blocks are ignored. A brief that asks only for the change
+itself still names it, for example `R1. The changed files and the focused test
+result.` The v3 preamble's eighth rule tells the worker to end its final message
+with a `## Returns` section answering every number, in order, one line each, as
+`R<n>: done — <the answer, or where it is>` or `R<n>: not done — <why>`. An
+item not delivered as asked is not done, even one the worker found cannot be
+done. An honest "not done" is an answer; a number with no line is an omission.
+The check also reads a number or state word wrapped in bold, italics,
+backticks or quotes.
+
+After a worker's final message, check it against its brief without a model:
+
+```bash
+python3 scripts/orch_dork_handoff_returns.py check \
+  --brief /abs/worktree/.orch-dork-brief.md --handoff /abs/final-message.md
+```
+
+The `orch-dork/handoff-returns/v1` report lists the requested numbers and, per
+number, `done` or `not_done` with the explanation's length and digest, or the
+number as missing; it lists unrequested numbers, counts malformed and repeated
+answer lines, and carries no text. It reads the last Returns section of the message and
+tolerates bullets, bold markers, case and the common dash and colon forms.
+Status is `COMPLETE` when every number is answered, otherwise `INCOMPLETE`
+(exit 0 or 1); a brief without a valid Returns section refuses (exit 2). The
+check also reads a `#` heading run into its first answer line. When the check
+reads `INCOMPLETE`, the coordinator sends the worker one follow-up, the fixed
+text that `orch_dork_handoff_returns.py followup --brief … --handoff …` prints
+(exit 1 with the text; exit 0 and nothing when the handoff is complete), and
+checks again with `check --brief … --handoff … --followup /abs/reply.md`. The
+join takes the final message's answer for each number and the reply's only for
+a number the final message lacks. A second follow-up is never sent. The
+coordinator records every number still missing as an omission in its join.
+The check is evidence for the coordinator; it grants, refuses and retries
+nothing.
 
 Instruction discovery is exact. Repeated `--agents-file` arguments list the
 inherited `AGENTS.md` chain; without them, the renderer discovers existing,
@@ -2558,9 +2597,11 @@ python3 scripts/orch_dork_brief_lint.py lint \
   --context-budget-tokens 16000 --calibration-receipt /abs/calibration.json
 ```
 
-The digest-bound `orch-dork/worker-brief-lint/v2` report must be `PASS`. A
+The digest-bound `orch-dork/worker-brief-lint/v3` report must be `PASS`. A
 missing, duplicate, changed, escaped, NUL-containing, non-UTF-8, or oversized
-brief aborts before task creation. While the deadline runs, the coordinator
+brief aborts before task creation, as does a Returns section that is missing,
+duplicated, empty, misnumbered, over 12 items, or carries an empty, overlong or
+unnumbered line. While the deadline runs, the coordinator
 monitors only terminal state and the owned-file patch name, not partial output
 or intent. Expiry without an owned-file patch aborts in place with no nudge,
 retry, replacement, or reuse; a successor needs a fresh attempt.

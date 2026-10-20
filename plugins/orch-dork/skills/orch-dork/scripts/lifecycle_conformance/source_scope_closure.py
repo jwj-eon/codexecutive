@@ -21,7 +21,7 @@ ORIGINALS_SCHEMA = 'orch-dork/source-scope-originals/v1'
 SOURCE_ROOTS = ('hooks', 'scripts', 'skills/orch-dork/scripts')
 CLASSIFICATION_PATH = 'skills/orch-dork/runtime/lifecycle-conformance/source-scope-classifications-v1.json'
 CLASSIFICATION_SCHEMA = 'orch-dork/source-scope-classifications/v1'
-SEMANTIC_BASES_SHA256 = '671ae474e56f8ad1da0dc0cceb7ba7804a82355e95d380d2fd2cc7d33930a1c2'
+SEMANTIC_BASES_SHA256 = '32306c3bb454f97f61c6833bed327accf63f73055b3367765d8c253ccea7a2cd'
 _SEMANTIC_SEAL_SOURCE = 'skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py'
 # Fixed source policies, subject to independent source review with this change.
 # These hashes bind semantic bases, not this reader or its packaged JSON. Unknown

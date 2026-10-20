@@ -50,7 +50,7 @@ _ACTION_HOST_CALLER_PATH = (
 # surface.  It is intentionally not derived from current bytes at runtime:
 # doing so would let modified source authorize itself.  Focused provider-free
 # tests patch this value with their separately calculated fixture pin.
-_ACCEPTED_RELEASE_GUARD_SHA256 = "862907db1599a1e297edc1305b89657900f62c9145cf2b93cc04d3c8b243f702"
+_ACCEPTED_RELEASE_GUARD_SHA256 = "6a947453a851a2ed7997ec50baa9bf2b5c879fdddb6ca4f043f61f94f01025bd"
 _PATH_FIELDS = frozenset({"release_root", "codex_executable", "codex_home", "home_directory"})
 _DIGEST_DEPTH_LIMIT = 48
 # 2048 bits renders as at most 617 decimal digits, below the smallest ceiling

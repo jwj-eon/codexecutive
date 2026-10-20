@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render and lint the exact Orch Dork worker-brief v2 preamble."""
+"""Render and lint the exact Orch Dork worker-brief v3 preamble and the brief's numbered Returns."""
 
 from __future__ import annotations
 
@@ -14,8 +14,8 @@ import sys
 from typing import Any, Iterable, Mapping
 
 
-PREAMBLE_SCHEMA = "orch-dork/worker-preamble/v2"
-LINT_REPORT_SCHEMA = "orch-dork/worker-brief-lint/v2"
+PREAMBLE_SCHEMA = "orch-dork/worker-preamble/v3"
+LINT_REPORT_SCHEMA = "orch-dork/worker-brief-lint/v3"
 CALIBRATION_SCHEMA = "orch-dork/brief-deadline-calibration/v1"
 MAX_BRIEF_BYTES = 65_536
 MAX_PATH_BYTES = 4_096
@@ -52,9 +52,11 @@ def _load_sibling(name: str):
 
 try:
     import orch_dork_evidence_core as evidence_core
+    import orch_dork_handoff_returns as handoff_returns
     import orch_dork_observer_receipt as observer_receipts
 except ModuleNotFoundError:  # standalone spec loading in focused tests
     evidence_core = _load_sibling("orch_dork_evidence_core")
+    handoff_returns = _load_sibling("orch_dork_handoff_returns")
     observer_receipts = _load_sibling("orch_dork_observer_receipt")
 
 
@@ -358,7 +360,7 @@ def render_worker_preamble(
     calibration_receipt: Mapping[str, Any],
     context_budget_tokens: int,
 ) -> str:
-    """Render the canonical v2 preamble that must begin at brief byte zero."""
+    """Render the canonical v3 preamble that must begin at brief byte zero."""
 
     normalized = _inputs(
         base_checkout=base_checkout,
@@ -445,13 +447,20 @@ def render_worker_preamble(
         "6. After any context compaction, re-read this brief file before acting.",
         "7. You must not spawn nested workers and must not widen ownership, "
         "authority, protected resources, tools, or workspace scope.",
+        "8. End your final message with a `## Returns` section that answers "
+        "every numbered item of this brief's `## Returns` section, in order, "
+        "one line each: `R<n>: done — <the answer, or where it is>` or "
+        "`R<n>: not done — <why>`. An item you could not deliver as asked is "
+        "not done, even when you found that it cannot be done. Answer every "
+        "number and add none.",
         "",
     ]
     return "\n".join(lines)
 
 
 def lint_worker_brief(**kwargs: Any) -> dict[str, Any]:
-    """Compare one on-disk brief with its exact frozen v2 preamble."""
+    """Compare one on-disk brief with its exact frozen v3 preamble, then lint the numbered Returns section of
+    the body that follows it."""
 
     expected = render_worker_preamble(**kwargs)
     path = _absolute_path(kwargs["brief_path"], "brief_path")
@@ -482,6 +491,10 @@ def lint_worker_brief(**kwargs: Any) -> dict[str, Any]:
                 issues.append("preamble:duplicate")
             if marker_count == 1 and not text.startswith(expected):
                 issues.append("preamble:mismatch")
+            elif marker_count == 1:
+                issues.extend(
+                    handoff_returns.parse_brief_returns(text[len(expected):])["issues"]
+                )
     report = {
         "schema": LINT_REPORT_SCHEMA,
         "status": "PASS" if not issues else "FAIL",

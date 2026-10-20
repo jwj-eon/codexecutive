@@ -3047,7 +3047,7 @@
           "value.report.digest",
           "weakref.ref"
         ],
-        "contract_identity": "540fa1e7480399f8e8aeca022dd9d854cff370befcf2860ccd207c304215db2d",
+        "contract_identity": "29b956b3e09d8f57802b13e803db656312e5b413f7c39db447cfa7ac1f229597",
         "dependency_bindings": [
           [
             "LifecycleContractError",
@@ -3388,7 +3388,7 @@
             "source_sha256": "413ea20d8699ee65466028a82e87b13ef941e8f4a00f0aa765b7b2a35a68a781"
           },
           {
-            "api_sha256": "9229dc4db69440627664c1fa59a06302762e406af787633d066560c141ce61c4",
+            "api_sha256": "1242e0d8b537ad40021fc191fc6758416bcf9c317b4ea6467b79ace39fb13f12",
             "bindings": [
               [
                 "release_execution",
@@ -3397,12 +3397,12 @@
             ],
             "module": "lifecycle_conformance.release_execution",
             "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
-            "review_api_sha256": "9229dc4db69440627664c1fa59a06302762e406af787633d066560c141ce61c4",
-            "review_source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59",
-            "source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59"
+            "review_api_sha256": "1242e0d8b537ad40021fc191fc6758416bcf9c317b4ea6467b79ace39fb13f12",
+            "review_source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082",
+            "source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082"
           },
           {
-            "api_sha256": "faa2e23118317e8ee76f00598c3ed3342e5fd65a475f59b7cdae2832bf0265db",
+            "api_sha256": "8d0cf53adbaf236df047941bf719ac91c45d66cca92343e09a6b1e056975d43e",
             "bindings": [
               [
                 "source_scope_closure",
@@ -3413,7 +3413,7 @@
             "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
             "review_api_sha256": "642c9e8cb260a6db332bc618218498658b7bd858a1342dc9ab4d47428dd3a599",
             "review_source_sha256": "17a3221c04d6beeb6774535dc8276881ef74f77a78a504479dc219ed087f380a",
-            "source_sha256": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d"
+            "source_sha256": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f"
           },
           {
             "api_sha256": "6acde8f0fee18f65ea4ed542f0c3ac689110ca0e669dd35ceda8cb03810d0eac",
@@ -3939,7 +3939,7 @@
           "weakref.ref",
           "zip"
         ],
-        "contract_identity": "a69607b27f220bf94a89b042f0f4e66da66c55de4bb8421cf801dfb5c9d2315e",
+        "contract_identity": "b465d3612ac2a502c7ea92fa3d3b7b40b6190e4473ae420b02822fe96a498e8a",
         "dependency_bindings": [
           [
             "Path",
@@ -4594,7 +4594,7 @@
             "source_sha256": "413ea20d8699ee65466028a82e87b13ef941e8f4a00f0aa765b7b2a35a68a781"
           },
           {
-            "api_sha256": "9229dc4db69440627664c1fa59a06302762e406af787633d066560c141ce61c4",
+            "api_sha256": "1242e0d8b537ad40021fc191fc6758416bcf9c317b4ea6467b79ace39fb13f12",
             "bindings": [
               [
                 "release_execution",
@@ -4603,12 +4603,12 @@
             ],
             "module": "lifecycle_conformance.release_execution",
             "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
-            "review_api_sha256": "9229dc4db69440627664c1fa59a06302762e406af787633d066560c141ce61c4",
-            "review_source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59",
-            "source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59"
+            "review_api_sha256": "1242e0d8b537ad40021fc191fc6758416bcf9c317b4ea6467b79ace39fb13f12",
+            "review_source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082",
+            "source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082"
           },
           {
-            "api_sha256": "faa2e23118317e8ee76f00598c3ed3342e5fd65a475f59b7cdae2832bf0265db",
+            "api_sha256": "8d0cf53adbaf236df047941bf719ac91c45d66cca92343e09a6b1e056975d43e",
             "bindings": [
               [
                 "source_scope_closure",
@@ -4619,7 +4619,7 @@
             "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
             "review_api_sha256": "642c9e8cb260a6db332bc618218498658b7bd858a1342dc9ab4d47428dd3a599",
             "review_source_sha256": "17a3221c04d6beeb6774535dc8276881ef74f77a78a504479dc219ed087f380a",
-            "source_sha256": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d"
+            "source_sha256": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f"
           },
           {
             "api_sha256": "6acde8f0fee18f65ea4ed542f0c3ac689110ca0e669dd35ceda8cb03810d0eac",
@@ -4678,7 +4678,7 @@
             "source_sha256": "9a9e179e09be4b114b558595c85086db26b26494e9b6c76ba0c48bcbe4985d18"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -4687,9 +4687,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "f62a595444f08cfe850318e8ea5bb8806f8b2508ded59e611ad8f5048748222b",
@@ -5522,7 +5522,7 @@
           "type",
           "verify_cachebuster_identity_transition"
         ],
-        "contract_identity": "5ee21a91963912f50343fe5f50889f457fcdd2472ea38247c29b8a60412cdbf8",
+        "contract_identity": "e798eb1ff04dbf3e2cf62e4403db2b9425b5844412315d37dc9d8054af06310d",
         "dependency_bindings": [
           [
             "Any",
@@ -5817,7 +5817,7 @@
             "source_sha256": "438c943aa8c6a59e219118b762a298d5303495a7699a0996dc1eb4ec3ce5e495"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -5826,9 +5826,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "373446271b4b578c1d95286ec81a78be28cd2cdf136ed57b28af427109af98da",
@@ -6623,7 +6623,7 @@
           "values.canonical_digest",
           "values.vocabulary_digest"
         ],
-        "contract_identity": "cbee3a5c551e681e533b88718b22aa1142174e474b23de966e6eac85598d0d39",
+        "contract_identity": "79a241faa687a81f8319057db35dfe1d24ac1b45ee9a865c55d11c02917317a6",
         "dependency_bindings": [
           [
             "Path",
@@ -7358,7 +7358,7 @@
             "source_sha256": "5947e899bc295cf90ad9d6ea13fe05e8a855fc957abde8a15b71d85645bcb4e4"
           },
           {
-            "api_sha256": "9229dc4db69440627664c1fa59a06302762e406af787633d066560c141ce61c4",
+            "api_sha256": "1242e0d8b537ad40021fc191fc6758416bcf9c317b4ea6467b79ace39fb13f12",
             "bindings": [
               [
                 "release",
@@ -7367,12 +7367,12 @@
             ],
             "module": "lifecycle_conformance.release_execution",
             "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
-            "review_api_sha256": "9229dc4db69440627664c1fa59a06302762e406af787633d066560c141ce61c4",
-            "review_source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59",
-            "source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59"
+            "review_api_sha256": "1242e0d8b537ad40021fc191fc6758416bcf9c317b4ea6467b79ace39fb13f12",
+            "review_source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082",
+            "source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082"
           },
           {
-            "api_sha256": "faa2e23118317e8ee76f00598c3ed3342e5fd65a475f59b7cdae2832bf0265db",
+            "api_sha256": "8d0cf53adbaf236df047941bf719ac91c45d66cca92343e09a6b1e056975d43e",
             "bindings": [
               [
                 "source_scope_closure",
@@ -7383,7 +7383,7 @@
             "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
             "review_api_sha256": "642c9e8cb260a6db332bc618218498658b7bd858a1342dc9ab4d47428dd3a599",
             "review_source_sha256": "17a3221c04d6beeb6774535dc8276881ef74f77a78a504479dc219ed087f380a",
-            "source_sha256": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d"
+            "source_sha256": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f"
           },
           {
             "api_sha256": "6acde8f0fee18f65ea4ed542f0c3ac689110ca0e669dd35ceda8cb03810d0eac",
@@ -7400,7 +7400,7 @@
             "source_sha256": "438c943aa8c6a59e219118b762a298d5303495a7699a0996dc1eb4ec3ce5e495"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "package",
@@ -7409,9 +7409,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "f6697adb65cdf2fc178c954954d44d93fa8627bc3cba514015ab135e9667b10c",
@@ -7637,7 +7637,7 @@
           "transport['original_receipt_json'].encode",
           "type"
         ],
-        "contract_identity": "6bed90a227e98dcc9ff1ec980cc97fa50f3f72a5f8bc2f60e9bfef757569cc80",
+        "contract_identity": "ea152483b1db9dca20c4c5086cddfb8b1873e551ac0f64276ecabd92970912ef",
         "dependency_bindings": [
           [
             "ExitStack",
@@ -7973,7 +7973,7 @@
             "source_sha256": "438c943aa8c6a59e219118b762a298d5303495a7699a0996dc1eb4ec3ce5e495"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -7982,9 +7982,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "3fe6ecb253d248ec6bde2792ad34d1297d2b225d088a82ed0a210773d26048f5",
@@ -10663,7 +10663,7 @@
           "weakref.ref",
           "wire.extend"
         ],
-        "contract_identity": "54fcaea3d7c618bcf804e83c84f2e9c2b47012236e829a920255b17479fa445e",
+        "contract_identity": "f62724fa6b27ef10429374d267a04beb8b466bdafd92277bbd787cfa09ef7bf3",
         "dependency_bindings": [
           [
             "MappingProxyType",
@@ -11143,7 +11143,7 @@
             "source_sha256": "438c943aa8c6a59e219118b762a298d5303495a7699a0996dc1eb4ec3ce5e495"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -11152,9 +11152,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "97ca40dacb207a24203d68f26576103aed4f4b39a3dfd26f83c19d634e3b7f2d",
@@ -14110,7 +14110,7 @@
           "value.validated_report.digest",
           "weakref.ref"
         ],
-        "contract_identity": "b36210cb315d590ec89e646ea0e179dc182105f536dd245f4a32bc168ed8f7e5",
+        "contract_identity": "733cedf8178aa683d488a071f1b746f4e36bbee3218bf3f5d2975d5c9be42507",
         "dependency_bindings": [
           [
             "LifecycleContractError",
@@ -14469,7 +14469,7 @@
             "source_sha256": "438c943aa8c6a59e219118b762a298d5303495a7699a0996dc1eb4ec3ce5e495"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -14478,9 +14478,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "99beb371e1a1ad9789648257cf58f3782074a2f59a159505648eef9192403643",
@@ -21017,7 +21017,7 @@
             "function"
           ]
         ],
-        "api_sha256": "9229dc4db69440627664c1fa59a06302762e406af787633d066560c141ce61c4",
+        "api_sha256": "1242e0d8b537ad40021fc191fc6758416bcf9c317b4ea6467b79ace39fb13f12",
         "call_targets": [
           "('release_execution:undigestable:%d' % id(value)).encode",
           "(Path(directory) / name).is_symlink",
@@ -21183,7 +21183,7 @@
           "{}.keys",
           "{}.values"
         ],
-        "contract_identity": "20f6728d1c945d40c05e87b66e5e67f0dff929084ee0a1fe3318e770279bd5b9",
+        "contract_identity": "083d056571f3434a62ef93016ee00bdc158b6047b22ac1b6e2b83be5d5d83bab",
         "dependency_bindings": [
           [
             "Path",
@@ -21518,7 +21518,7 @@
             "source_sha256": "9a9e179e09be4b114b558595c85086db26b26494e9b6c76ba0c48bcbe4985d18"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -21527,24 +21527,24 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
-        "review_api_sha256": "9229dc4db69440627664c1fa59a06302762e406af787633d066560c141ce61c4",
-        "review_source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59",
+        "review_api_sha256": "1242e0d8b537ad40021fc191fc6758416bcf9c317b4ea6467b79ace39fb13f12",
+        "review_source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082",
         "semantics": "Owns same-process custody of the single physical release invocation and retains its exact original result or failure. execute_release, release_report and completion_facts are actual lifecycle constructors and validators: execute_release verifies pinned source digests for release_marketplace, runtime_package and action_authority, requires the exact ReleaseActionInputs issued by prepare_release_action, requires the candidate root to resolve to this module's own repository root, validates every fixed absolute path with a create-only release root and an executable Codex binary, derives health only from validated completion facts including full_suite_same_runtime, and captures source and runtime inventories before the effect. Physical facts are withheld rather than inferred: the module refuses with release_guard_dependency_pending while _ACCEPTED_RELEASE_GUARD_SHA256 is None, and release_report yields PASS only when the release module's own opaque physical-result validator accepts a non-plain source-owned original and both pre- and post-effect inventories match the current tree; otherwise status is BLOCKED_PHYSICAL_ORIGINAL_REQUIRED or FAILED with diagnostic_only true and release, qualification and promotion authority all false. Post-effect capture is deliberately total and degrades to one fixed marker, which can never equal a real inventory, so degradation is fail-closed for authority and fail-open for custody of the retained original. Hostile str, getattr, comparison and oversized-integer rendering are bounded so a retained original can never escape or destroy its own custody. Actual public constructors, validators, reports, actions, and legacy consumers remain lifecycle semantic obligations; source review supplies no execution or acceptance credit.",
-        "source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59",
-        "source_span_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59"
+        "source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082",
+        "source_span_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082"
       },
       "groups": [
-        "classification-group:1d7f129a1ef0e78a9be90a636c5bcff3116f9898a450643471abfa0d08f3eeec",
-        "classification-group:21e8446630dbbfc497cf5ad91e967762eea2ce1fbc7f7f57827795bd160bcefd",
-        "classification-group:334ea437ced29da547d7a08a0558d8b07b32215fdd15e8fcad4f96aebab1ff32",
-        "classification-group:702585e34a94849fab848cfa38c9fe05bfd75997ff5bb23a941584fd96211a52",
-        "classification-group:844c8fd4a562fc5746af1ec6c642fd448cc24a912323b4f9667c9a67224925ba",
-        "classification-group:eec7817c874b32e1587f3f405c04da272a06b4ca933e5308e5c2f0455a8adb5b"
+        "classification-group:01afd168d524248e263d115ffddb4cab0f047d176ef0decaa9e0c25fabe11c84",
+        "classification-group:396b09adf602bca041d95a2085085fa8ceb4d3ca4cd20118e188cd912df1da5e",
+        "classification-group:501494ab6f8992910ff2564ad0869b87fe76d6c4d93adcb9a3f9088f2f420e7e",
+        "classification-group:70e60c382c946963296d64e1d7d40d76deb00af8a01f7398daae58c3bd1ddb30",
+        "classification-group:c250d99ac50a7cc49b5596949db199e446098da8d02ee2bd197ca30898cc50b4",
+        "classification-group:f8d96af69c58899231789c497fbe53accbe6114ee8be17196df933dcaee14ea8"
       ],
       "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
       "policy": "family-t-declared-lifecycle-public-api",
@@ -22769,7 +22769,7 @@
             "function"
           ]
         ],
-        "api_sha256": "faa2e23118317e8ee76f00598c3ed3342e5fd65a475f59b7cdae2832bf0265db",
+        "api_sha256": "8d0cf53adbaf236df047941bf719ac91c45d66cca92343e09a6b1e056975d43e",
         "call_targets": [
           "'\\n'.join",
           "(_ROOT / directory).rglob",
@@ -22952,7 +22952,7 @@
           "values.canonical_digest",
           "visit"
         ],
-        "contract_identity": "e4a4bbd42889ee8f2feabf1453facadd90880ef20a964eb7b4c00ebd4c32c8dd",
+        "contract_identity": "59a82a32fcc0807356520aae005cb2453898607d2262bbecdae784ae1564b721",
         "dependency_bindings": [
           [
             "Path",
@@ -23391,7 +23391,7 @@
             "source_sha256": "438c943aa8c6a59e219118b762a298d5303495a7699a0996dc1eb4ec3ce5e495"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "package",
@@ -23400,24 +23400,24 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "642c9e8cb260a6db332bc618218498658b7bd858a1342dc9ab4d47428dd3a599",
         "review_source_sha256": "17a3221c04d6beeb6774535dc8276881ef74f77a78a504479dc219ed087f380a",
         "semantics": "These public APIs construct immutable model/registry/catalog/trace or evidence-reader values. Their model, corpus, gap, shard and interruption contracts are mandatory; scanner syntax is implementation discovery, not extra production constructor coverage. Actual utility, model, reader, transport, persistence, or release interfaces require ordinary contract and effect tests; internal syntax does not create lifecycle cases.",
-        "source_sha256": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d",
-        "source_span_sha256": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d"
+        "source_sha256": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f",
+        "source_span_sha256": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f"
       },
       "groups": [
-        "classification-group:2e27840df3239281e2c2f31db489668f67dc0966b568d2da1449540df32bb8ab",
-        "classification-group:698eb811e1180719ee1ea82fb6c255987ecda1e3b84776604dc82f66edb9961b",
-        "classification-group:8e11583ff6e240d1fd8d67cd560c3aebad184bc9b6f35c5c89013f4c22ba0e67",
-        "classification-group:9a7e713047da2c1f51fbccec979b3d45c52628777d2e39c9e73a39da399edaa2",
-        "classification-group:9affab3d9960781d5f97f8204f50112d674b4f9033a2bcaf2710475e8cff5428",
-        "classification-group:fb8957e3bdabb9d2b0ea842036df759d6d542d086721bd9a525bbccab1be377a"
+        "classification-group:2c7d631f41dc5b3c9b96b3d3a9dbe0b240c3dc2102b0ddf54817573ff3e6bcdf",
+        "classification-group:40608e8c262738df05274362aef8b4f2613074ee57db03001148393a0c92298c",
+        "classification-group:419464619a1adfb944cb68649b933e9b7eef5ebfc0e7203671089950a3238d67",
+        "classification-group:7723d448eda1727689f243779ab4aadfd538f68535c5b922c10787e7c82143a4",
+        "classification-group:8d22fbfee712b29644ada677dce42a50e5791364add21b5bab77e995b68c4779",
+        "classification-group:a5e0d5b20011786039a0692eb88dbf0334dea0b5533912c6db73ca075d2f29ef"
       ],
       "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
       "policy": "family-b-supporting-ordinary-contracts",
@@ -29102,7 +29102,7 @@
             "function"
           ]
         ],
-        "api_sha256": "c0a0e8906dae1633fbbb2342e52e069fccea62fce2ad06f7b40175f3d8f771fa",
+        "api_sha256": "ece06af07cb319b555adcabff920a4b59585de4eb425ce17e1bc1836261174d9",
         "call_targets": [
           "','.join",
           "'\\n'.join",
@@ -29142,12 +29142,14 @@
           "evidence_core.check_seal",
           "evidence_core.digest",
           "evidence_core.instant",
+          "handoff_returns.parse_brief_returns",
           "hashlib.sha256",
           "hashlib.sha256(value.encode('utf-8')).hexdigest",
           "importlib.util.module_from_spec",
           "importlib.util.spec_from_file_location",
           "isinstance",
           "issues.append",
+          "issues.extend",
           "json.dumps",
           "json.loads",
           "len",
@@ -29182,7 +29184,7 @@
           "value.encode",
           "workspace.is_dir"
         ],
-        "contract_identity": "d5701c53f29898a516d88add611b91bc18007c095e3080da2924d3473b7afe69",
+        "contract_identity": "c34ea1adcb77313b93d219ad21c63c80dfa779d0b3b0a52169d4405fd853c7d6",
         "dependency_bindings": [
           [
             "Any",
@@ -29217,6 +29219,10 @@
             "orch_dork_evidence_core"
           ],
           [
+            "handoff_returns",
+            "orch_dork_handoff_returns"
+          ],
+          [
             "hashlib",
             "hashlib"
           ],
@@ -29247,32 +29253,32 @@
         ],
         "effect_spans": [
           {
-            "count": 205,
+            "count": 209,
             "first_line": 40,
             "kind": "call",
-            "last_line": 578,
-            "members_sha256": "22035da6e85ffabeaa2c6999c2178db32cd77e6c559ddbd339bd22f43545ca2f"
+            "last_line": 591,
+            "members_sha256": "94c05da2ec105958cad3f431f55bc274a84309032d63acc5731644d680928758"
           },
           {
-            "count": 12,
+            "count": 13,
             "first_line": 4,
             "kind": "dependency-import",
-            "last_line": 55,
-            "members_sha256": "a21119d0e1f3e287be567733cc7fabddd09694abbcb9ff6f821872383291d12a"
+            "last_line": 56,
+            "members_sha256": "fccb52b6d586440e11d38b0a59d620dba1c55609fe3664da78cd99ec2e4f6ce5"
           },
           {
             "count": 37,
             "first_line": 47,
             "kind": "raise",
-            "last_line": 578,
-            "members_sha256": "af31ee9e8e111c6839e8532e61914c6a13f8343a7f77d2967c12b5f87f1e26c2"
+            "last_line": 591,
+            "members_sha256": "e03eea3f5bae90da1ebd7894e76dd46a1fe9b77cc34ddb56189c42d38576f24d"
           },
           {
             "count": 1,
-            "first_line": 491,
+            "first_line": 504,
             "kind": "state-mutation",
-            "last_line": 491,
-            "members_sha256": "3941bac26dd56341ea319856b9e35d9b19cf2190229b2ddec4a87a669ac99613"
+            "last_line": 504,
+            "members_sha256": "b75f4979141cab3dec6dcdfd8211701dde0997f64b05beca05f3f5c7c3cc3310"
           }
         ],
         "first_line": 1,
@@ -29424,17 +29430,29 @@
           {
             "bindings": [
               {
-                "bound": "observer_receipts",
-                "target": "orch_dork_observer_receipt"
+                "bound": "handoff_returns",
+                "target": "orch_dork_handoff_returns"
               }
             ],
             "first_line": 55,
             "last_line": 55,
+            "syntax": "import orch_dork_handoff_returns as handoff_returns",
+            "text_sha256": "92e35828e49938f9e9fa963fd84275f308672ee1e8ae9cd675d08c14b76fb2d3"
+          },
+          {
+            "bindings": [
+              {
+                "bound": "observer_receipts",
+                "target": "orch_dork_observer_receipt"
+              }
+            ],
+            "first_line": 56,
+            "last_line": 56,
             "syntax": "import orch_dork_observer_receipt as observer_receipts",
             "text_sha256": "560f0ef25abdb0049cf7092896c114374bf36098f481947198c1901bae86c1c1"
           }
         ],
-        "last_line": 591,
+        "last_line": 604,
         "local_dependencies": [
           {
             "api_sha256": "0d041d4d724979a943223d67f919ec39f46b1e4a85f1152c0192f90a60e5eacd",
@@ -29451,6 +29469,20 @@
             "source_sha256": "3a028118e7e5e8e0189518a56344d15886fa431fde003cc5f5198b39c97230d0"
           },
           {
+            "api_sha256": "c27820ba56d08c17a4da04f6943579441da17bd906e63bbc9db9d52ab3274b6c",
+            "bindings": [
+              [
+                "handoff_returns",
+                "orch_dork_handoff_returns"
+              ]
+            ],
+            "module": "orch_dork_handoff_returns",
+            "path": "skills/orch-dork/scripts/orch_dork_handoff_returns.py",
+            "review_api_sha256": "c27820ba56d08c17a4da04f6943579441da17bd906e63bbc9db9d52ab3274b6c",
+            "review_source_sha256": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f",
+            "source_sha256": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f"
+          },
+          {
             "api_sha256": "8a2a6e6244c3a5deb795f2118d5cf3ac53377c13fda759b14a366c6bfd30a84d",
             "bindings": [
               [
@@ -29465,19 +29497,19 @@
             "source_sha256": "8b34ff2d5043092e140ee88974ce63230e4353dd5898fe86751efe9f9fc0c11b"
           }
         ],
-        "review_api_sha256": "c0a0e8906dae1633fbbb2342e52e069fccea62fce2ad06f7b40175f3d8f771fa",
-        "review_source_sha256": "58d195847a99e84f7758451f2a170f563db334a2c02d2bff21ea3f5f48181c83",
+        "review_api_sha256": "ece06af07cb319b555adcabff920a4b59585de4eb425ce17e1bc1836261174d9",
+        "review_source_sha256": "919680988d2d55a9c37e2b4f6048be0cacfbcf11df4bb8c34b3027e7d5e22877",
         "semantics": "Qualification preparation actually consumes these admission, project, route and governance contracts. Whole typed report/artifact readers feed pre-spawn, activation and first-action preparation. Shared evaluation helpers do not become separate semantic cases merely by being exported. Actual utility, model, reader, transport, persistence, or release interfaces require ordinary contract and effect tests; internal syntax does not create lifecycle cases.",
-        "source_sha256": "58d195847a99e84f7758451f2a170f563db334a2c02d2bff21ea3f5f48181c83",
-        "source_span_sha256": "58d195847a99e84f7758451f2a170f563db334a2c02d2bff21ea3f5f48181c83"
+        "source_sha256": "919680988d2d55a9c37e2b4f6048be0cacfbcf11df4bb8c34b3027e7d5e22877",
+        "source_span_sha256": "919680988d2d55a9c37e2b4f6048be0cacfbcf11df4bb8c34b3027e7d5e22877"
       },
       "groups": [
-        "classification-group:201c906fbf661fe7014fb84d9406d98718f86aa744cc0f5d8423d4e9ed107c6c",
-        "classification-group:227bb9bd5f828666547a6f2e0523946cdd17f80962171d4205ece50a8915a693",
-        "classification-group:5c4659512cefc3f4f547dfb0888b0eaed53bfb9b8bbf81ec0c8c5f4cf2456c9e",
-        "classification-group:a77851dbcc3f2647a59f11ab82ce070f221d9293891c22b900590cee99886cc8",
-        "classification-group:e12a79ed3b1f8d5972dc051dedf6e5ec21120b644b5c7fa55496322654a3eb10",
-        "classification-group:f806124d8e40c8891da62b6f785bc2508dedcdca81e78688b51c43d9700c8111"
+        "classification-group:01d3959a5970a68b631938a43b17b900be6e95372b0ae219c9228a4614ba7ac6",
+        "classification-group:2b96da28a257648c634977d57e7a6f1d8ade08bee9af746d03cc6d9cdfd02b4a",
+        "classification-group:33ee1339300d403586020679bb209bc587f46071b31bb42a1b4f9ead817993be",
+        "classification-group:53dfadd5c9b09a9164daff9c700e7603f0d51971c3b8fb0ddfc680bdff45182d",
+        "classification-group:7a8d39fe25bda1956d31fb4c6aa6886c4789d0f745a15c3fb554ec26bddba235",
+        "classification-group:d66ea5895f06c4e8952b69c2fde813b0baf0c8a0a54ef2e429355901fc787152"
       ],
       "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
       "policy": "family-d-supporting-ordinary-contracts",
@@ -32372,7 +32404,7 @@
           "verified.get",
           "workspace.mkdir"
         ],
-        "contract_identity": "a83ff7de8eecd21883e7a94de1b51078b02923beb169c7c9ba2c2a23bf79c90d",
+        "contract_identity": "7459051c433988c3dfd8e5986b592f663241ac5386ee018fc9a9c1f686d2efd1",
         "dependency_bindings": [
           [
             "Any",
@@ -32751,7 +32783,7 @@
             "source_sha256": "daa6f7dcee9bb9ea672c6073307918d2c5c51cd6ba536dea4c015b2e8340983a"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -32760,9 +32792,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           },
           {
             "api_sha256": "14c75add70ecfbe1ea494eee7ae31a571dbb23a881b548cf216292530b763094",
@@ -46213,7 +46245,7 @@
           "type",
           "validation.get"
         ],
-        "contract_identity": "97f8e82d21127ade8a369daacf15f6f884c09ed2c35b0b41693754b7f939a0a5",
+        "contract_identity": "8dd74841f3e016c9efadb239da39aeab097a3fd91bc69077a806fc280b4a6db0",
         "dependency_bindings": [
           [
             "Any",
@@ -46512,7 +46544,7 @@
             "source_sha256": "4caa13708684a5bf8f5d849452fe4e2276874b5df492994a7894741c9101c1c9"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -46521,9 +46553,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "8d55d3b65cd497b0cf733aa5c473801dc7a35b19c8154a57ceeb6e3196610978",
@@ -50854,7 +50886,7 @@
           "worker_thread.get",
           "zip"
         ],
-        "contract_identity": "6bdbc53b86fbd021139152038624f4f7c165ab7ef4529d1223b655f979fbf90a",
+        "contract_identity": "676b669b4e160af23587bbbf989c7350af22434eff340359bbc3278159e9d06e",
         "dependency_bindings": [
           [
             "Any",
@@ -52432,7 +52464,7 @@
             "source_sha256": "b8b5bc93dfe78e2eec3189d4c6144575b2884326a0b1b2753a525c75df5468d1"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -52441,9 +52473,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "710db0e71bb58f181b65360735c301ad03baa4b118d298e7d11ed091d8601861",
@@ -58124,6 +58156,301 @@
       "basis": {
         "api_bindings": [
           [
+            "MAX_BRIEF_BYTES",
+            "value"
+          ],
+          [
+            "MAX_HANDOFF_BYTES",
+            "value"
+          ],
+          [
+            "MAX_ITEMS",
+            "value"
+          ],
+          [
+            "MAX_ITEM_CHARS",
+            "value"
+          ],
+          [
+            "REPORT_SCHEMA",
+            "value"
+          ],
+          [
+            "ReturnsError",
+            "class"
+          ],
+          [
+            "check_returns",
+            "function"
+          ],
+          [
+            "followup_message",
+            "function"
+          ],
+          [
+            "parse_brief_returns",
+            "function"
+          ]
+        ],
+        "api_sha256": "c27820ba56d08c17a4da04f6943579441da17bd906e63bbc9db9d52ab3274b6c",
+        "call_targets": [
+          "', '.join",
+          "','.join",
+          "ANY_HEADING.match",
+          "BRIEF_HEADING.match",
+          "BRIEF_ITEM.match",
+          "BRIEF_ITEM_PREFIX.match",
+          "FENCE.match",
+          "FENCE_CLOSE.match",
+          "GLUED_HEADING.match",
+          "HANDOFF_ANSWER.match",
+          "HANDOFF_ANSWER_PREFIX.match",
+          "HANDOFF_HEADING.match",
+          "Path",
+          "ReturnsError",
+          "SystemExit",
+          "_canonical",
+          "_handoff_section",
+          "_main",
+          "_read",
+          "_read_answers",
+          "_requested",
+          "_sha256",
+          "_unfenced",
+          "argparse.ArgumentParser",
+          "check.add_argument",
+          "check_returns",
+          "closed.group",
+          "commands.add_parser",
+          "enumerate",
+          "follow.add_argument",
+          "followup_message",
+          "glued.group",
+          "hashlib.sha256",
+          "hashlib.sha256(text.encode('utf-8')).hexdigest",
+          "int",
+          "issues.append",
+          "items.append",
+          "json.dumps",
+          "len",
+          "line.lstrip",
+          "line.strip",
+          "lines.append",
+          "lines.extend",
+          "list",
+          "match.group",
+          "match.group(2).lower",
+          "match.group(2).strip",
+          "match.group(3).strip",
+          "opened.group",
+          "parse_brief_returns",
+          "parser.add_subparsers",
+          "parser.parse_args",
+          "path.is_file",
+          "path.is_symlink",
+          "path.read_bytes",
+          "path.stat",
+          "range",
+          "raw.decode",
+          "re.compile",
+          "section.append",
+          "set",
+          "sorted",
+          "str",
+          "sys.stderr.write",
+          "sys.stdout.write",
+          "text.encode",
+          "text.splitlines",
+          "unrequested.append"
+        ],
+        "contract_identity": "94f6bbfd5614666f87d7b4a60227406084125c0d4c71b5e319729252c20fca6e",
+        "dependency_bindings": [
+          [
+            "Any",
+            "typing.Any"
+          ],
+          [
+            "Path",
+            "pathlib.Path"
+          ],
+          [
+            "annotations",
+            "__future__.annotations"
+          ],
+          [
+            "argparse",
+            "argparse"
+          ],
+          [
+            "hashlib",
+            "hashlib"
+          ],
+          [
+            "json",
+            "json"
+          ],
+          [
+            "re",
+            "re"
+          ],
+          [
+            "sys",
+            "sys"
+          ]
+        ],
+        "effect_spans": [
+          {
+            "count": 133,
+            "first_line": 33,
+            "kind": "call",
+            "last_line": 280,
+            "members_sha256": "76bcf8aafd56d85c011a1842a5bbddba516aafaa07b81c029d3ec5314af0d6de"
+          },
+          {
+            "count": 8,
+            "first_line": 15,
+            "kind": "dependency-import",
+            "last_line": 23,
+            "members_sha256": "39c79e65e77366596aba58d3541014f2bc75f42752d77239c9473d9153e9f431"
+          },
+          {
+            "count": 8,
+            "first_line": 145,
+            "kind": "raise",
+            "last_line": 280,
+            "members_sha256": "e9e63061339707f3184839e68a89704cc161dfe5d38ee9e4c1a695b5788ba01f"
+          },
+          {
+            "count": 5,
+            "first_line": 162,
+            "kind": "state-mutation",
+            "last_line": 211,
+            "members_sha256": "a89d96ea0eca47061721553fb7fb06c09789751982dbe638becb69c57c47dfa6"
+          }
+        ],
+        "first_line": 1,
+        "imports": [
+          {
+            "bindings": [
+              {
+                "bound": "annotations",
+                "target": "__future__.annotations"
+              }
+            ],
+            "first_line": 15,
+            "last_line": 15,
+            "syntax": "from __future__ import annotations",
+            "text_sha256": "a6284e6d3d43bdfbf0da732945adb2b4f31147c92bea47aee100d7f556c22d00"
+          },
+          {
+            "bindings": [
+              {
+                "bound": "argparse",
+                "target": "argparse"
+              }
+            ],
+            "first_line": 17,
+            "last_line": 17,
+            "syntax": "import argparse",
+            "text_sha256": "f534a72c58d199602723840a24761409f227f4238759b1f6b1982afb8956b460"
+          },
+          {
+            "bindings": [
+              {
+                "bound": "hashlib",
+                "target": "hashlib"
+              }
+            ],
+            "first_line": 18,
+            "last_line": 18,
+            "syntax": "import hashlib",
+            "text_sha256": "ada1d9e0a360cda0fd1c8757d297aa74a4fc8d7193a69d3c28b43afc6950e9f9"
+          },
+          {
+            "bindings": [
+              {
+                "bound": "json",
+                "target": "json"
+              }
+            ],
+            "first_line": 19,
+            "last_line": 19,
+            "syntax": "import json",
+            "text_sha256": "ff3e4d4dcf7250cae8d622d77c9a6d69aefcf4ab04ef9920218fafe93c0f1991"
+          },
+          {
+            "bindings": [
+              {
+                "bound": "Path",
+                "target": "pathlib.Path"
+              }
+            ],
+            "first_line": 20,
+            "last_line": 20,
+            "syntax": "from pathlib import Path",
+            "text_sha256": "6d69f2ac09017b8a49d050ab336e953b8fa02ae08c24396916ea7ea42418e627"
+          },
+          {
+            "bindings": [
+              {
+                "bound": "re",
+                "target": "re"
+              }
+            ],
+            "first_line": 21,
+            "last_line": 21,
+            "syntax": "import re",
+            "text_sha256": "66ec018201fb03f10df19f1a56a1264beb2654e8f07c2f163f023ebd53a751e4"
+          },
+          {
+            "bindings": [
+              {
+                "bound": "sys",
+                "target": "sys"
+              }
+            ],
+            "first_line": 22,
+            "last_line": 22,
+            "syntax": "import sys",
+            "text_sha256": "9e77b3746ea081eb4c557e71cc84ca29dc66a89d18a07e85dba66a336e7310ae"
+          },
+          {
+            "bindings": [
+              {
+                "bound": "Any",
+                "target": "typing.Any"
+              }
+            ],
+            "first_line": 23,
+            "last_line": 23,
+            "syntax": "from typing import Any",
+            "text_sha256": "063e3d97fbe5c7382df417aae2453be61a01861561f37741b5ce484cfd6551d0"
+          }
+        ],
+        "last_line": 293,
+        "local_dependencies": [],
+        "review_api_sha256": "c27820ba56d08c17a4da04f6943579441da17bd906e63bbc9db9d52ab3274b6c",
+        "review_source_sha256": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f",
+        "semantics": "These expose real typed task, handoff, worker-result, lane/workspace and DAG contracts, including aliases. Finite two-lane qualification uses TaskSpec/handoff contracts; broader write-capable workspace and portable-worker features cannot be excluded merely because a sampled qualification path is read-only. Actual utility, model, reader, transport, persistence, or release interfaces require ordinary contract and effect tests; internal syntax does not create lifecycle cases.",
+        "source_sha256": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f",
+        "source_span_sha256": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f"
+      },
+      "groups": [
+        "classification-group:132b6f9ad345ff4f4cc2bbe07535dd86a8e1acf1f239edd573e9f498877d6b62",
+        "classification-group:3876d5f0f12bb94781ecf12cabbf9b8e63efe1a261152fb103056d63b8224d68",
+        "classification-group:6eebb2116a26a1bbb54c531475068b5110f5a5c911b977b5dd39737c9e96bf3b",
+        "classification-group:76396c21c181f30dc91494aad0d0b1ec1da2db3562a068400a7bba8f07c89da5",
+        "classification-group:c1f59cc9abd40e2b85ef3477360c1a7f9dadcad40a6098f973a573a4b3f76bb8",
+        "classification-group:c232b34bc145e0b34cc086cf0290505cad1401a3eee50edf4222c6e8270cb34e"
+      ],
+      "path": "skills/orch-dork/scripts/orch_dork_handoff_returns.py",
+      "policy": "family-j-supporting-ordinary-contracts",
+      "route": "SUPPORTING_CONTRACT"
+    },
+    {
+      "basis": {
+        "api_bindings": [
+          [
             "BoundedInputError",
             "value"
           ],
@@ -59000,7 +59327,7 @@
           "weakref.ref",
           "worker.get"
         ],
-        "contract_identity": "1b8cd86a0f6fea3cf403c65683c3c92ac579b9c1f74e598c9aff0fee144a0016",
+        "contract_identity": "2c63fcf1565c30f6a8d739c122cd6f83ea25c7f064f4c2aa381749f12689b583",
         "dependency_bindings": [
           [
             "Any",
@@ -59696,7 +60023,7 @@
             "source_sha256": "6bc8c662580f2eb82c492cde32604e32cbc914f227c575ffeba5d52b4992dad6"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -59705,9 +60032,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "695d54e07bf54a43ea7c45be08c9ed9f60402d5a0c09dbafa0a2161009173842",
@@ -84742,7 +85069,7 @@
           "value.strip",
           "value['predecessor'].get"
         ],
-        "contract_identity": "750fe3249f6a3a29fa0746156684c2bfd4764789a0f38890281545e869507d35",
+        "contract_identity": "21aeef729792753f782f6a739e826c80c4a1ccf180320556eb13d28aa1b2f097",
         "dependency_bindings": [
           [
             "Any",
@@ -85227,7 +85554,7 @@
             "source_sha256": "b8b5bc93dfe78e2eec3189d4c6144575b2884326a0b1b2753a525c75df5468d1"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -85236,9 +85563,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           },
           {
             "api_sha256": "997a13ff7c037834281b1d36e136e1c633ad16a65cdbc673a268380c70a915fe",
@@ -88759,7 +89086,7 @@
           "watcher.utc_now",
           "watcher.write_json"
         ],
-        "contract_identity": "5423757a961217543955d6e8cb8181d09b0407ede30ad628d7030e7e6b8b1d19",
+        "contract_identity": "115bb92772cf2b1cb9cacd94076bee9d283cf48d8b209991f0a8951836e6f22f",
         "dependency_bindings": [
           [
             "Any",
@@ -89192,7 +89519,7 @@
             "source_sha256": "7124bd1136369f34d68ebea26dc1b3a25151166c41eced30373c08f28106ece5"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -89201,9 +89528,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "d8deeb1e8c2c62766065030cdb3db430381f3ecf4f25f2ce93aa28ab9e890b9a",
@@ -107118,7 +107445,7 @@
           "weakref.ref",
           "{'claim': claim, 'report': report, 'context': context, 'physical_observation': physical_observation, 'release_host_check': release_host_check, 'marketplace_build': marketplace_build, 'installation': installation, 'cleanup_observations': cleanup_observations}.items"
         ],
-        "contract_identity": "467adfedc0261f83c26328a4ebf90b071eeab5d80abd19ec771cbea75cec67d3",
+        "contract_identity": "d46c35a1797c4ce7bc5f974ae4801814deb1ece90d95eb6de12487cbfdb821a1",
         "dependency_bindings": [
           [
             "Any",
@@ -107714,7 +108041,7 @@
             "source_sha256": "413ea20d8699ee65466028a82e87b13ef941e8f4a00f0aa765b7b2a35a68a781"
           },
           {
-            "api_sha256": "9229dc4db69440627664c1fa59a06302762e406af787633d066560c141ce61c4",
+            "api_sha256": "1242e0d8b537ad40021fc191fc6758416bcf9c317b4ea6467b79ace39fb13f12",
             "bindings": [
               [
                 "release_execution",
@@ -107723,9 +108050,9 @@
             ],
             "module": "lifecycle_conformance.release_execution",
             "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
-            "review_api_sha256": "9229dc4db69440627664c1fa59a06302762e406af787633d066560c141ce61c4",
-            "review_source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59",
-            "source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59"
+            "review_api_sha256": "1242e0d8b537ad40021fc191fc6758416bcf9c317b4ea6467b79ace39fb13f12",
+            "review_source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082",
+            "source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082"
           },
           {
             "api_sha256": "6acde8f0fee18f65ea4ed542f0c3ac689110ca0e669dd35ceda8cb03810d0eac",
@@ -107760,7 +108087,7 @@
             "source_sha256": "daa6f7dcee9bb9ea672c6073307918d2c5c51cd6ba536dea4c015b2e8340983a"
           },
           {
-            "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+            "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
             "bindings": [
               [
                 "runtime_package",
@@ -107769,9 +108096,9 @@
             ],
             "module": "orch_dork_runtime_package",
             "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-            "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-            "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-            "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+            "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+            "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+            "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
           }
         ],
         "review_api_sha256": "97e3c9cc253d1fc019e8aaaed38ecf9988ca8062ff0f68fdffa0f8223a18b3cf",
@@ -112036,7 +112363,7 @@
             "function"
           ]
         ],
-        "api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
+        "api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
         "call_targets": [
           "', '.join",
           "(root / DIRECT_ACTION_CONFIG_PATH).read_bytes",
@@ -112223,7 +112550,7 @@
           "validate_projected_runtime_package",
           "validate_runtime_package"
         ],
-        "contract_identity": "4a8ef87996ae8f407fd4ff7bf7ad6c236e7d3ccca79818c34978f0b7a0629115",
+        "contract_identity": "93131b85c89757080796e046e8479e96c0ae3fc17715440d16b25862c7950a51",
         "dependency_bindings": [
           [
             "Any",
@@ -112293,10 +112620,10 @@
         "effect_spans": [
           {
             "count": 533,
-            "first_line": 410,
+            "first_line": 412,
             "kind": "call",
-            "last_line": 1630,
-            "members_sha256": "be1079feff8311b456b6613ae0b3b637d54337b8d6ab6427affd2c90933a8628"
+            "last_line": 1632,
+            "members_sha256": "328ba13ae76adc0f7010bd4e806948d2ba27b8bc6e04c75de50858e98c875657"
           },
           {
             "count": 12,
@@ -112307,17 +112634,17 @@
           },
           {
             "count": 77,
-            "first_line": 593,
+            "first_line": 595,
             "kind": "raise",
-            "last_line": 1630,
-            "members_sha256": "33f89d86083477313de6dc413c363c9a0751eb8b2cb56084ec4f3f1a69b1c2a5"
+            "last_line": 1632,
+            "members_sha256": "ae0be787a8404233d9275960246a3d44e5c73521f02b370789ea2cf2046c3be2"
           },
           {
             "count": 6,
-            "first_line": 564,
+            "first_line": 566,
             "kind": "state-mutation",
-            "last_line": 1137,
-            "members_sha256": "31628138263df1bad30b37096d0cd947c1978045137ab693386df6145086f5bd"
+            "last_line": 1139,
+            "members_sha256": "36037db9337535004abe252e7c48f3a9fa75db6c6ddab5ac7b0615ec440fcb09"
           }
         ],
         "first_line": 1,
@@ -112483,21 +112810,21 @@
             "text_sha256": "f945ef78aee957ce668fc64b156b8393ddad397478ec68d4a5c2eab52288722f"
           }
         ],
-        "last_line": 1630,
+        "last_line": 1632,
         "local_dependencies": [],
-        "review_api_sha256": "b2ce377372009dd56033d983de9238294e8934371d5a4fed4f8193f0d497fc02",
-        "review_source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
+        "review_api_sha256": "257df87cfe3b3bf3b0d28a6217ce060642b9b2159b17982dfbde7e0642b72101",
+        "review_source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
         "semantics": "These build/validate packages, marketplace/health/provenance/SBOM and clean-machine acceptance results. They are supporting release contracts and final mandatory gates, not evidence that a lifecycle execution passed. The release_and_install seam must enforce campaign identity and consumption. Actual utility, model, reader, transport, persistence, or release interfaces require ordinary contract and effect tests; internal syntax does not create lifecycle cases.",
-        "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
-        "source_span_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
+        "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
+        "source_span_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
       },
       "groups": [
-        "classification-group:44fb9045cf30387bedb5410fb2db3dc0c23c1eb1f01bd506dd17daaa9ec4d533",
-        "classification-group:aa3beaea731948f46724c2f198ee33a3b4651bcc416d989e1e1014fb0b959984",
-        "classification-group:b0e62535ab6a57774a657bf345808737ce2bf3fe59d6974875a6c8d944f65f16",
-        "classification-group:becf2c98b0e11a5fd910379beb884791fb2e146dd50ca7159adf82010bf129af",
-        "classification-group:bf401718a8bfe1d2eac05bbad47439fc52c0d16b77dc832e755a82f4d44d5381",
-        "classification-group:cac79a65198ec259ea93a01334f12d0eedf6bd9157c97c62ddb5cd4f16b073ee"
+        "classification-group:34acccc0c90fadd8db7a3f8e38d3dc791d247f16ac6845f043b4726d90ac4236",
+        "classification-group:378b6408a577f351aa2191c540e44b722ca440262c2488294f2d57501bde4ab5",
+        "classification-group:c05ed2c69747d4f66c78c4df419f293c861b3a865e4af8e9fcc66d7e9a5ac141",
+        "classification-group:f1a44572bd257984282ad8115946ec1d0c17787e9b0a34c0ec8f272f1ad950d6",
+        "classification-group:f366aa46b9465f6c2fb10ceb082af21d18a43c6ec0f61704075d67664e18fc1b",
+        "classification-group:f5d0252ee025e288530a0dcc73ed1f7bd0307fc36c796c35646a1c8b7be47ce8"
       ],
       "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
       "policy": "family-m-supporting-ordinary-contracts",
@@ -129280,6 +129607,20 @@
       "path": "skills/orch-dork/scripts/orch_dork_adaptive_contracts.py",
       "source_sha256": "6b27f5b3839902389f52fe0e92dc240738e359eb55821e82e0cca98b238d835c"
     },
+    "classification-group:01afd168d524248e263d115ffddb4cab0f047d176ef0decaa9e0c25fabe11c84": {
+      "kind": "exports",
+      "member_count": 6,
+      "member_sha256": "c758b91fc5985d1906019d3b4984161d12a279320d14b91fd940ada0c56ff01c",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
+      "source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082"
+    },
+    "classification-group:01d3959a5970a68b631938a43b17b900be6e95372b0ae219c9228a4614ba7ac6": {
+      "kind": "bindings",
+      "member_count": 172,
+      "member_sha256": "c10f4967d4d0c1c810df7942f023261e67ffc350a5a4d3f48d16631ed95f3c98",
+      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
+      "source_sha256": "919680988d2d55a9c37e2b4f6048be0cacfbcf11df4bb8c34b3027e7d5e22877"
+    },
     "classification-group:01f21d03402c6d1401cdf233520fd89940d4717e19d90dee9553048a02ed3702": {
       "kind": "source_obligations",
       "member_count": 31,
@@ -129910,6 +130251,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_qualification_wave.py",
       "source_sha256": "5ae6f605022ed4b07d931b2c0e2aec0d90e9181bf2c09a44a55ffdced627c5da"
     },
+    "classification-group:132b6f9ad345ff4f4cc2bbe07535dd86a8e1acf1f239edd573e9f498877d6b62": {
+      "kind": "bindings",
+      "member_count": 134,
+      "member_sha256": "70ab9fe9186db833e68ce2e05cc5c072f81e5dfd66c047def0c80f9afe86b094",
+      "path": "skills/orch-dork/scripts/orch_dork_handoff_returns.py",
+      "source_sha256": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f"
+    },
     "classification-group:1385293530672a8d5c59a8e598415dd1f9c064fb9185d7af6d3c734e9d0418f2": {
       "kind": "bindings",
       "member_count": 68,
@@ -130323,13 +130671,6 @@
       "path": "skills/orch-dork/scripts/orch_dork_mission_publication.py",
       "source_sha256": "09790e34c9c8549aac00ffc69d0b23813d4c074c65c3b83f5a49d545fbd1730d"
     },
-    "classification-group:1d7f129a1ef0e78a9be90a636c5bcff3116f9898a450643471abfa0d08f3eeec": {
-      "kind": "effects",
-      "member_count": 498,
-      "member_sha256": "253a2d5c0889f23c2e89c7e2462eb2fd5ee47e24079f4c9b6173130f61363dec",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
-      "source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59"
-    },
     "classification-group:1d81e7b5e9c0be3f606061d425fb597554e4ec174dd39e136addc8a50e4f1aa0": {
       "kind": "effects",
       "member_count": 74,
@@ -130435,13 +130776,6 @@
       "path": "skills/orch-dork/scripts/orch_dork_qualification_rehearsal.py",
       "source_sha256": "5a338e3804e7383257f127dac4509b7100d1212dbc49b6f52bf5637417e1a10c"
     },
-    "classification-group:201c906fbf661fe7014fb84d9406d98718f86aa744cc0f5d8423d4e9ed107c6c": {
-      "kind": "exports",
-      "member_count": 9,
-      "member_sha256": "c411fea1f570266c95e44d42714d1f2fcdb524ad173a19fcbd1b2504311bc89b",
-      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
-      "source_sha256": "58d195847a99e84f7758451f2a170f563db334a2c02d2bff21ea3f5f48181c83"
-    },
     "classification-group:20525a02b162fff1a1d405836851938c8a536cdf5d53d598ee66a9681859bfea": {
       "kind": "effects",
       "member_count": 1705,
@@ -130477,13 +130811,6 @@
       "path": "scripts/ci_validate_manifest.py",
       "source_sha256": "bf198aa5ea93be3c9b53e5ea74ce3200e5522b6b3c2cf440a88b83fef397f41a"
     },
-    "classification-group:21e8446630dbbfc497cf5ad91e967762eea2ce1fbc7f7f57827795bd160bcefd": {
-      "kind": "bindings",
-      "member_count": 296,
-      "member_sha256": "6135d59bc377a30cb292935daca44fad6d9652c594ec135e36a85c01aae51514",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
-      "source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59"
-    },
     "classification-group:21eb0de273a508aa34e32bcc1df98e889dfaf602e4d812d817baa93bc78e30ee": {
       "kind": "aliases",
       "member_count": 21,
@@ -130497,13 +130824,6 @@
       "member_sha256": "51a82b87b48332c20a21447d021c9a96833044739147099609eee41b5d854a51",
       "path": "skills/orch-dork/scripts/orch_dork_custody_exception_ledger.py",
       "source_sha256": "da248a2036193d3c6e6e2261ae2437ec70f9d407ed101077a76e5c260f32efb1"
-    },
-    "classification-group:227bb9bd5f828666547a6f2e0523946cdd17f80962171d4205ece50a8915a693": {
-      "kind": "effects",
-      "member_count": 255,
-      "member_sha256": "03c14c8eca86703f2cf496a2ea68076cc5fd36f63f9dd47a26fa98fe1cad1b84",
-      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
-      "source_sha256": "58d195847a99e84f7758451f2a170f563db334a2c02d2bff21ea3f5f48181c83"
     },
     "classification-group:22d3a28cdbdbe8ecdfa202c6263e85fadc5df77f82cdeb7bace643f8c3051c6c": {
       "kind": "exports",
@@ -130841,6 +131161,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_agent_lifecycle.py",
       "source_sha256": "b90c7c57ce34670257b2cd6eddcd370c9a41b9ce87a1d81967b6e8ffb382c4b5"
     },
+    "classification-group:2b96da28a257648c634977d57e7a6f1d8ade08bee9af746d03cc6d9cdfd02b4a": {
+      "kind": "aliases",
+      "member_count": 19,
+      "member_sha256": "a11de40f6d7e69a29942f162c7a1496b7b14ba6d5d601d0a9715b465996426a2",
+      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
+      "source_sha256": "919680988d2d55a9c37e2b4f6048be0cacfbcf11df4bb8c34b3027e7d5e22877"
+    },
     "classification-group:2badb0bf6067ecc4f056934aa699616e5a117cb5f9185e19a008e58b63a1206c": {
       "kind": "module_effects",
       "member_count": 3,
@@ -130890,6 +131217,13 @@
       "path": "skills/orch-dork/scripts/lifecycle_conformance/scope_policy.py",
       "source_sha256": "2495f53b42d6af2886cc41b3181b17d9a1e603b54c6223493a20e78c4ad92c2a"
     },
+    "classification-group:2c7d631f41dc5b3c9b96b3d3a9dbe0b240c3dc2102b0ddf54817573ff3e6bcdf": {
+      "kind": "aliases",
+      "member_count": 43,
+      "member_sha256": "5756c7263f751e8e4e20c8d511f8c4163110277e8c9c5d5b31539d1382eb73a5",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
+      "source_sha256": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f"
+    },
     "classification-group:2c91e19dd78ceee2f5a1c07774f89e4cf4a79b0ae522543d1f13d285a068bc59": {
       "kind": "source_obligations",
       "member_count": 20,
@@ -130931,13 +131265,6 @@
       "member_sha256": "50ee6de590ba82d0292d5ab7234949d1a9d2b24f8458ac43cc6b62c07dad0622",
       "path": "skills/orch-dork/scripts/orch_dork_provenance.py",
       "source_sha256": "de7d3d65208ae3482cad0eb7df7bf80f09d076bd555c704c90c77519ee890ce4"
-    },
-    "classification-group:2e27840df3239281e2c2f31db489668f67dc0966b568d2da1449540df32bb8ab": {
-      "kind": "bindings",
-      "member_count": 404,
-      "member_sha256": "e1008a41758526cdaf950b499001d8855f203a468683c863e83b72d70de167b2",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
-      "source_sha256": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d"
     },
     "classification-group:2e37a3a6a9038ba311965bd23742ea42c6263a20d10d1c1438c283ecc8f7f2ac": {
       "kind": "module_effects",
@@ -131100,13 +131427,6 @@
       "path": "skills/orch-dork/scripts/orch_dork_route_learning.py",
       "source_sha256": "7124bd1136369f34d68ebea26dc1b3a25151166c41eced30373c08f28106ece5"
     },
-    "classification-group:334ea437ced29da547d7a08a0558d8b07b32215fdd15e8fcad4f96aebab1ff32": {
-      "kind": "exports",
-      "member_count": 6,
-      "member_sha256": "c758b91fc5985d1906019d3b4984161d12a279320d14b91fd940ada0c56ff01c",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
-      "source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59"
-    },
     "classification-group:33970eff9e7f0bcccca8a622065c65759cd8eadf1dc5bf3a4db7616c73e0e0d9": {
       "kind": "source_obligations",
       "member_count": 15,
@@ -131127,6 +131447,13 @@
       "member_sha256": "42a6c83c70e09cf9837d67b35d8dd76d9d5e9c0aa809c1d6273bf2230a7a50dc",
       "path": "skills/orch-dork/scripts/orch_dork_completion_process.py",
       "source_sha256": "eca6b424aadb49549b528624f2e7d74c751fe2079af0517ddfce69cad593acf6"
+    },
+    "classification-group:33ee1339300d403586020679bb209bc587f46071b31bb42a1b4f9ead817993be": {
+      "kind": "effects",
+      "member_count": 260,
+      "member_sha256": "8d7c955397bf41cb903bc48cb060d73e8072a604477952e0f918f1ddb1b09c77",
+      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
+      "source_sha256": "919680988d2d55a9c37e2b4f6048be0cacfbcf11df4bb8c34b3027e7d5e22877"
     },
     "classification-group:3404c7038cd71a8e0a34f7f047de9cb59c79351983dffbc69eba85fb9d75a18f": {
       "kind": "aliases",
@@ -131169,6 +131496,13 @@
       "member_sha256": "b99dd4fce218bab43a0114fc342c0641fa820a4baca65af40bc36932056988b1",
       "path": "skills/orch-dork/scripts/orch_dork_clean_machine_acceptance.py",
       "source_sha256": "a56056442fc498d4655424917c27b795acf5b14466f4b34a590d0094deb5a078"
+    },
+    "classification-group:34acccc0c90fadd8db7a3f8e38d3dc791d247f16ac6845f043b4726d90ac4236": {
+      "kind": "aliases",
+      "member_count": 37,
+      "member_sha256": "e5f8072cd2939affd3f8adb6eefec9cad8fcc391827b18f2dc5865048752bcab",
+      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
+      "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
     },
     "classification-group:34af5f56d7e2a5af325c09f9428ff036fa740f4e00b437a183d3b858d88b806c": {
       "kind": "aliases",
@@ -131289,6 +131623,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_dogfood_recovery.py",
       "source_sha256": "b600c3e231a0928ff2415884f8a068e81b7b5eeb00088bc121f95ddebb73beb6"
     },
+    "classification-group:378b6408a577f351aa2191c540e44b722ca440262c2488294f2d57501bde4ab5": {
+      "kind": "module_effects",
+      "member_count": 3,
+      "member_sha256": "428fc9e75ab81ed412b4cc589ed3d85b0fc1e7decb723fb5dae80d85331a06d6",
+      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
+      "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
+    },
     "classification-group:3799903880dd4db8daf95e1cabea1210748b006f5bad34545369c59ca4d8c167": {
       "kind": "bindings",
       "member_count": 383,
@@ -131345,6 +131686,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_read_custody.py",
       "source_sha256": "5caa8150e98f61f15ad5678065a14320e0258a7b27804831a602a00066d9dc02"
     },
+    "classification-group:3876d5f0f12bb94781ecf12cabbf9b8e63efe1a261152fb103056d63b8224d68": {
+      "kind": "source_obligations",
+      "member_count": 26,
+      "member_sha256": "3919938b4076076660bf6dc251d3c7df61a374ef9f27ba2b44048e4a1cc6603e",
+      "path": "skills/orch-dork/scripts/orch_dork_handoff_returns.py",
+      "source_sha256": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f"
+    },
     "classification-group:388d737ebdd44f8c6256178b448354ed8718b09d9bd926fde842707fe9b75975": {
       "kind": "module_effects",
       "member_count": 3,
@@ -131372,6 +131720,13 @@
       "member_sha256": "de2b476499c2f686f504e3d727c88bce4350c31762d79d8bbf85c0fa6fba2259",
       "path": "skills/orch-dork/scripts/orch_dork_observed_spawn_stall_recovery.py",
       "source_sha256": "eafe0375c58c0fdef39ff522a9239a606b8d98477872157b2c8e66aca5192fa7"
+    },
+    "classification-group:396b09adf602bca041d95a2085085fa8ceb4d3ca4cd20118e188cd912df1da5e": {
+      "kind": "module_effects",
+      "member_count": 3,
+      "member_sha256": "7b7393c013ee5f08823865d576082c7c268c07463d7960e20631f14446162e97",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
+      "source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082"
     },
     "classification-group:39830f1b2f7c5a6a325b4cf5c5ab2f43a00fc67e2941b0646cbfaa15a92d6174": {
       "kind": "exports",
@@ -131723,6 +132078,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_worker_lifecycle.py",
       "source_sha256": "38e5201aabd27f53baa8e8a27d124644d5ea220ef764e90b92fedf4d80ea55c6"
     },
+    "classification-group:40608e8c262738df05274362aef8b4f2613074ee57db03001148393a0c92298c": {
+      "kind": "module_effects",
+      "member_count": 3,
+      "member_sha256": "f52d208980d4476e28e4c088dbec004bbaa46f3761330a356f39d5a0427c365d",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
+      "source_sha256": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f"
+    },
     "classification-group:40708af56be801776c6c02e89138377f424cca123d0f66b5af8154aa378c727e": {
       "kind": "module_effects",
       "member_count": 3,
@@ -131778,6 +132140,13 @@
       "member_sha256": "68563f693931a97f69a5b98c2dee38725a724fedc86272fddd72f38b183f3d5c",
       "path": "skills/orch-dork/scripts/orch_dork_topology_closure.py",
       "source_sha256": "a20a865084454fcf6174f16ba5a2646caff2e677b62966cc9d252978e1e05ee7"
+    },
+    "classification-group:419464619a1adfb944cb68649b933e9b7eef5ebfc0e7203671089950a3238d67": {
+      "kind": "effects",
+      "member_count": 538,
+      "member_sha256": "284f3e711654bba2c4bbb2234f2bdd041dbaae0c637ab9fa1af5d4a55b5938f9",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
+      "source_sha256": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f"
     },
     "classification-group:41cfcb1469157d001fa6bd6a883f01330ceda26ef568c435dd92b6faf603bbc4": {
       "kind": "exports",
@@ -131897,13 +132266,6 @@
       "member_sha256": "9c9e324833a24279bc0b517ae5f045bf56d974f61c16fbf6367672a920f76284",
       "path": "skills/orch-dork/scripts/orch_dork_advisory_scan.py",
       "source_sha256": "98bdc4442276760bea66b57c854ffab3901795f430df05306363c7fb79e1d797"
-    },
-    "classification-group:44fb9045cf30387bedb5410fb2db3dc0c23c1eb1f01bd506dd17daaa9ec4d533": {
-      "kind": "aliases",
-      "member_count": 37,
-      "member_sha256": "364b25243195ee03a063b6014d555867ee19ca8f7ad4e0ac889d20d62c0f2c93",
-      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-      "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
     },
     "classification-group:45065be53809c04ebf5f706d4f6b8a80441c4a5f0ea1cc054ed950fa6d8f6535": {
       "kind": "bindings",
@@ -132395,6 +132757,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_issue170_qualification_owner.py",
       "source_sha256": "e2d6cfb8eafbe10b7714efc0d761aa7b5415eb2cf6d2625d75995985dc8141bf"
     },
+    "classification-group:501494ab6f8992910ff2564ad0869b87fe76d6c4d93adcb9a3f9088f2f420e7e": {
+      "kind": "effects",
+      "member_count": 498,
+      "member_sha256": "545959fc9563df21b694a7b66c42b1671b77e7512f5d8c48af19f6b34c79b1ef",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
+      "source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082"
+    },
     "classification-group:502cad1f9ae01c166be6922c5df49d200ab8635afa44bb6d13e42dee88920e98": {
       "kind": "effects",
       "member_count": 2428,
@@ -132562,6 +132931,13 @@
       "member_sha256": "6471a504aebc3b950ee7a0abf2bfafb3bff7bc0ab96569ce5c516c6e8da4a945",
       "path": "skills/orch-dork/scripts/lifecycle_conformance/explorer.py",
       "source_sha256": "b4a403a734c9dbdbd6cb13155992ab50e36f50cf1c637b0f920195d3b594ec53"
+    },
+    "classification-group:53dfadd5c9b09a9164daff9c700e7603f0d51971c3b8fb0ddfc680bdff45182d": {
+      "kind": "exports",
+      "member_count": 9,
+      "member_sha256": "dad9650afe3122c4710d592776ef3d6114a4bf1ec7db459ee9158e6b850db755",
+      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
+      "source_sha256": "919680988d2d55a9c37e2b4f6048be0cacfbcf11df4bb8c34b3027e7d5e22877"
     },
     "classification-group:5421616eb79456e19d49b494cdccfef0bac6e164afec82672b5d6ac3101a88e6": {
       "kind": "module_effects",
@@ -132884,13 +133260,6 @@
       "member_sha256": "8f2892dfcf0743fe94b24d91331773c9356ef7d259559ca6758e53dea284c843",
       "path": "skills/orch-dork/scripts/orch_dork_capacity_inventory.py",
       "source_sha256": "70eb73e286502c0d3eced458b90f202b72fba756ae5cbfd849dcec10a903bc77"
-    },
-    "classification-group:5c4659512cefc3f4f547dfb0888b0eaed53bfb9b8bbf81ec0c8c5f4cf2456c9e": {
-      "kind": "aliases",
-      "member_count": 18,
-      "member_sha256": "ee5923b9735afa0ea2291dadd874202cbb921bc71887dac2f50dda9fb1419f1e",
-      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
-      "source_sha256": "58d195847a99e84f7758451f2a170f563db334a2c02d2bff21ea3f5f48181c83"
     },
     "classification-group:5cbc210c6af71206855ba3658600450bc62e0d2c76ab89d296d3753202956275": {
       "kind": "aliases",
@@ -133424,13 +133793,6 @@
       "path": "skills/orch-dork/scripts/orch_dork_mission_verification.py",
       "source_sha256": "7bd64d30fb8d2164a3bfb5e5cc9840b94ba825bc35963c05fc0d8d6e6f0df987"
     },
-    "classification-group:698eb811e1180719ee1ea82fb6c255987ecda1e3b84776604dc82f66edb9961b": {
-      "kind": "effects",
-      "member_count": 538,
-      "member_sha256": "a1a4e5ed1d4303d565a706418dbd1cb167c8132fb50afab674a51f73669c0021",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
-      "source_sha256": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d"
-    },
     "classification-group:699c7fe43f5f8a32057ba409d73f72816ddf699449e3e30598a23f8fa7235fcd": {
       "kind": "exports",
       "member_count": 30,
@@ -133690,6 +134052,13 @@
       "path": "skills/orch-dork/scripts/lifecycle_conformance/injection_sites.py",
       "source_sha256": "328002abc2a9490eb2193d07c7ea4cec20452963dd0e9bee141c226f8e6b2cd9"
     },
+    "classification-group:6eebb2116a26a1bbb54c531475068b5110f5a5c911b977b5dd39737c9e96bf3b": {
+      "kind": "effects",
+      "member_count": 154,
+      "member_sha256": "54913a78d51c5e9c9c00d23c5c8f32f23183b26218093e13c28f9c100a44e27b",
+      "path": "skills/orch-dork/scripts/orch_dork_handoff_returns.py",
+      "source_sha256": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f"
+    },
     "classification-group:6f2bc370015b9ef2f3004a6fd2dae9984fd9c193beed9a7c55cbed2b253acb6a": {
       "kind": "exports",
       "member_count": 68,
@@ -133781,13 +134150,6 @@
       "path": "skills/orch-dork/scripts/lifecycle_conformance/live_qualification_execution.py",
       "source_sha256": "45d041c19826948aa500512d6637f95cea6dc35eb662ea345a5a2223151bdfe4"
     },
-    "classification-group:702585e34a94849fab848cfa38c9fe05bfd75997ff5bb23a941584fd96211a52": {
-      "kind": "source_obligations",
-      "member_count": 27,
-      "member_sha256": "09d8e9e7a5a5b29269a5986004e2bd5bac986ee3c5a48bbd04ded99af677c4c7",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
-      "source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59"
-    },
     "classification-group:702d2fe4c6077746553ab4eab0e32bf3c78d7ae1bdc30084524bd1ee143ad232": {
       "kind": "bindings",
       "member_count": 281,
@@ -133815,6 +134177,13 @@
       "member_sha256": "7d931d87e5d0595f512f4c2bb34af623513a39f4b29d18786611cffd699109f3",
       "path": "skills/orch-dork/scripts/orch_dork_qualification_progress.py",
       "source_sha256": "bbfa5bc1ef55dff8a9149fb30278ed3488c79a6af84b100a12817adcbb723cd3"
+    },
+    "classification-group:70e60c382c946963296d64e1d7d40d76deb00af8a01f7398daae58c3bd1ddb30": {
+      "kind": "source_obligations",
+      "member_count": 27,
+      "member_sha256": "90e3fe077f15bcf79e622e1c94900d1c32bd924661c1ea1703245412882612f7",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
+      "source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082"
     },
     "classification-group:71189e15027184176a90c9795a6ae3deeefe3ac871a66311f807f2f860d1f530": {
       "kind": "aliases",
@@ -134019,6 +134388,13 @@
       "path": "skills/orch-dork/scripts/lifecycle_conformance/injection_sites.py",
       "source_sha256": "328002abc2a9490eb2193d07c7ea4cec20452963dd0e9bee141c226f8e6b2cd9"
     },
+    "classification-group:76396c21c181f30dc91494aad0d0b1ec1da2db3562a068400a7bba8f07c89da5": {
+      "kind": "exports",
+      "member_count": 9,
+      "member_sha256": "e8496e0ab03b0a6e31b20aafa845f8a7681a85df95afdc922b35ac05cf92e8be",
+      "path": "skills/orch-dork/scripts/orch_dork_handoff_returns.py",
+      "source_sha256": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f"
+    },
     "classification-group:7676a053343617a480b5fea63327784a038c4634cce7e579dc40c6877e744029": {
       "kind": "bindings",
       "member_count": 143,
@@ -134067,6 +134443,13 @@
       "member_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
       "path": "skills/orch-dork/scripts/lifecycle_conformance/__init__.py",
       "source_sha256": "2c7b04a74518fa8e2eb54180cb5ab561fd60c955d851bf69dc910c2fab2c7c5d"
+    },
+    "classification-group:7723d448eda1727689f243779ab4aadfd538f68535c5b922c10787e7c82143a4": {
+      "kind": "exports",
+      "member_count": 7,
+      "member_sha256": "8dad393c425496c86db04e35ec35c8d5d4e80d2204d8fa424cd4d5cb078a62a8",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
+      "source_sha256": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f"
     },
     "classification-group:7728ebf97b10999e8b4f7c7003e066afadbcff1464b952f30b78157d5f636f89": {
       "kind": "exports",
@@ -134158,6 +134541,13 @@
       "member_sha256": "49731021bd636d48d1455a53aeabae14bbe5d082de61c0a15efb7e792f37eb30",
       "path": "skills/orch-dork/scripts/orch_dork_qualification_route_canary.py",
       "source_sha256": "49d061b6fb5e959904a264230ee4edc1fb2459a731b057bd4947f5de32823b31"
+    },
+    "classification-group:7a8d39fe25bda1956d31fb4c6aa6886c4789d0f745a15c3fb554ec26bddba235": {
+      "kind": "source_obligations",
+      "member_count": 23,
+      "member_sha256": "9270bc307bf279fc7554a39dfcd6ffb62cfc7d2af0f870ba501fbf7f6a7614af",
+      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
+      "source_sha256": "919680988d2d55a9c37e2b4f6048be0cacfbcf11df4bb8c34b3027e7d5e22877"
     },
     "classification-group:7ac07a6ce874cf31ee210ecded2fa468cd513aa46570aafbb89cab3a45447f6d": {
       "kind": "effects",
@@ -134509,13 +134899,6 @@
       "path": "skills/orch-dork/scripts/orch_dork_shared_capacity.py",
       "source_sha256": "dca2e0a0c5d2312e8fe96d0ba2575093cfe752cea8c6281ed3fd04ea8b14beb5"
     },
-    "classification-group:844c8fd4a562fc5746af1ec6c642fd448cc24a912323b4f9667c9a67224925ba": {
-      "kind": "aliases",
-      "member_count": 29,
-      "member_sha256": "488f1f64d955633a98e5b41463eb9d2bba60010ed5f19c176693bab86fe16254",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
-      "source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59"
-    },
     "classification-group:8486cbd25af31d0e20c4f5454f0e05f628f21a3351f12226e49dda4280bd9156": {
       "kind": "module_effects",
       "member_count": 3,
@@ -134866,6 +135249,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_post_ack_bridge_failure_recovery.py",
       "source_sha256": "46f17964169ac8d06e5ad951d3bd66943a8d8bc413066c4965fcbe3ae38c8929"
     },
+    "classification-group:8d22fbfee712b29644ada677dce42a50e5791364add21b5bab77e995b68c4779": {
+      "kind": "source_obligations",
+      "member_count": 26,
+      "member_sha256": "23ea541cc9bac5da40f55ed90560a5e6efd52d06dd698f4c4358fde39ee75158",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
+      "source_sha256": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f"
+    },
     "classification-group:8d43e9c06ce4ee363dde403b0ba5a79f395cb26e9200817f78fd40930418ef6a": {
       "kind": "bindings",
       "member_count": 356,
@@ -134900,13 +135290,6 @@
       "member_sha256": "c0cbbf9dbbc92458fe3d9f7a801cb4e9b34f98ef708b84dd361da8554088f490",
       "path": "skills/orch-dork/scripts/lifecycle_conformance/production_adapter.py",
       "source_sha256": "fd6edb6a95611f6d9b7239c45d376b5a6804e9dbb324aa8c3f82e578998b4dc8"
-    },
-    "classification-group:8e11583ff6e240d1fd8d67cd560c3aebad184bc9b6f35c5c89013f4c22ba0e67": {
-      "kind": "aliases",
-      "member_count": 43,
-      "member_sha256": "b497f72a9d50a62455d5af2f975a1aa0b3c5ec7c292b6f35d72dc2fa280a29df",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
-      "source_sha256": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d"
     },
     "classification-group:8e1c609cfa8cc2d2109136711579afb822466ec66645746f94dd8b0cb5a185e2": {
       "kind": "effects",
@@ -135391,13 +135774,6 @@
       "path": "skills/orch-dork/scripts/orch_dork_qualification_closure.py",
       "source_sha256": "e4a9b47bc0b3f87b89c962103640575cd59474fdf7f1cbcd9a5fc3c2b559c28b"
     },
-    "classification-group:9a7e713047da2c1f51fbccec979b3d45c52628777d2e39c9e73a39da399edaa2": {
-      "kind": "module_effects",
-      "member_count": 3,
-      "member_sha256": "f52d208980d4476e28e4c088dbec004bbaa46f3761330a356f39d5a0427c365d",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
-      "source_sha256": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d"
-    },
     "classification-group:9a94e2bad88897214f0fbede1b191ede57dbc952031f407da51b9549a5862e37": {
       "kind": "source_obligations",
       "member_count": 267,
@@ -135418,13 +135794,6 @@
       "member_sha256": "84a61033a362549bd3aa141924192636e95387b9c9612520f512449703a1ba26",
       "path": "skills/orch-dork/scripts/orch_dork_stateful_fuzz.py",
       "source_sha256": "cd2b4b7ec3806732e857f021700860fbfa6850ae58a4af658a19734bedc48aa8"
-    },
-    "classification-group:9affab3d9960781d5f97f8204f50112d674b4f9033a2bcaf2710475e8cff5428": {
-      "kind": "source_obligations",
-      "member_count": 26,
-      "member_sha256": "282afabb687101f45af3e6fed53c2f5618e62a74d021efdb92e43ec0f1e70b6e",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
-      "source_sha256": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d"
     },
     "classification-group:9b1087fe7dba0e6abf47d2886816d5a4a4786b529c5ba2c0ad57a46b7d470ca3": {
       "kind": "source_obligations",
@@ -135860,6 +136229,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_live_view.py",
       "source_sha256": "00153bf2070c3d8923fa60bd10172504b24e0001a91e5b1f8d8b9b399e4f727d"
     },
+    "classification-group:a5e0d5b20011786039a0692eb88dbf0334dea0b5533912c6db73ca075d2f29ef": {
+      "kind": "bindings",
+      "member_count": 404,
+      "member_sha256": "2757edb9b226bf35686aea668e2200273fef54118b6ce83e656142f298838f0b",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
+      "source_sha256": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f"
+    },
     "classification-group:a5f4601d7a3efc0d6592b9f81ce9d28856e8f8d19d9dd4e9787880799f61debd": {
       "kind": "source_obligations",
       "member_count": 18,
@@ -135901,13 +136277,6 @@
       "member_sha256": "053ea05eb484434a6d4d274e31d2e1fc1bff4e00d92e05a7ae9e7522f279c98c",
       "path": "skills/orch-dork/scripts/orch_dork_runtime_receipt_chain.py",
       "source_sha256": "03aac5e2524d52c0dedad881888199e4f82c2076a8be5bbeb392d9143a2acece"
-    },
-    "classification-group:a77851dbcc3f2647a59f11ab82ce070f221d9293891c22b900590cee99886cc8": {
-      "kind": "bindings",
-      "member_count": 170,
-      "member_sha256": "3c860e4e95c6f8115ef0387f846f24bbbfe727df39e07819bcc50fbb5548b906",
-      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
-      "source_sha256": "58d195847a99e84f7758451f2a170f563db334a2c02d2bff21ea3f5f48181c83"
     },
     "classification-group:a779c5f5ce1d8f567eb8945c165833278635ea6c41c7ae5114a99e0609e7df9e": {
       "kind": "module_effects",
@@ -136020,13 +136389,6 @@
       "member_sha256": "1c4ceb6f78bcbb4891607f86c9d5f01b3ab709f2b92dadac1809458f537547e7",
       "path": "skills/orch-dork/scripts/lifecycle_conformance/values.py",
       "source_sha256": "438c943aa8c6a59e219118b762a298d5303495a7699a0996dc1eb4ec3ce5e495"
-    },
-    "classification-group:aa3beaea731948f46724c2f198ee33a3b4651bcc416d989e1e1014fb0b959984": {
-      "kind": "bindings",
-      "member_count": 461,
-      "member_sha256": "c7c6312b4e5aeb2697c7eab65d643b6e803621b03b2c3dc3d09dfd4de9ef4c24",
-      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-      "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
     },
     "classification-group:aa674ca4ba0e5f5d60c6d79c4390ea1651b44e366e9298dd9a1913e214fda635": {
       "kind": "source_obligations",
@@ -136251,13 +136613,6 @@
       "member_sha256": "85531950f3f692f21f7b9d70fbf9b7c5034acc792fa8ee9dd90ccd4ebbd47107",
       "path": "skills/orch-dork/scripts/orch_dork_worker_workspace.py",
       "source_sha256": "19477da625867df3e9386f471c94dba41fb5e499455803c646a79097241d28ee"
-    },
-    "classification-group:b0e62535ab6a57774a657bf345808737ce2bf3fe59d6974875a6c8d944f65f16": {
-      "kind": "effects",
-      "member_count": 628,
-      "member_sha256": "7256963077ae0ecce932889d2101d1a65326dee00657dbae320ce2558dea6275",
-      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-      "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
     },
     "classification-group:b103918bf443c22022a8874a3e5c5fd0749da05b78b9d4a2f09c2633469c5acf": {
       "kind": "exports",
@@ -136777,13 +137132,6 @@
       "path": "skills/orch-dork/scripts/orch_dork_post_spawn_failure_recovery.py",
       "source_sha256": "f9044d2177676cf4e8410d71bcb4c9591daa3579e0adf9e59cce69d94762783e"
     },
-    "classification-group:becf2c98b0e11a5fd910379beb884791fb2e146dd50ca7159adf82010bf129af": {
-      "kind": "module_effects",
-      "member_count": 3,
-      "member_sha256": "ffd137371960119fc9570c0f53e70ad9b65da060817bb95a9d9acf099ac3e05f",
-      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-      "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
-    },
     "classification-group:beead55e3c1ce9020b2ff67bffb44ce80fc38de8abe2e07d9fe970f0b5f7cf6a": {
       "kind": "effects",
       "member_count": 151,
@@ -136797,13 +137145,6 @@
       "member_sha256": "a2c6fb5fe691db30b76a539f10e9f76c8a45646eaa93b00460f1fd2292173163",
       "path": "skills/orch-dork/scripts/orch_dork_usage.py",
       "source_sha256": "9950decfd8e38e2c25d4e87d8b693a64100c1ea1e269b81edab4aba7a53e73c8"
-    },
-    "classification-group:bf401718a8bfe1d2eac05bbad47439fc52c0d16b77dc832e755a82f4d44d5381": {
-      "kind": "source_obligations",
-      "member_count": 94,
-      "member_sha256": "6e59264ad97e702c9237cb0c7f930d8da33ca68a44b2b0817a1337ec6c9236d6",
-      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-      "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
     },
     "classification-group:bf6b702fa5a71181cfd7fc3b67893ac3132adcd3fa9e5f28182d26720c718cec": {
       "kind": "exports",
@@ -136860,6 +137201,13 @@
       "member_sha256": "72db32424a2567ac4d96ea1fb812e28db08b35b37710a06bece68e74e3a6750f",
       "path": "skills/orch-dork/scripts/lifecycle_conformance/candidate_identity.py",
       "source_sha256": "292f0981b9aad7ac5dd95779ac28af136d2df0fa5aaf67badbc1297e01119c94"
+    },
+    "classification-group:c05ed2c69747d4f66c78c4df419f293c861b3a865e4af8e9fcc66d7e9a5ac141": {
+      "kind": "effects",
+      "member_count": 628,
+      "member_sha256": "3ac81ff08ed5a360f70b535088e756a94794fd9cc92696b7253a6d3cce9e09ee",
+      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
+      "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
     },
     "classification-group:c06d7defe95c5f5ab68ce535d849c506c1683e1d74f6215127b93a07af9f1a49": {
       "kind": "bindings",
@@ -136938,6 +137286,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_toml.py",
       "source_sha256": "e5f7a603cb459289449c0b7895a16f061824223f990d18cd2a0e642f65471a75"
     },
+    "classification-group:c1f59cc9abd40e2b85ef3477360c1a7f9dadcad40a6098f973a573a4b3f76bb8": {
+      "kind": "module_effects",
+      "member_count": 3,
+      "member_sha256": "e23ea4a0d4da6ec185d9cec5f3469ef88908490ab5f5c037e7105fe660a7f053",
+      "path": "skills/orch-dork/scripts/orch_dork_handoff_returns.py",
+      "source_sha256": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f"
+    },
     "classification-group:c1f80d9b5f0933ad2e389231f9eb373d06ff360e9cfa536262beb554995bbd47": {
       "kind": "bindings",
       "member_count": 473,
@@ -136965,6 +137320,20 @@
       "member_sha256": "154aa0bd9c12c7c69a6e1e86f930c25293709a2850a182a2872cf077a3e48340",
       "path": "skills/orch-dork/scripts/orch_dork_evidence_policy.py",
       "source_sha256": "920b32438a0e29b9542c5494c0e291cbee7722129464154da2340f6787e22100"
+    },
+    "classification-group:c232b34bc145e0b34cc086cf0290505cad1401a3eee50edf4222c6e8270cb34e": {
+      "kind": "aliases",
+      "member_count": 9,
+      "member_sha256": "1bff87d6bd35698fb0fdd1534f0255313b8fde375ec002f9a9c4c07405c62925",
+      "path": "skills/orch-dork/scripts/orch_dork_handoff_returns.py",
+      "source_sha256": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f"
+    },
+    "classification-group:c250d99ac50a7cc49b5596949db199e446098da8d02ee2bd197ca30898cc50b4": {
+      "kind": "aliases",
+      "member_count": 29,
+      "member_sha256": "27f9f57aa914dba0981c1070d45c32a8b7a7c5e1ddef6f623dd2acc62e5f47a2",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
+      "source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082"
     },
     "classification-group:c252ee38d87451746d8539dd24b8f1cd6fd8cde75ac861b473fcc7237a4d5b2f": {
       "kind": "effects",
@@ -137378,13 +137747,6 @@
       "member_sha256": "8b9b5186cf17190f265327e8b66942494da49b386731a83b7a0d662bd918f439",
       "path": "skills/orch-dork/scripts/orch_dork_qualification_closure.py",
       "source_sha256": "e4a9b47bc0b3f87b89c962103640575cd59474fdf7f1cbcd9a5fc3c2b559c28b"
-    },
-    "classification-group:cac79a65198ec259ea93a01334f12d0eedf6bd9157c97c62ddb5cd4f16b073ee": {
-      "kind": "exports",
-      "member_count": 41,
-      "member_sha256": "23336d0a71ddd3e8524b0c8a285dcb1aa2e19f9c7b09093dc75b4e7c82133b51",
-      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
-      "source_sha256": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed"
     },
     "classification-group:cb18438ac7224720a13bea527cc15ef0065ef0b78f4d0d988476347219409731": {
       "kind": "exports",
@@ -137918,6 +138280,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_qualification_wave.py",
       "source_sha256": "5ae6f605022ed4b07d931b2c0e2aec0d90e9181bf2c09a44a55ffdced627c5da"
     },
+    "classification-group:d66ea5895f06c4e8952b69c2fde813b0baf0c8a0a54ef2e429355901fc787152": {
+      "kind": "module_effects",
+      "member_count": 3,
+      "member_sha256": "18a0e51ebf73cbc11d42887c75f0431172c6b83f3fbb5cc711e77003e4a90d8a",
+      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
+      "source_sha256": "919680988d2d55a9c37e2b4f6048be0cacfbcf11df4bb8c34b3027e7d5e22877"
+    },
     "classification-group:d6bca2f8d62428736891d3aa7d0337bb1fae88af3fc81cd3f02e4a7b5e78cfdd": {
       "kind": "exports",
       "member_count": 37,
@@ -138414,13 +138783,6 @@
       "member_sha256": "6a85904fe3a393351c72c8a61cfec06e1b3df5c147a1310b2f533900c8053794",
       "path": "skills/orch-dork/scripts/orch_dork_project_ground.py",
       "source_sha256": "f359bc9f05b922cbe4c67bf666ea312f28734333fee82ee3fe690cc2d5c7c5b0"
-    },
-    "classification-group:e12a79ed3b1f8d5972dc051dedf6e5ec21120b644b5c7fa55496322654a3eb10": {
-      "kind": "source_obligations",
-      "member_count": 22,
-      "member_sha256": "38572cd5df71647489387ca5b1d4df8b550af879eef6a80c533f47cf1f4e8b4b",
-      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
-      "source_sha256": "58d195847a99e84f7758451f2a170f563db334a2c02d2bff21ea3f5f48181c83"
     },
     "classification-group:e13bd1c2b4c3b9ba7f907ef6bc68f793e20744db6fafd8db199d5d7ef4155ad9": {
       "kind": "exports",
@@ -139066,13 +139428,6 @@
       "path": "skills/orch-dork/scripts/orch_dork_fixture_variants.py",
       "source_sha256": "d96f8832383a1e5060a2a7820f23c7d0564ffa3d850a4d21ecc6072e81acf544"
     },
-    "classification-group:eec7817c874b32e1587f3f405c04da272a06b4ca933e5308e5c2f0455a8adb5b": {
-      "kind": "module_effects",
-      "member_count": 3,
-      "member_sha256": "7b7393c013ee5f08823865d576082c7c268c07463d7960e20631f14446162e97",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
-      "source_sha256": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59"
-    },
     "classification-group:eeee6d2025d04286b87aa78c3290b9927959c4d25c316aa737a02f6810ab8449": {
       "kind": "exports",
       "member_count": 19,
@@ -139170,6 +139525,13 @@
       "member_sha256": "38f7dd6a0fb2094a46107a536788b99dd8c62b161a789f05d73359c90567152a",
       "path": "skills/orch-dork/scripts/orch_dork_governed_run_cleanup.py",
       "source_sha256": "88dec902aac2eaceb61f87a700b085cd54404ce5d405b49e7c2001d8d7d77842"
+    },
+    "classification-group:f1a44572bd257984282ad8115946ec1d0c17787e9b0a34c0ec8f272f1ad950d6": {
+      "kind": "source_obligations",
+      "member_count": 94,
+      "member_sha256": "4b7fab015a46b20a717fa13b7733580fc0a960b27a28a294966ebc7efde35ba1",
+      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
+      "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
     },
     "classification-group:f1d1a10146cd296d67ab3d870f0d27add6ad0c049e6237ee3f2a2cafdaa751a5": {
       "kind": "exports",
@@ -139276,6 +139638,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_dogfood_recovery.py",
       "source_sha256": "b600c3e231a0928ff2415884f8a068e81b7b5eeb00088bc121f95ddebb73beb6"
     },
+    "classification-group:f366aa46b9465f6c2fb10ceb082af21d18a43c6ec0f61704075d67664e18fc1b": {
+      "kind": "bindings",
+      "member_count": 461,
+      "member_sha256": "0c20dab3e8ccf1be61caa27bff2e1d570489cf996c27a8d20e423db4a779db8c",
+      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
+      "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
+    },
     "classification-group:f3bf3a666f2acf98b377d9aa8534647dfbea76f410dafe2c0bc4a01f4d3d0ef2": {
       "kind": "module_effects",
       "member_count": 3,
@@ -139353,6 +139722,13 @@
       "path": "skills/orch-dork/scripts/orch_dork_governed_run_cost.py",
       "source_sha256": "6cab8e7fdd922ff05d665a9fca505bb9c33fff6d790a7b64be024d67555c3b16"
     },
+    "classification-group:f5d0252ee025e288530a0dcc73ed1f7bd0307fc36c796c35646a1c8b7be47ce8": {
+      "kind": "exports",
+      "member_count": 41,
+      "member_sha256": "d8cce0386923df28e5118d3505123810d5e9bab3f2b3070c67a37aec00b6e432",
+      "path": "skills/orch-dork/scripts/orch_dork_runtime_package.py",
+      "source_sha256": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd"
+    },
     "classification-group:f5d26e7900e19f017c4f6f6bda807f24f6b633b73d7c83ac569544ab014e07d3": {
       "kind": "bindings",
       "member_count": 205,
@@ -139416,13 +139792,6 @@
       "path": "skills/orch-dork/scripts/orch_dork_live_view.py",
       "source_sha256": "00153bf2070c3d8923fa60bd10172504b24e0001a91e5b1f8d8b9b399e4f727d"
     },
-    "classification-group:f806124d8e40c8891da62b6f785bc2508dedcdca81e78688b51c43d9700c8111": {
-      "kind": "module_effects",
-      "member_count": 3,
-      "member_sha256": "0b12e43a109ead64a6a8aa3e5dfc35a6e4d163533c0a9e9146649fd0423df413",
-      "path": "skills/orch-dork/scripts/orch_dork_brief_lint.py",
-      "source_sha256": "58d195847a99e84f7758451f2a170f563db334a2c02d2bff21ea3f5f48181c83"
-    },
     "classification-group:f83f76e34abad255eb4ec2b776d1a5a1b6ee3932d71ffe4e486bb6a2914db746": {
       "kind": "source_obligations",
       "member_count": 109,
@@ -139450,6 +139819,13 @@
       "member_sha256": "f4277325ee8cf39450f206a5d163fad42c9c2cccfd0c6f5b7450a33d8c021174",
       "path": "skills/orch-dork/scripts/orch_dork_project_ground_enforcement.py",
       "source_sha256": "f99577553cb57e3ae123bd8f9f4162d421c60778e0ca3decfff5862b0fb51185"
+    },
+    "classification-group:f8d96af69c58899231789c497fbe53accbe6114ee8be17196df933dcaee14ea8": {
+      "kind": "bindings",
+      "member_count": 296,
+      "member_sha256": "fc126983ec9f0b63100495126f7aa28ad9ae9f198a86d478ad80c7e1b7b1cf25",
+      "path": "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py",
+      "source_sha256": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082"
     },
     "classification-group:f918427678d529627bb4315a9e578485196698eb5f34b0f392acf6d6e699647a": {
       "kind": "effects",
@@ -139576,13 +139952,6 @@
       "member_sha256": "11f3a58dd8112fceb8706c0a196cd1d8ff0dd1ce520e6d7ab9a0328776c5414b",
       "path": "skills/orch-dork/scripts/orch_dork_dispatch_packet.py",
       "source_sha256": "ea820ce96bfde55705bd71435efc9f50ad412740d417e3e573312af4e8634fee"
-    },
-    "classification-group:fb8957e3bdabb9d2b0ea842036df759d6d542d086721bd9a525bbccab1be377a": {
-      "kind": "exports",
-      "member_count": 7,
-      "member_sha256": "8dad393c425496c86db04e35ec35c8d5d4e80d2204d8fa424cd4d5cb078a62a8",
-      "path": "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py",
-      "source_sha256": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d"
     },
     "classification-group:fbb576e0a8b96c8d1dac7c2e98766468ddc9a2dfed50e28f9346981b71e17a95": {
       "kind": "module_effects",
@@ -139775,12 +140144,12 @@
     "skills/orch-dork/scripts/lifecycle_conformance/reference_model.py": "0d059030bdb7ade727a8e744fb22b79f1dbe06b3e05102edf5212ab0c33cdc1b",
     "skills/orch-dork/scripts/lifecycle_conformance/reference_values.py": "413ea20d8699ee65466028a82e87b13ef941e8f4a00f0aa765b7b2a35a68a781",
     "skills/orch-dork/scripts/lifecycle_conformance/registries.py": "5947e899bc295cf90ad9d6ea13fe05e8a855fc957abde8a15b71d85645bcb4e4",
-    "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59",
+    "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082",
     "skills/orch-dork/scripts/lifecycle_conformance/replay_bindings.py": "71a635c06c0086c3bcc183e4ffdc921b680af62118a366180284938b042a7f14",
     "skills/orch-dork/scripts/lifecycle_conformance/replays.py": "457e0985b64ed883174ab161b0fdb491e14c4bc7ab1d2f02341cd7d67b229595",
     "skills/orch-dork/scripts/lifecycle_conformance/scope_policy.py": "2495f53b42d6af2886cc41b3181b17d9a1e603b54c6223493a20e78c4ad92c2a",
     "skills/orch-dork/scripts/lifecycle_conformance/source_coverage_backlog.py": "a1cf8a8d7aebc5fabcf194ce73642998062a1463ecd824eadf6359a160ddd4ac",
-    "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d",
+    "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f",
     "skills/orch-dork/scripts/lifecycle_conformance/values.py": "438c943aa8c6a59e219118b762a298d5303495a7699a0996dc1eb4ec3ce5e495",
     "skills/orch-dork/scripts/orch_dork_activation_only_failure_recovery.py": "2f51ca46302ffd3ac0de1f10c177216b35062d75b72e4924f66f85080302d1c8",
     "skills/orch-dork/scripts/orch_dork_adaptive_contracts.py": "6b27f5b3839902389f52fe0e92dc240738e359eb55821e82e0cca98b238d835c",
@@ -139793,7 +140162,7 @@
     "skills/orch-dork/scripts/orch_dork_artifact_attestation.py": "30a2fec0fcaed8762b99e8dd22c55307808ca72932da4e0079b324ff0b3a6a65",
     "skills/orch-dork/scripts/orch_dork_artifact_ledger.py": "090c45d5f5db70513e668e9c95888455347bf9781830c9fc426ee5987fc70884",
     "skills/orch-dork/scripts/orch_dork_attempt_observer.py": "483575e3126790006300c726890af7183f8a13f632178c84ccb9214c20a0bc4e",
-    "skills/orch-dork/scripts/orch_dork_brief_lint.py": "58d195847a99e84f7758451f2a170f563db334a2c02d2bff21ea3f5f48181c83",
+    "skills/orch-dork/scripts/orch_dork_brief_lint.py": "919680988d2d55a9c37e2b4f6048be0cacfbcf11df4bb8c34b3027e7d5e22877",
     "skills/orch-dork/scripts/orch_dork_bundle.py": "939fb6ca6011dfbe92e9069f30281ffded3e45911dac66e2a48e843c840750c3",
     "skills/orch-dork/scripts/orch_dork_campaign_policy.py": "024196e69b162692b516e2d8ba283261696d24f1c5729611650607fc3d586829",
     "skills/orch-dork/scripts/orch_dork_campaign_power.py": "c0cebee1846a8022f86576e44f61c9997f0cf3e9f23bd085ccfcfe243df5b7a1",
@@ -139846,6 +140215,7 @@
     "skills/orch-dork/scripts/orch_dork_governed_run_policy.py": "97d570dded4a28048eb717797e7758e7404295e51d5998a8f45bf293c51dd577",
     "skills/orch-dork/scripts/orch_dork_governed_run_watcher.py": "f31e2bfef6d75f169fdcab2868aa30b9e833396f4665c71a71b16fe51b9cac5f",
     "skills/orch-dork/scripts/orch_dork_guided_enrollment.py": "f3c0cf7079740c324f1dcc683b630d587d6a1bc58555c0abd54356352c4185d2",
+    "skills/orch-dork/scripts/orch_dork_handoff_returns.py": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f",
     "skills/orch-dork/scripts/orch_dork_hostile_input.py": "3bac74193500119d2d7073956aa320db1dc978b953abafb892f0cc6a3a1535f8",
     "skills/orch-dork/scripts/orch_dork_issue170_qualification_owner.py": "e2d6cfb8eafbe10b7714efc0d761aa7b5415eb2cf6d2625d75995985dc8141bf",
     "skills/orch-dork/scripts/orch_dork_lane_workspace.py": "80a4794fdcf9761cf39f20d72c77598bf0b1ba4acc247e661212d5cf6811d021",
@@ -139937,7 +140307,7 @@
     "skills/orch-dork/scripts/orch_dork_run_engine.py": "863cf63aaa53009230c049779879983e43c7e4cb8f0a1277b832da0b77c75484",
     "skills/orch-dork/scripts/orch_dork_run_registry.py": "db242deb589bc18828fc7496ed5ba61c94cbf56e30844f0a943c23d7af33286b",
     "skills/orch-dork/scripts/orch_dork_run_store.py": "b8b5bc93dfe78e2eec3189d4c6144575b2884326a0b1b2753a525c75df5468d1",
-    "skills/orch-dork/scripts/orch_dork_runtime_package.py": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
+    "skills/orch-dork/scripts/orch_dork_runtime_package.py": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
     "skills/orch-dork/scripts/orch_dork_runtime_receipt_chain.py": "03aac5e2524d52c0dedad881888199e4f82c2076a8be5bbeb392d9143a2acece",
     "skills/orch-dork/scripts/orch_dork_sbom.py": "f5f27b2bc3f8cf69d9dff36cc19857390b16d9cc3f5aa06cbf2e8af06d7746e0",
     "skills/orch-dork/scripts/orch_dork_semantic_delta.py": "cc21410311c2e2c36249c906f7106989df52558c29ec4fc43a73bc05367e6739",
@@ -140024,12 +140394,12 @@
     "skills/orch-dork/scripts/lifecycle_conformance/reference_model.py": "0d059030bdb7ade727a8e744fb22b79f1dbe06b3e05102edf5212ab0c33cdc1b",
     "skills/orch-dork/scripts/lifecycle_conformance/reference_values.py": "413ea20d8699ee65466028a82e87b13ef941e8f4a00f0aa765b7b2a35a68a781",
     "skills/orch-dork/scripts/lifecycle_conformance/registries.py": "5947e899bc295cf90ad9d6ea13fe05e8a855fc957abde8a15b71d85645bcb4e4",
-    "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py": "3f9ee95390bafb5595f6ca63e18592731edeec02a6f48ee5adea0ee86d12ca59",
+    "skills/orch-dork/scripts/lifecycle_conformance/release_execution.py": "051483240f0c94989b0a6cb88af0bc1a5abaf855456f156d51969b651a13c082",
     "skills/orch-dork/scripts/lifecycle_conformance/replay_bindings.py": "71a635c06c0086c3bcc183e4ffdc921b680af62118a366180284938b042a7f14",
     "skills/orch-dork/scripts/lifecycle_conformance/replays.py": "457e0985b64ed883174ab161b0fdb491e14c4bc7ab1d2f02341cd7d67b229595",
     "skills/orch-dork/scripts/lifecycle_conformance/scope_policy.py": "2495f53b42d6af2886cc41b3181b17d9a1e603b54c6223493a20e78c4ad92c2a",
     "skills/orch-dork/scripts/lifecycle_conformance/source_coverage_backlog.py": "a1cf8a8d7aebc5fabcf194ce73642998062a1463ecd824eadf6359a160ddd4ac",
-    "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py": "ecaacaae83db246f2fd7ecaca973d7c2c6fcf3640e9e6749ea46b2de2439f98d",
+    "skills/orch-dork/scripts/lifecycle_conformance/source_scope_closure.py": "25dc85eb38b863e382f7d3ceb1bc6522051c30d8348b4b3ea3eea97e1bb4d59f",
     "skills/orch-dork/scripts/lifecycle_conformance/values.py": "438c943aa8c6a59e219118b762a298d5303495a7699a0996dc1eb4ec3ce5e495",
     "skills/orch-dork/scripts/orch_dork_activation_only_failure_recovery.py": "2f51ca46302ffd3ac0de1f10c177216b35062d75b72e4924f66f85080302d1c8",
     "skills/orch-dork/scripts/orch_dork_adaptive_contracts.py": "6b27f5b3839902389f52fe0e92dc240738e359eb55821e82e0cca98b238d835c",
@@ -140042,7 +140412,7 @@
     "skills/orch-dork/scripts/orch_dork_artifact_attestation.py": "30a2fec0fcaed8762b99e8dd22c55307808ca72932da4e0079b324ff0b3a6a65",
     "skills/orch-dork/scripts/orch_dork_artifact_ledger.py": "090c45d5f5db70513e668e9c95888455347bf9781830c9fc426ee5987fc70884",
     "skills/orch-dork/scripts/orch_dork_attempt_observer.py": "483575e3126790006300c726890af7183f8a13f632178c84ccb9214c20a0bc4e",
-    "skills/orch-dork/scripts/orch_dork_brief_lint.py": "58d195847a99e84f7758451f2a170f563db334a2c02d2bff21ea3f5f48181c83",
+    "skills/orch-dork/scripts/orch_dork_brief_lint.py": "919680988d2d55a9c37e2b4f6048be0cacfbcf11df4bb8c34b3027e7d5e22877",
     "skills/orch-dork/scripts/orch_dork_bundle.py": "939fb6ca6011dfbe92e9069f30281ffded3e45911dac66e2a48e843c840750c3",
     "skills/orch-dork/scripts/orch_dork_campaign_policy.py": "024196e69b162692b516e2d8ba283261696d24f1c5729611650607fc3d586829",
     "skills/orch-dork/scripts/orch_dork_campaign_power.py": "c0cebee1846a8022f86576e44f61c9997f0cf3e9f23bd085ccfcfe243df5b7a1",
@@ -140098,6 +140468,7 @@
     "skills/orch-dork/scripts/orch_dork_governed_run_policy.py": "97d570dded4a28048eb717797e7758e7404295e51d5998a8f45bf293c51dd577",
     "skills/orch-dork/scripts/orch_dork_governed_run_watcher.py": "f31e2bfef6d75f169fdcab2868aa30b9e833396f4665c71a71b16fe51b9cac5f",
     "skills/orch-dork/scripts/orch_dork_guided_enrollment.py": "f3c0cf7079740c324f1dcc683b630d587d6a1bc58555c0abd54356352c4185d2",
+    "skills/orch-dork/scripts/orch_dork_handoff_returns.py": "8094bdb8e41ef24f896c9be7c2505792f7b57cad077d729c47f150a216971c1f",
     "skills/orch-dork/scripts/orch_dork_hostile_input.py": "3bac74193500119d2d7073956aa320db1dc978b953abafb892f0cc6a3a1535f8",
     "skills/orch-dork/scripts/orch_dork_issue170_qualification_owner.py": "e2d6cfb8eafbe10b7714efc0d761aa7b5415eb2cf6d2625d75995985dc8141bf",
     "skills/orch-dork/scripts/orch_dork_lane_workspace.py": "80a4794fdcf9761cf39f20d72c77598bf0b1ba4acc247e661212d5cf6811d021",
@@ -140192,7 +140563,7 @@
     "skills/orch-dork/scripts/orch_dork_run_engine.py": "863cf63aaa53009230c049779879983e43c7e4cb8f0a1277b832da0b77c75484",
     "skills/orch-dork/scripts/orch_dork_run_registry.py": "db242deb589bc18828fc7496ed5ba61c94cbf56e30844f0a943c23d7af33286b",
     "skills/orch-dork/scripts/orch_dork_run_store.py": "b8b5bc93dfe78e2eec3189d4c6144575b2884326a0b1b2753a525c75df5468d1",
-    "skills/orch-dork/scripts/orch_dork_runtime_package.py": "991b654e1746d208fc351765d0d4deffe461e5bca54dbfb9eb10605d6d0399ed",
+    "skills/orch-dork/scripts/orch_dork_runtime_package.py": "bf897affa983d6faec409e15bc2b0aca8f5d72a4a336c7d7cbbb936701c991bd",
     "skills/orch-dork/scripts/orch_dork_runtime_receipt_chain.py": "03aac5e2524d52c0dedad881888199e4f82c2076a8be5bbeb392d9143a2acece",
     "skills/orch-dork/scripts/orch_dork_sbom.py": "f5f27b2bc3f8cf69d9dff36cc19857390b16d9cc3f5aa06cbf2e8af06d7746e0",
     "skills/orch-dork/scripts/orch_dork_semantic_delta.py": "cc21410311c2e2c36249c906f7106989df52558c29ec4fc43a73bc05367e6739",
@@ -140231,5 +140602,5 @@
     "skills/orch-dork/scripts/orch_dork_workspace_sandbox.py": "2d72433a8fac32a5f1092004053958a3c92f244f4394e932f53f9abe30de6a45",
     "skills/orch-dork/scripts/orch_dork_worktree_runner.py": "1be17e5e37852b7d602b5dad50b8029d9ce858db61658fa8688b7f00797ca44c"
   },
-  "source_inventory_sha256": "7bfdffe94db4911aca41dbbc0bb013efeeaa2330ff24325958d2fe1b16bacc17"
+  "source_inventory_sha256": "1eec44e2ce19bad6b6a5da1e52d03d6a851cf487703888bc64e456adf502cfcc"
 }

@@ -24,8 +24,8 @@ Python 3.9 or later must be on PATH.
 ## What is here
 
 - `plugins/orch-dork/` is the exact runtime package of the qualified
-  generation `0.1.0+codex.20261015223833` (runtime package digest
-  `0499381b9ceaf5825dad55f99c6a42aa4426dc750d5001dc1fbe13b66cf3890d`).
+  generation `0.1.0+codex.20261020121054` (runtime package digest
+  `19e2238afc702d27f5bc7c758dc7d2e51f44eb27ca8a2dd39a5ecf899d02fab9`).
   Nothing in it is edited after qualification; a new generation replaces the
   directory as a whole.
 - `.agents/plugins/marketplace.json` is the marketplace manifest Codex reads.

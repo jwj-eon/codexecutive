@@ -1,6 +1,6 @@
 {
   "name": "orch-dork",
-  "version": "0.1.0+codex.20261015223833",
+  "version": "0.1.0+codex.20261020121054",
   "description": "Coordinate decomposable Codex work with frozen plans and explicit advisory versus governed evidence.",
   "author": {
     "name": "clawton-sub"
